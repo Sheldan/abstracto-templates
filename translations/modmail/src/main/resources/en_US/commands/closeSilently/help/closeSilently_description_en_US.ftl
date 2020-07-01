@@ -1,0 +1,1 @@
+Closes the mod mail thread and does not notify the user.

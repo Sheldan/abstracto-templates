@@ -1,0 +1,1 @@
+Suggests the given text in the `suggestions` post target to be voted on.

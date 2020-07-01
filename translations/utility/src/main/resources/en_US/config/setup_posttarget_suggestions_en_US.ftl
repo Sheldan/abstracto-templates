@@ -1,0 +1,1 @@
+The channel where suggestions should be posted to. Currently: ${currentTarget}

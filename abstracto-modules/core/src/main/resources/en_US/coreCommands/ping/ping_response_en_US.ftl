@@ -1,0 +1,1 @@
+<#include "ping_latency_response">

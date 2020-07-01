@@ -1,0 +1,1 @@
+<#assign featureString>${features?join(", ")}</#assign><#include "enable_available_features">

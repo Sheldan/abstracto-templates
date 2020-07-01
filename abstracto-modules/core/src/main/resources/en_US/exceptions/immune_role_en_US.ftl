@@ -1,0 +1,1 @@
+<#assign roleName>${role.name}</#assign> <#include "immune_role_text">

@@ -1,0 +1,1 @@
+Opens a new mod mail thread with the user, and posts a message containing a link to the thread if one is already open.
