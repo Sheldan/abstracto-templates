@@ -1,1 +1,1 @@
-<#include "channel_not_found_exception_text">
+Channel ${channelId} not found in the database.

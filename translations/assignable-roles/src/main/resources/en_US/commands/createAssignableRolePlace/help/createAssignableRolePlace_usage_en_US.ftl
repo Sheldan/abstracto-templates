@@ -1,0 +1,1 @@
+createAssignableRolePlace <name> <channel> <text>

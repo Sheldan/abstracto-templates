@@ -1,0 +1,1 @@
+The name of the assignable place for the configuration should be changed.

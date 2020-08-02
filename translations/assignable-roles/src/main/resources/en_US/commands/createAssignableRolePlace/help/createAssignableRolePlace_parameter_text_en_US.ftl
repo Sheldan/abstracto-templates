@@ -1,0 +1,1 @@
+The text which should be displayed as the description of the assignable role place.

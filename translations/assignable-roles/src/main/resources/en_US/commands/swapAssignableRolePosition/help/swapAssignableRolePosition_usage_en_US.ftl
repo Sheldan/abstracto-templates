@@ -1,0 +1,1 @@
+swapAssignableRolePosition <placeName> <firstEmote> <secondEmote>

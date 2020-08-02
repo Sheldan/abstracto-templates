@@ -1,0 +1,1 @@
+The description of the role to be displayed next to the emote in the assignable role place

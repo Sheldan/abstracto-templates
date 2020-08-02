@@ -1,0 +1,1 @@
+Sets the position of an emote within an assignable place

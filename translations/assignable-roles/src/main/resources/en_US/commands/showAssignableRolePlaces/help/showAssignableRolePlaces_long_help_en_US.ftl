@@ -1,0 +1,1 @@
+Shows a list of the currently available assignable role places with their respective keys.

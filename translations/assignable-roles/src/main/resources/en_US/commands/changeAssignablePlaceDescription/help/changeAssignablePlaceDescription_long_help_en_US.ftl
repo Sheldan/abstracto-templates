@@ -1,0 +1,1 @@
+Changes the description which is shown for the assignable role place. This change takes effect the next time the assignable place is setup the next time.

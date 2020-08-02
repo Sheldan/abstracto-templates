@@ -1,0 +1,2 @@
+Adds an assignable role to the given assignable role place. This assignment requires an emote, a description and a role to be assigned. The mentioned role will be assigned once a member reacts to the emote.
+Only emotes from a server the bot is in can be used and it is not possible to assign an emote twice. The emote will be added at the _end_ of the assignable role place and if the posts already exists, the emote will be added already.

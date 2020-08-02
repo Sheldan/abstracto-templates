@@ -1,0 +1,1 @@
+This changes the text which describes the assignable role place and is shown in the the first message of the place.

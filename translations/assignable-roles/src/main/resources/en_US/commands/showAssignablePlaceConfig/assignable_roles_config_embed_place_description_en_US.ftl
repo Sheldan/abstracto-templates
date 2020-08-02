@@ -1,0 +1,2 @@
+Configuration for assignable roles for assignable role place `${place.key}`, shown with text: ${place.text}, which is currently ${place.active?string('active', 'not active')}. The fields are shown ${place.inline?string('inline', 'not inline')}.
+If a role has been assigned, the added reaction will ${place.autoRemove?string('be removed', 'not be removed')} and it is ${place.uniqueRoles?string('not possible', 'possible')} to have multiple roles at once.

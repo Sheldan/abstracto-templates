@@ -1,0 +1,1 @@
+Moves an assignable role place to another channel

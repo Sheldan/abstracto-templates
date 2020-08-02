@@ -1,0 +1,1 @@
+setAssignableRolePosition <placeName> <emote> <newPosition>

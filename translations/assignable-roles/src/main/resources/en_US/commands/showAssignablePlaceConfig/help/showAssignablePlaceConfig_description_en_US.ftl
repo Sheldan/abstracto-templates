@@ -1,0 +1,1 @@
+Shows the current configuration of an assignable role place

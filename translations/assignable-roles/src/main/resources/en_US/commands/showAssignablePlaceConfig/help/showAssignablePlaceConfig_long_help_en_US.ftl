@@ -1,0 +1,2 @@
+Shows all of the possible configurations of the given assignable role place.
+This includes: the assignable roles (emote, description and awarded role), whether or not the emotes are displayed inline or directly on top of one another, whether or not the assignable role place is active

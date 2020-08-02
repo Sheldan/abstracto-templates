@@ -21,6 +21,7 @@
         <module>moderation</module>
         <module>modmail</module>
         <module>utility</module>
+        <module>assignable-roles</module>
     </modules>
 
 </project>

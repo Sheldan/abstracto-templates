@@ -12,14 +12,14 @@
 
 <#if command.help??>
 <#if command.help.templated>
-<#include "help_command_embed_command_usage">: `<#include "${command.name}_usage">`
-<#include "help_command_embed_command_detailed_help">: <#include "${command.name}_long_help">
+**<#include "help_command_embed_command_usage">**: `<#include "${command.name}_usage">`
+**<#include "help_command_embed_command_detailed_help">**: <#include "${command.name}_long_help">
 <#if command.help.hasExample>
 <#include "help_command_embed_command_example">: <#include "${command.name}_example">
 </#if>
 <#else>
-<#include "help_command_embed_command_usage">: `${command.help.usage}`
-<#include "help_command_embed_command_detailed_help">: ${command.help.longHelp}
+**<#include "help_command_embed_command_usage">**: `${command.help.usage}`
+**<#include "help_command_embed_command_detailed_help">**: ${command.help.longHelp}
 <#if command.help.hasExample>
 <#include "help_command_embed_command_example">:${command.help.example}
 </#if>
@@ -35,7 +35,7 @@
 </#if>
 
 </#if>
-<#include "help_command_embed_command_parameters">:
+**<#include "help_command_embed_command_parameters">**:
 <#if command.parameters??>
 <#list command.parameters as parameter>
 <#include "help_command_embed_command_description"> `${parameter.name}`: <#if parameter.templated?? && parameter.templated><#include "${command.name}_parameter_${parameter.name}"><#else>${(parameter.description)!""}</#if>

@@ -1,0 +1,1 @@
+Currently configured assignable role places

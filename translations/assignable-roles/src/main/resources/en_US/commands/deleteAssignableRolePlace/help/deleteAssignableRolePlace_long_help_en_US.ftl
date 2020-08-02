@@ -1,0 +1,1 @@
+Deletes the assignable role place completely from the database and within discord, if there are any currently present

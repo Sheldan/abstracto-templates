@@ -1,0 +1,1 @@
+Emote ${model.emote.emoteRepr} is already defined for place ${model.placeName}.

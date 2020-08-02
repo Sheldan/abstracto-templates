@@ -1,0 +1,1 @@
+The emote which to identify the assignable role to remove

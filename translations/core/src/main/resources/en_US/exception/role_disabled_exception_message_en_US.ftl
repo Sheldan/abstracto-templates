@@ -1,0 +1,1 @@
+Role ${model.role.id?c} has been deleted.

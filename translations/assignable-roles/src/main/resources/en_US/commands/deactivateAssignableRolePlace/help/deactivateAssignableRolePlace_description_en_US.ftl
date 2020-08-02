@@ -1,0 +1,1 @@
+Deactivates an assignable place

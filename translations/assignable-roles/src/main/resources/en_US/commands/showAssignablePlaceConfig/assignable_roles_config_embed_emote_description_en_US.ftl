@@ -1,0 +1,1 @@
+#${role.position}: ${role.emote.asMention} with <#if role.awardedRole?has_content>${role.awardedRole.asMention}<#else>Deleted role</#if>: `${role.description}`.

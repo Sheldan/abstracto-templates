@@ -1,0 +1,1 @@
+Emote ${model.emote.emoteRepr} was not found in the assignable place ${model.placeName}.

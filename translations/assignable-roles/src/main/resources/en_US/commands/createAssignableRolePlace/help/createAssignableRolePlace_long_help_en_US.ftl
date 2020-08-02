@@ -1,0 +1,2 @@
+Creates an assignable role place with the given name used as key to identify it. The provided description will be displayed when it is posted.
+This does not create any messages, only creates the instance in the database and can be removed with `deleteAssignableRolePlace`.

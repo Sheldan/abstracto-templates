@@ -1,0 +1,2 @@
+This command can be used to show the emotes in the assignable place posts in a column, so the messages are a bit more spread out and structured.
+This change applies when the assignable place is setup the next time.

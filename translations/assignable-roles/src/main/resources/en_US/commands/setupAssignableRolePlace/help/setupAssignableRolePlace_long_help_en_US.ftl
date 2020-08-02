@@ -1,0 +1,2 @@
+Deletes the old assignable role posts (if any) and creates the assignable role posts completely anew in the channel where the assignable post is configured in.
+This effectively means that old reactions are lost, but the assigned roles still persist.
