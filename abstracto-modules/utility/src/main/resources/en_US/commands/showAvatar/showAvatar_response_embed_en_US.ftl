@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "${memberInfo.user.name}#${memberInfo.user.discriminator}",
+    "name": "${memberInfo.user.name?js_string}#${memberInfo.user.discriminator}",
     "avatar":  "${memberInfo.user.effectiveAvatarUrl}"
   },
   "color" : {
@@ -11,13 +11,13 @@
   "imageUrl":  "${memberInfo.user.effectiveAvatarUrl}",
   "fields": [
   {
-        "name": "<#include "showAvatar_response_embed_user_field_title">",
-        "value": "${memberInfo.user.name}#${memberInfo.user.discriminator}",
+        "name": "<@safe_include "showAvatar_response_embed_user_field_title"/>",
+        "value": "${memberInfo.user.name?js_string}#${memberInfo.user.discriminator}",
         "inline": "true"
   },
   {
-        "name": "<#include "showAvatar_response_embed_image_field_title">",
-        "value": "[<#include "showAvatar_response_embed_image_field_value_display">](${memberInfo.user.effectiveAvatarUrl})",
+        "name": "<@safe_include "showAvatar_response_embed_image_field_title"/>",
+        "value": "[<@safe_include "showAvatar_response_embed_image_field_value_display"/>](${memberInfo.user.effectiveAvatarUrl})",
         "inline": "true"
   }
   ]

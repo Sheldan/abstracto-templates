@@ -1,1 +1,1 @@
-<#assign user>${user.name}#${user.discriminator} (${user.asMention})</#assign><#include "user_left_text">
+<#assign user>${user.name}#${user.discriminator} (${user.asMention})</#assign><@safe_include "user_left_text"/>

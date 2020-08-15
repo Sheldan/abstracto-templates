@@ -1,10 +1,10 @@
 {
   "author": {
-    "name": "${bannedUser.effectiveName}",
+    "name": "${bannedUser.effectiveName?js_string}",
     "avatar":  "${bannedUser.user.effectiveAvatarUrl}"
   },
   "title": {
-    "title": "<#include "ban_log_title">"
+    "title": "<@safe_include "ban_log_title"/>"
   },
   "color" : {
     "r": 200,
@@ -13,20 +13,20 @@
   },
   "fields": [
     {
-      "name": "<#include "ban_log_banned_user_field_title">",
-      "value": "${bannedUser.effectiveName} ${bannedUser.asMention} (${bannedUser.idLong?c})"
+      "name": "<@safe_include "ban_log_banned_user_field_title"/>",
+      "value": "${bannedUser.effectiveName?js_string} ${bannedUser.asMention?js_string} (${bannedUser.idLong?c})"
     },
     {
-        "name": "<#include "ban_log_banning_user_field_title">",
-        "value": "${banningUser.effectiveName} ${banningUser.asMention} (${banningUser.idLong?c})"
+        "name": "<@safe_include "ban_log_banning_user_field_title"/>",
+        "value": "${banningUser.effectiveName?js_string} ${banningUser.asMention?js_string} (${banningUser.idLong?c})"
     },
     {
-        "name": "<#include "ban_log_jump_link_field_title">",
-        "value": "[${messageChannel.name}](${message.jumpUrl})"
+        "name": "<@safe_include "ban_log_jump_link_field_title"/>",
+        "value": "[${messageChannel.name?js_string}](${message.jumpUrl})"
     },
     {
-        "name": "<#include "ban_log_reason_field_title">",
-        "value": "${reason}"
+        "name": "<@safe_include "ban_log_reason_field_title"/>",
+        "value": "${reason?js_string}"
     }
   ]
 }

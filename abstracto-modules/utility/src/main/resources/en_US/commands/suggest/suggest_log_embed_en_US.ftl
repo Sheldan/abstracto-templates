@@ -1,7 +1,7 @@
 {
   "author": {
     <#if suggester?has_content>
-    "name": "${suggester.effectiveName}",
+    "name": "${suggester.effectiveName?js_string}",
     "avatar":  "${suggester.user.effectiveAvatarUrl}"
     <#else>
     "name": "${suggesterUser.userReference.id}"
@@ -12,24 +12,24 @@
     "g": 0,
     "b": 255
   },
-  <#assign user>${member.effectiveName}</#assign>
+  <#assign user>${member.effectiveName?js_string}</#assign>
   <#assign id>${suggestion.id}</#assign>
   <#if suggestion.state = "ACCEPTED">
-    "description": "~~${text}~~ \n✅ ${reason} - <#include "suggest_accepted_by">",
+    "description": "~~${text?js_string}~~ \n✅ ${reason} - <@safe_include "suggest_accepted_by"/>",
   <#elseif suggestion.state = "REJECTED">
-    "description": "~~${text}~~ \n❌ ${reason} - <#include "suggest_rejected_by">",
+    "description": "~~${text?js_string}~~ \n❌ ${reason} - <@safe_include "suggest_rejected_by"/>",
   <#else>
-    "description": "${text}",
+    "description": "${text?js_string}",
   </#if>
   <#if suggestion.state = "ACCEPTED" || suggestion.state = "REJECTED">
   "fields": [
     {
-        "name": "<#include "suggest_link_field_title">",
-        "value": "[<#include "suggest_link_display_value">](${originalMessageUrl})"
+        "name": "<@safe_include "suggest_link_field_title"/>",
+        "value": "[<@safe_include "suggest_link_display_value"/>](${originalMessageUrl})"
     }
   ],
   </#if>
   "footer": {
-    "text": "<#include "suggest_suggestion_id_footer">"
+    "text": "<@safe_include "suggest_suggestion_id_footer"/>"
   }
 }

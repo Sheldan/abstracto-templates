@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "${author.member.effectiveName}",
+    "name": "${author.member.effectiveName?js_string}",
     "avatar":  "${author.member.user.effectiveAvatarUrl}"
   },
   "color" : {
@@ -9,13 +9,13 @@
     "b": 255
   }
   <#if message.embeds[0].description?has_content>
-  ,"description": "${message.embeds[0].description}"
+  ,"description": "${message.embeds[0].description?js_string}"
   </#if>
    <#if message.attachments?size gt 0>
      ,"imageUrl": "${message.embeds[0].image.proxyUrl}"
    </#if>
    <#if modMailMessage.anonymous>
-   , "additionalMessage": "<#include "modmail_anonymous_message_note">"
+   , "additionalMessage": "<@safe_include "modmail_anonymous_message_note"/>"
    </#if>
    ,"timeStamp": "${message.timeCreated}"
 }

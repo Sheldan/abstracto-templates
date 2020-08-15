@@ -4,5 +4,5 @@
     "g": 0,
     "b": 255
   },
-  "description": "${closingMessage}"
+  "description": "${closingMessage?js_string}"
 }

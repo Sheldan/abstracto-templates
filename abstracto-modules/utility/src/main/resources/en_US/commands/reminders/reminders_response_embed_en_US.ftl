@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "${member.effectiveName}",
+    "name": "${member.effectiveName?js_string}",
     "avatar":  "${member.user.effectiveAvatarUrl}"
   },
   "color" : {
@@ -9,14 +9,14 @@
     "b": 255
   },
    "title": {
-      "title": "<#include "reminders_reminders_embed_title">"
+      "title": "<@safe_include "reminders_reminders_embed_title"/>"
     },
    "fields": [
-       <#list reminders as reminder>
+       <#list reminders as reminder><#assign reminder=reminder/>
            {
            <#assign id>${reminder.id}</#assign>
-            "name": "<#include "reminders_reminder_field_title">",
-            "value": "<#include "reminders_due_on">"
+            "name": "<@safe_include "reminders_reminder_field_title"/>",
+            "value": "<@safe_include "reminders_due_on"/>"
            }
        <#sep>,
        </#list>

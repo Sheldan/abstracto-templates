@@ -1,9 +1,9 @@
 {
   "author": {
-    "name": "${member.effectiveName}#${member.user.discriminator}",
+    "name": "${member.effectiveName?js_string}#${member.user.discriminator}",
     "avatar":  "${member.user.effectiveAvatarUrl}"
   },
-  "description": "<#include "messageEdited_description_text">",
+  "description": "<@safe_include "messageEdited_description_text"/>",
   "color" : {
     "r": 200,
     "g": 0,
@@ -11,16 +11,16 @@
   },
   "fields": [
     {
-      "name": "<#include "messageEdited_original_message_field_title">",
-      "value": "${messageBefore.content}"
+      "name": "<@safe_include "messageEdited_original_message_field_title"/>",
+      "value": "${messageBefore.content?js_string}"
     },
     {
-          "name": "<#include "messageEdited_new_message_field_title">",
-          "value": "${messageAfter.contentRaw}"
+          "name": "<@safe_include "messageEdited_new_message_field_title"/>",
+          "value": "${messageAfter.contentRaw?js_string}"
     },
     {
-        "name": "<#include "messageEdited_link_field_title">",
-        "value": "[${messageChannel.name}](${messageBefore.messageUrl})"
+        "name": "<@safe_include "messageEdited_link_field_title"/>",
+        "value": "[${messageChannel.name?js_string}](${messageBefore.messageUrl})"
     }
   ]
 }

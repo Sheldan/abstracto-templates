@@ -2,7 +2,7 @@
     <#assign id>${reminder.id}</#assign>
     <#assign messageUrl>${message.jumpUrl}</#assign>
   "author": {
-    "name": "${member.effectiveName}",
+    "name": "${member.effectiveName?js_string}",
     "avatar":  "${member.user.effectiveAvatarUrl}"
   },
   "color" : {
@@ -10,6 +10,6 @@
     "g": 0,
     "b": 255
   },
-  "description": "<#include "remind_reminding_description_text">",
-  "additionalMessage": "${member.asMention}"
+  "description": "<@safe_include "remind_reminding_description_text"/>",
+  "additionalMessage": "${member.asMention?js_string}"
 }

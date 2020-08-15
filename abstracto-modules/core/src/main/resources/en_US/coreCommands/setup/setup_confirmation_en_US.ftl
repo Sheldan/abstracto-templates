@@ -1,5 +1,5 @@
-<#list actionConfigs as actionConfig>
+<#list actionConfigs as actionConfig><#assign actionConfig=actionConfig/>
 <#assign param=actionConfig.templateModel>
-<#include "${actionConfig.templateName}">
+<@safe_include "${actionConfig.templateName}"/>
 
 </#list>

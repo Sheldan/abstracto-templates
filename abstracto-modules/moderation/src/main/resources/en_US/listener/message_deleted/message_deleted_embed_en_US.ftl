@@ -1,9 +1,9 @@
 {
   "author": {
-    "name": "${member.effectiveName}#${member.user.discriminator}",
+    "name": "${member.effectiveName?js_string}#${member.user.discriminator}",
     "avatar":  "${member.user.effectiveAvatarUrl}"
   },
-  "description": "<#include "messageDeleted_description_text">",
+  "description": "<@safe_include "messageDeleted_description_text"/>",
   "color" : {
     "r": 200,
     "g": 0,
@@ -11,12 +11,12 @@
   },
   "fields": [
     {
-      "name": "<#include "messageDeleted_original_message_field_title">",
-      "value": "${cachedMessage.content}"
+      "name": "<@safe_include "messageDeleted_original_message_field_title"/>",
+      "value": "${cachedMessage.content?js_string}"
     },
     {
-        "name": "<#include "messageDeleted_message_link_field_title">",
-        "value": "[${messageChannel.name}](${cachedMessage.messageUrl})"
+        "name": "<@safe_include "messageDeleted_message_link_field_title"/>",
+        "value": "[${messageChannel.name?js_string}](${cachedMessage.messageUrl})"
     }
   ]
 }

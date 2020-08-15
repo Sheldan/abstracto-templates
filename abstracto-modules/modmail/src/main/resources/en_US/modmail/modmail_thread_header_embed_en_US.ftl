@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "${threadUser.member.effectiveName}",
+    "name": "${threadUser.member.effectiveName?js_string}",
     "avatar":  "${threadUser.member.user.effectiveAvatarUrl}"
   },
   "color" : {
@@ -8,8 +8,8 @@
     "g": 0,
     "b": 255
   },
-  <#assign user>${threadUser.member.effectiveName}#${threadUser.member.user.discriminator} (${threadUser.member.user.id})</#assign>
+  <#assign user>${threadUser.member.effectiveName?js_string}#${threadUser.member.user.discriminator} (${threadUser.member.user.id})</#assign>
   <#assign joinDate>${threadUser.member.timeJoined}</#assign>
-  <#assign roles><#list threadUser.member.roles as role>${role.asMention}<#sep>,<#else><#include "modmail_thread_header_no_roles"></#list></#assign>
-  "description": "<#include "modmail_thread_header_embed_description">"
+  <#assign roles><#list threadUser.member.roles as role>${role.asMention?js_string}<#sep>,<#else><@safe_include "modmail_thread_header_no_roles"/></#list></#assign>
+  "description": "<@safe_include "modmail_thread_header_embed_description"/>"
 }

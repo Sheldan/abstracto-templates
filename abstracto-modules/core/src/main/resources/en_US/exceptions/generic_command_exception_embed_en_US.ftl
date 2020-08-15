@@ -1,7 +1,7 @@
 {
   "author": {
-    "name": "${user.member.effectiveName}",
-    "avatar":  "${user.member.user.effectiveAvatarUrl}"
+    "name": "${user.member.effectiveName?js_string}",
+    "avatar":  "${user.member.user.effectiveAvatarUrl?js_string}"
   },
   "color" : {
     "r": 200,
@@ -12,8 +12,7 @@
   <#if template?has_content>
   <#if template.templateModel?has_content>
     <#assign model=template.templateModel/>
-    <#assign rendered><#include "${template.templateName}"></#assign>
-    ${rendered?js_string}
+    <#include "${template.templateName}"/>
   </#if>
   <#elseif throwable.localizedMessage?has_content>
   "description": "${throwable.localizedMessage?js_string}"

@@ -1,1 +1,1 @@
-<#assign defaultValue=defaultConfig.valueAsString><#include "setup_config_${configKey}">
+<#assign defaultValue=defaultConfig.valueAsString><@safe_include "setup_config_${configKey}"/>

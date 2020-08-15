@@ -1,10 +1,10 @@
 {
   "author": {
-    "name": "${member.effectiveName}",
+    "name": "${member.effectiveName?js_string}",
     "avatar":  "${member.user.effectiveAvatarUrl}"
   },
   "title": {
-    "title": "<#include "list_disabled_experience_roles_embed_title">"
+    "title": "<@safe_include "list_disabled_experience_roles_embed_title"/>"
   },
   "color" : {
     "r": 200,
@@ -13,9 +13,9 @@
   },
   "description": "
     <#list roles as role>
-    ${role.role.asMention}
+    ${role.role.asMention?js_string}
     <#else>
-    <#include "list_disabled_experience_roles_embed_no_roles">
+    <@safe_include "list_disabled_experience_roles_embed_no_roles"/>
     </#list>
   "
 }

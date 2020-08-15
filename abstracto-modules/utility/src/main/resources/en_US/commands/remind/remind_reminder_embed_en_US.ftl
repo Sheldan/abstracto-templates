@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "${member.effectiveName}",
+    "name": "${member.effectiveName?js_string}",
     "avatar":  "${member.user.effectiveAvatarUrl}"
   },
   "color" : {
@@ -8,20 +8,20 @@
     "g": 0,
     "b": 255
   },
-  "description": "<#include "remind_reminder_description">",
+  "description": "<@safe_include "remind_reminder_description"/>",
   "fields": [
     {
-        "name": "<#include "remind_reminder_duration_field_title">",
+        "name": "<@safe_include "remind_reminder_duration_field_title"/>",
         "value": "${fmtDuration(duration)}"
     },
     {
-        "name": "<#include "remind_reminder_note_field_title">",
-        "value": "${reminder.text}"
+        "name": "<@safe_include "remind_reminder_note_field_title"/>",
+        "value": "${reminder.text?js_string}"
     },
     {
-        "name": "<#include "remind_reminder_link_field_title">",
-        "value": "[<#include "remind_reminder_link_content_display_text">](${messageUrl})"
+        "name": "<@safe_include "remind_reminder_link_field_title"/>",
+        "value": "[<@safe_include "remind_reminder_link_content_display_text"/>](${messageUrl})"
     }
   ],
-  "additionalMessage": "${member.asMention}"
+  "additionalMessage": "${member.asMention?js_string}"
 }

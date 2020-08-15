@@ -1,4 +1,4 @@
-<#include "server_chooser_server_list_description">
+<@safe_include "server_chooser_server_list_description"/>
 
 <#list commonGuilds as guild>
     ${guild.reactionEmote} ${guild.guild.guild.name}

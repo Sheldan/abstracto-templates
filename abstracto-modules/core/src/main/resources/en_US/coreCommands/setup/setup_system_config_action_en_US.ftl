@@ -1,1 +1,1 @@
-<#assign configKey>${param.configKey}</#assign><#assign newValue>${param.newValue}</#assign><#include "setup_system_config_action_display">
+<#assign configKey>${param.configKey}</#assign><#assign newValue>${param.newValue}</#assign><@safe_include "setup_system_config_action_display"/>

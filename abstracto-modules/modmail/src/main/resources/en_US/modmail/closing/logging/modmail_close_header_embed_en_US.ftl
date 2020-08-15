@@ -1,6 +1,6 @@
 {
   "title": {
-      "title": "<#include "modmail_closing_notification_title">"
+      "title": "<@safe_include "modmail_closing_notification_title"/>"
     },
   "color" : {
     "r": 200,
@@ -11,5 +11,5 @@
   <#assign user>user</#assign>
   <#assign startDate>${formatDate(closedThread.created,"yyyy-MM-dd HH:mm:ss")}</#assign>
   <#assign duration>${fmtDuration(duration)}</#assign>
-  "description": "<#include "close_closing_description">"
+  "description": "<@safe_include "close_closing_description"/>"
 }

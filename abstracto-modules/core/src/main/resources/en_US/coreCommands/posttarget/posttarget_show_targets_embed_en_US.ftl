@@ -1,6 +1,6 @@
 {
   "title": {
-    "title": "<#include "posttarget_embed_title">"
+    "title": "<@safe_include "posttarget_embed_title"/>"
   },
   "color" : {
     "r": 200,
@@ -8,12 +8,12 @@
     "b": 255
   },
   "description": "
-<#list postTargets as postTarget>
-<#assign postTargetName>${postTarget.postTarget.name}</#assign>
-<#assign channelMention><#if postTarget.channel?has_content>${postTarget.channel.asMention}<#else><#include "posttarget_no_channel"></#if></#assign>
-<#include "posttarget_post_target_text">
+<#list postTargets as postTarget><#assign postTarget=postTarget/>
+<#assign postTargetName>${postTarget.postTarget.name?js_string}</#assign>
+<#assign channelMention><#if postTarget.channel?has_content>${postTarget.channel.asMention?js_string}<#else><@safe_include "posttarget_no_channel"/></#if></#assign>
+<@safe_include "posttarget_post_target_text"/>
 <#else>
-<#include "posttarget_no_post_targets_found">
+<@safe_include "posttarget_no_post_targets_found"/>
 </#list>
 "
 }

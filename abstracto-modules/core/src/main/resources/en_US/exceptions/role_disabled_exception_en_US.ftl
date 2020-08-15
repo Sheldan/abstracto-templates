@@ -1,1 +1,1 @@
-"description": "<#include "role_disabled_exception_message">"
+"description": "<@safe_include "role_disabled_exception_message"/>"

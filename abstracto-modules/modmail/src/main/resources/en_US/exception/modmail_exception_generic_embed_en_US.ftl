@@ -1,6 +1,6 @@
 {
   "author": {
-    "name": "${user.member.effectiveName}",
+    "name": "${user.member.effectiveName?js_string}",
     "avatar":  "${user.member.user.effectiveAvatarUrl}"
   },
   "color" : {
@@ -8,5 +8,5 @@
     "g": 0,
     "b": 255
   },
-  "description": "<#include "modmail_generic_error">"
+  "description": "<@safe_include "modmail_generic_error"/>"
 }
