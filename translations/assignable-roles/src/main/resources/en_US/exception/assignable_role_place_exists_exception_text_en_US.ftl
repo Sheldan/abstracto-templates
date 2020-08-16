@@ -1,1 +1,1 @@
-Assignable roles place ${model.name} already exists.
+Assignable roles place ${roleName} already exists.

@@ -1,1 +1,1 @@
-User ${model.aUserInAServer.userReference.id} was not found in the assigned users.
+User ${userId} was not found in the assigned users.

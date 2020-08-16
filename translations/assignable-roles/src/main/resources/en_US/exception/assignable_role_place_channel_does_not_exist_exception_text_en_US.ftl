@@ -1,1 +1,1 @@
-Unable to create assignable place, channel ${model.channelId?c} does not exist.
+Unable to create assignable place, channel ${channelId?c} does not exist.

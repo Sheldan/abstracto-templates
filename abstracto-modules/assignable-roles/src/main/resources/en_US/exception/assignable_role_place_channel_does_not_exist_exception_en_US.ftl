@@ -1,1 +1,1 @@
-"description": "<@safe_include "assignable_role_place_channel_does_not_exist_exception_text"/>"
+"description": "<#assign channelId=model.channelId/><@safe_include "assignable_role_place_channel_does_not_exist_exception_text"/>"

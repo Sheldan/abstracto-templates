@@ -1,25 +1,20 @@
 {
-  "author": {
-    "name": "${warnedUser.effectiveName?js_string}",
-    "avatar":  "${warnedUser.user.effectiveAvatarUrl}"
-  },
+  <#include "full_member_info">
+  <#include "member_author">
+  <@member_author member=warnedUser/>,
   "title": {
     "title": "<@safe_include "warn_log_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "moderation_action_color">,
   "fields": [
     {
       "name": "<@safe_include "warn_log_warned_user_field_title"/>",
-      "value": "${warnedUser.effectiveName?js_string} ${warnedUser.asMention?js_string} (${warnedUser.idLong?c})"
+      "value": "<@full_member_info member=warnedUser/>"
     },
     <#if warningUser?has_content>
     {
         "name": "<@safe_include "warn_log_warning_user_field_title"/>",
-        "value": "${warningUser.effectiveName?js_string} ${warningUser.asMention?js_string} (${warningUser.idLong?c})"
+        "value": "<@full_member_info member=warningUser/>"
     },
     </#if>
      <#if warning?has_content>

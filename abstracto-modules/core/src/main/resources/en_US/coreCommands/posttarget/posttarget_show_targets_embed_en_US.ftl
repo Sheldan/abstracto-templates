@@ -2,11 +2,7 @@
   "title": {
     "title": "<@safe_include "posttarget_embed_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "success_color">,
   "description": "
 <#list postTargets as postTarget><#assign postTarget=postTarget/>
 <#assign postTargetName>${postTarget.postTarget.name?js_string}</#assign>

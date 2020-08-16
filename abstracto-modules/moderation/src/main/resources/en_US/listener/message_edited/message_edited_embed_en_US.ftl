@@ -1,14 +1,8 @@
 {
-  "author": {
-    "name": "${member.effectiveName?js_string}#${member.user.discriminator}",
-    "avatar":  "${member.user.effectiveAvatarUrl}"
-  },
+  <#include "member_author">
+  <@member_author member=member/>,
   "description": "<@safe_include "messageEdited_description_text"/>",
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 0
-  },
+  <@safe_include "abstracto_color"/>,
   "fields": [
     {
       "name": "<@safe_include "messageEdited_original_message_field_title"/>",

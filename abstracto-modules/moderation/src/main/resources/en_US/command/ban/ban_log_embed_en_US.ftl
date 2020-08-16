@@ -1,24 +1,19 @@
 {
-  "author": {
-    "name": "${bannedUser.effectiveName?js_string}",
-    "avatar":  "${bannedUser.user.effectiveAvatarUrl}"
-  },
+  <#include "full_member_info">
+  <#include "member_author">
+  <@member_author member=bannedUser/>,
   "title": {
     "title": "<@safe_include "ban_log_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "moderation_action_color">,
   "fields": [
     {
       "name": "<@safe_include "ban_log_banned_user_field_title"/>",
-      "value": "${bannedUser.effectiveName?js_string} ${bannedUser.asMention?js_string} (${bannedUser.idLong?c})"
+      "value": "<@full_member_info member=bannedUser/>"
     },
     {
         "name": "<@safe_include "ban_log_banning_user_field_title"/>",
-        "value": "${banningUser.effectiveName?js_string} ${banningUser.asMention?js_string} (${banningUser.idLong?c})"
+        "value": "<@full_member_info member=banningUser/>"
     },
     {
         "name": "<@safe_include "ban_log_jump_link_field_title"/>",

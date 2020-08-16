@@ -2,11 +2,7 @@
   "title": {
     "title": "<@safe_include "starStats_response_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "abstracto_color">,
   "description": "<@safe_include "startStats_description"/>",
   "fields": [
       {

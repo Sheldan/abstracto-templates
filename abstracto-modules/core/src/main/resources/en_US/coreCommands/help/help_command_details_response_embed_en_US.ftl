@@ -2,11 +2,7 @@
   "title": {
     "title": "<@safe_include "help_command_embed_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "abstracto_color">,
   "description": "<@safe_include "help_command_embed_command_name"/>: **${command.name?js_string}**
 <@safe_include "help_command_embed_command_description"/>: <#if command.templated> <@safe_include "${command.name}_description"/> <#else> ${command.description?js_string} </#if>
 

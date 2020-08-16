@@ -1,13 +1,7 @@
 {
-  "author": {
-    "name": "${author.effectiveName?js_string}",
-    "avatar": "${author.user.effectiveAvatarUrl}"
-  },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "member_author">
+  <@member_author member=author/>,
+  <#include "abstracto_color">,
   <#if embeddedMessage.content?has_content || embeddedMessage.embeds?size gt 0>
    "description": "${embeddedMessage.content?js_string}
    <#list embeddedMessage.embeds>

@@ -1,1 +1,1 @@
-Assignable role place post with id ${model.messageId} could not be found.
+Assignable role place post with id ${messageId} could not be found.

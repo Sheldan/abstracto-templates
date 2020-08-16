@@ -1,8 +1,4 @@
 {
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "warning_color">,
   "description": "<@safe_include "modmail_no_server_available"/>"
 }

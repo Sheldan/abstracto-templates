@@ -1,18 +1,14 @@
 {
   "author": {
     <#if suggester?has_content>
-    "name": "${suggester.effectiveName?js_string}",
+    "name": "<@member_user_name member=suggester/>",
     "avatar":  "${suggester.user.effectiveAvatarUrl}"
     <#else>
     "name": "${suggesterUser.userReference.id}"
     </#if>
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
-  <#assign user>${member.effectiveName?js_string}</#assign>
+  <#include "abstracto_color">,
+  <#assign user><@member_user_name member=member/></#assign>
   <#assign id>${suggestion.id}</#assign>
   <#if suggestion.state = "ACCEPTED">
     "description": "~~${text?js_string}~~ \n✅ ${reason} - <@safe_include "suggest_accepted_by"/>",

@@ -1,1 +1,1 @@
-Emote ${model.emote.emoteRepr} is already defined for place ${model.placeName}.
+Emote ${emoteMention} is already defined for place ${placeName}.

@@ -1,13 +1,7 @@
 {
-  "author": {
-    "name": "${user.member.effectiveName?js_string}",
-    "avatar":  "${user.member.user.effectiveAvatarUrl?js_string}"
-  },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "member_author">
+  <@member_author member=user.member/>,
+  <#include "exception_color">,
   "preventEmptyEmbed": "true",
   <#if template?has_content>
   <#if template.templateModel?has_content>

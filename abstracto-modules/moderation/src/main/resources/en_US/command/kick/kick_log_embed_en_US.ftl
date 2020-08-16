@@ -1,24 +1,19 @@
 {
-  "author": {
-    "name": "${kickedUser.effectiveName?js_string}",
-    "avatar":  "${kickedUser.user.effectiveAvatarUrl}"
-  },
+  <#include "full_member_info">
+  <#include "member_author">
+  <@member_author member=kickedUser/>,
   "title": {
     "title": "<@safe_include "kick_log_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "moderation_action_color">,
   "fields": [
     {
       "name": "<@safe_include "kick_log_kicked_user_field_title"/>",
-      "value": "${kickedUser.effectiveName?js_string} ${kickedUser.asMention?js_string} (${kickedUser.idLong?c})"
+      "value": "<@full_member_info member=kickedUser/>"
     },
     {
         "name": "<@safe_include "kick_log_kicking_user_field_title"/>",
-        "value": "${kickingUser.effectiveName?js_string} ${kickingUser.asMention?js_string} (${kickingUser.idLong?c})"
+        "value": "<@full_member_info member=kickingUser/>"
     },
     {
         "name": "<@safe_include "kick_log_jump_link_field_title"/>",

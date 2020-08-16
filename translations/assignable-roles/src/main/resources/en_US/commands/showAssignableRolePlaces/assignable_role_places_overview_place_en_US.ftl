@@ -1,1 +1,1 @@
-${place.key}${place?size}
+${placeKey}

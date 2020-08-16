@@ -1,1 +1,1 @@
-Due on ${reminder.targetDate} with text ${reminder.text}
+Due on ${reminderTargetDate} with text ${reminderText}

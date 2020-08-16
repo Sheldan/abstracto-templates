@@ -1,13 +1,7 @@
 {
-  "author": {
-    "name": "${author.member.effectiveName?js_string}",
-    "avatar":  "${author.member.user.effectiveAvatarUrl}"
-  },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  }
+  <#include "member_author">
+  <@member_author member=author.member/>,
+  <#include "modmail_color">,
   <#if message.embeds[0].description?has_content>
   ,"description": "${message.embeds[0].description?js_string}"
   </#if>

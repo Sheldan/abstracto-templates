@@ -1,16 +1,10 @@
 {
-  "author": {
-    "name": "${member.effectiveName?js_string}",
-    "avatar":  "${member.user.effectiveAvatarUrl}"
-  },
+  <#include "member_author">
+  <@member_author member=member/>,
   "title": {
     "title": "<@safe_include "list_disabled_experience_roles_embed_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "success_color">,
   "description": "
     <#list roles as role>
     ${role.role.asMention?js_string}

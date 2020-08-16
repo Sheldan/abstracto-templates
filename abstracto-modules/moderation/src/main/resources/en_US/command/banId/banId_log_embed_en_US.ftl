@@ -1,12 +1,9 @@
 {
+  <#include "full_member_info">
   "title": {
     "title": "<@safe_include "ban_log_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "moderation_action_color">,
   "fields": [
     {
       "name": "<@safe_include "ban_log_banned_user_field_title"/>",
@@ -14,7 +11,7 @@
     },
     {
         "name": "<@safe_include "ban_log_banning_user_field_title"/>",
-        "value": "${banningUser.effectiveName?js_string} ${banningUser.asMention?js_string} (${banningUser.idLong?c})"
+        "value": "<@full_member_info member=banningUser/>"
     },
     {
         "name": "<@safe_include "ban_log_jump_link_field_title"/>",

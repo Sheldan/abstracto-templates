@@ -1,14 +1,8 @@
 {
-  "author": {
-    "name": "${member.effectiveName?js_string}",
-    "avatar":  "${member.user.effectiveAvatarUrl}"
-  },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  }
-  <#assign userMention>${member.effectiveName?js_string}</#assign>
+  <#include "member_author">
+  <@member_author member=member/>,
+  <#include "success_color">,
+  <#assign userMention><@member_user_name member=member/></#assign>
   ,"description" :"<@safe_include "myWarnings_with_decay_embed_description"/>"
   </#if>
 }

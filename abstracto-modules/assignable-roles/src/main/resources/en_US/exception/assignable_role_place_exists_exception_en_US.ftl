@@ -1,1 +1,1 @@
-"additionalMessage": "<@safe_include "assignable_role_place_exists_exception_text"/>"
+"additionalMessage": "<#assign roleName=model.name/><@safe_include "assignable_role_place_exists_exception_text"/>"

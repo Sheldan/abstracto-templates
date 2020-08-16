@@ -1,16 +1,10 @@
 {
-  "author": {
-    "name": "${threadUser.member.effectiveName?js_string}",
-    "avatar":  "${threadUser.member.user.effectiveAvatarUrl}"
-  },
+  <#include "member_author">
+  <@member_author member=threadUser.member/>,
   "title": {
     "title": "<@safe_include "modmail_thread_user_message_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "modmail_color">,
   <#if postedMessage.contentRaw?has_content>
     "description": "${postedMessage.contentRaw?js_string}"
   </#if>

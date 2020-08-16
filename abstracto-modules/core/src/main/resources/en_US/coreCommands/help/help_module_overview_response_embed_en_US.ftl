@@ -2,11 +2,7 @@
   "title": {
     "title": "<@safe_include "help_modules_embed_title"/>"
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "abstracto_color">,
   "description": "
        <#list modules as module><#assign module=module/>
        <@safe_include "help_module_embed_module_name"/>: **${module.info.name?js_string}**

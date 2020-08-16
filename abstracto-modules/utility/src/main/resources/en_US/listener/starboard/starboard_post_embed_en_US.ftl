@@ -1,17 +1,13 @@
 {
   "author": {
   <#if author?has_content>
-    "name": "${author.effectiveName}",
+    "name": "<@member_user_name member=author/>",
     "avatar": "${author.user.effectiveAvatarUrl}"
   <#else>
     "name": "${user.id?c} (<@safe_include "user_left_server"/>)"
   </#if>
   },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  }
+  <#include "abstracto_color">,
   <#if message.content?has_content || message.embeds?size gt 0>
    ,"description": "${message.content?js_string}
    <#list message.embeds>

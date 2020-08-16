@@ -1,1 +1,1 @@
-"description": "<@safe_include "assignable_role_place_role_not_usable_exception_text"/>"
+"description": "<#assign roleMention=model.role.roleRepr/><@safe_include "assignable_role_place_role_not_usable_exception_text"/>"

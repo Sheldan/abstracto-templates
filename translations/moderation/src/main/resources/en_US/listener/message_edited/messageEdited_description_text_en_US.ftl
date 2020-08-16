@@ -1,1 +1,1 @@
-Message from ${member.effectiveName}#${member.user.discriminator} (${member.idLong?c}) edited in ${messageChannel.asMention}
+Message from <@member_user_name member=member/> (${member.idLong?c}) edited in ${messageChannel.asMention}

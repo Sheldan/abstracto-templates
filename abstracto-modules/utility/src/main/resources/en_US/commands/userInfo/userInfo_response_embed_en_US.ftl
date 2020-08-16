@@ -1,13 +1,7 @@
 {
-  "author": {
-    "name": "${memberInfo.user.name?js_string}#${memberInfo.user.discriminator}",
-    "avatar":  "${memberInfo.user.effectiveAvatarUrl}"
-  },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "member_author">
+  <@member_author member=memberInfo/>,
+  <#include "abstracto_color">,
   "thumbnail":  "${memberInfo.user.effectiveAvatarUrl}",
   "fields": [
   {

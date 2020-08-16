@@ -1,13 +1,7 @@
 {
-  "author": {
-    "name": "${member.effectiveName?js_string}",
-    "avatar":  "${member.user.effectiveAvatarUrl}"
-  },
-  "color" : {
-    "r": 200,
-    "g": 0,
-    "b": 255
-  },
+  <#include "member_author">
+  <@member_author member=member/>,
+  <#include "success_color">,
   "fields": [
     {
         "name": "<@safe_include "rank_xp_field_title"/>",

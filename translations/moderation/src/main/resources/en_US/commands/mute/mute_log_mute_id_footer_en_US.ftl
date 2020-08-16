@@ -1,1 +1,1 @@
-Mute
+Mute #{muteId}

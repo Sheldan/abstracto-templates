@@ -1,1 +1,1 @@
-${userMention} has current ${currentWarnCount} Warnings and ${totalWarnCount} warnings in total.
+${userMention} has currently ${currentWarnCount} warnings and ${totalWarnCount} warnings in total.
