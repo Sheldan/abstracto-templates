@@ -33,7 +33,7 @@
 </#if>
 **<@safe_include "help_command_embed_command_parameters"/>**:
 <#if command.parameters??>
-<#list command.parameters as parameter>
+<#list command.parameters as parameter><#assign parameter=parameter>
 <@safe_include "help_command_embed_command_description"/> `${parameter.name?js_string}`: <#if parameter.templated?? && parameter.templated><@safe_include "${command.name}_parameter_${parameter.name}"/><#else>${(parameter.description?js_string)!""}</#if>
 <@safe_include "help_command_embed_command_optional"/><#sep>
 

@@ -1,0 +1,1 @@
+"description": "<@safe_include "immune_role_exception"/>"

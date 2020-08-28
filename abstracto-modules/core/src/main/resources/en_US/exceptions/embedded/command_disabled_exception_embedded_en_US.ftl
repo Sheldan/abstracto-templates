@@ -1,0 +1,1 @@
+"description": "<@safe_include "command_disabled_exception"/>"

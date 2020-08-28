@@ -1,0 +1,1 @@
+<#assign categoryId=model.categoryId><#include "modmail_category_not_setup_exception_text">

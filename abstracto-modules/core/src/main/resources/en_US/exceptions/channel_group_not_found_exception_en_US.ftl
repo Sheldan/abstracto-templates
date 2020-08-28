@@ -1,1 +1,1 @@
-<#include "channel_group_not_found_exception_text">
+<#assign name=model.name><#assign available>${model.available?join(", ")}</#assign><#include "channel_group_not_found_exception_text">

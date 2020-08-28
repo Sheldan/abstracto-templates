@@ -1,0 +1,1 @@
+Emote ${emoteId} not available in guild.

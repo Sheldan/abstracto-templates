@@ -1,1 +1,1 @@
-"description": "<@safe_include "assignable_role_place_not_found_exception_text">/"
+<#include "assignable_role_place_not_found_exception_text">

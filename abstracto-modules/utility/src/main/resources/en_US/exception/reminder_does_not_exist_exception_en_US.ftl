@@ -1,0 +1,1 @@
+<#assign reminderId>${model.reminderId?c}</#assign><#include "reminder_does_not_exist_exception_text">

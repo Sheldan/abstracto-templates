@@ -1,1 +1,1 @@
-<#include "channel_group_exists_exception_text">
+<#assign channelGroupName=model.name><#include "channel_group_exists_exception_text">

@@ -1,0 +1,1 @@
+"description": "<@safe_include "modmail_cannot_message_user_exception"/>"

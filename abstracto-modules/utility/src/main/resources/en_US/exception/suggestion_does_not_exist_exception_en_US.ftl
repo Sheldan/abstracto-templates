@@ -1,0 +1,1 @@
+<#assign suggestionId=model.suggestionId><#include "suggestion_does_not_exist_exception_text">

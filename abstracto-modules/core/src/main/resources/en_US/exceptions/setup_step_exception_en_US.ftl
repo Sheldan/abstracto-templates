@@ -1,1 +1,3 @@
-<#assign text><#if templateKey?has_content><#assign exceptionModel=templateModel><#include "${templateKey}"><#else>${message}</#if></#assign><#include "setup_step_exception_message">
+<#assign text><#if model.templateKey?has_content>
+<#assign exceptionModel=model.templateModel>
+<#include "${model.templateKey}"><#else>${model.message}</#if></#assign><#include "setup_step_exception_text">

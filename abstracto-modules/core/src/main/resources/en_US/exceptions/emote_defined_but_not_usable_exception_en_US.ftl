@@ -1,0 +1,1 @@
+<#assign emoteName=model.emote.name><#include "emote_defined_but_not_usable_exception_text">

@@ -1,0 +1,1 @@
+<#include "command_disabled_exception_text">

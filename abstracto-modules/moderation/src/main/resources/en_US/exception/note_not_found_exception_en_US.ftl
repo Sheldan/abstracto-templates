@@ -1,1 +1,1 @@
-<#include "note_not_found_exception_message">
+<#include "note_not_found_exception_text">

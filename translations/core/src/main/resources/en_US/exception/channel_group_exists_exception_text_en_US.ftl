@@ -1,1 +1,1 @@
-Channel group ${name} already exists.
+Channel group ${channelGroupName} already exists.

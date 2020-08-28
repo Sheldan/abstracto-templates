@@ -1,0 +1,1 @@
+<#assign channelGroupName=model.channelGroup.groupName><#include "channel_already_in_channel_group_exception_text">

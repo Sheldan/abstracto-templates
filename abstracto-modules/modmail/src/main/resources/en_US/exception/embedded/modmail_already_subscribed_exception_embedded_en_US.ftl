@@ -1,0 +1,1 @@
+"description": "<@safe_include "modmail_already_subscribed_exception"/>"

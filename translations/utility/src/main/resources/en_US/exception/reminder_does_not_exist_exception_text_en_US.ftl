@@ -1,0 +1,1 @@
+Reminder ${reminderId} does not exist, was already reminded or does not belong to you.

@@ -1,1 +1,1 @@
-"description": "<#assign userId=model.aUserInAServer.userReference.id/><@safe_include "assignable_role_place_assigned_user_not_found_exception_text"/>"
+<#assign userId=model.aUserInAServer.userReference.id/><#include "assignable_role_place_assigned_user_not_found_exception_text">

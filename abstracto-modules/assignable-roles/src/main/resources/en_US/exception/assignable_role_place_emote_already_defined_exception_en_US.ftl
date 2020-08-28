@@ -1,1 +1,1 @@
-"description": "<#assign emoteMention=model.emote.emoteRepr/><#assign placeName=model.placeName/><@safe_include "assignable_role_place_emote_already_defined_exception_text"/>"
+<#assign emoteMention=model.emote.emoteRepr/><#assign placeName=model.placeName/><#include "assignable_role_place_emote_already_defined_exception_text">

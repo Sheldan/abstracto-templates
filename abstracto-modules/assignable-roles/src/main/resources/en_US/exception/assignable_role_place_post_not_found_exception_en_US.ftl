@@ -1,1 +1,1 @@
-"description": "<#assign messageId=model.messageId/><@safe_include "assignable_role_place_post_not_found_exception_text"/>"
+<#assign messageId=model.messageId/><#include "assignable_role_place_post_not_found_exception_text">
