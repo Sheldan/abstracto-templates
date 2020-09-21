@@ -13,11 +13,11 @@
     },
     {
         "name": "<@safe_include "kick_log_kicking_user_field_title"/>",
-        "value": "<@full_member_info member=kickingUser/>"
+        "value": "<@full_member_info member=member/>"
     },
     {
         "name": "<@safe_include "kick_log_jump_link_field_title"/>",
-        "value": "[${messageChannel.name?js_string}](${message.jumpUrl})"
+        "value": "[${channel.name?js_string}](${message.jumpUrl})"
     },
     {
         "name": "<@safe_include "kick_log_reason_field_title"/>",

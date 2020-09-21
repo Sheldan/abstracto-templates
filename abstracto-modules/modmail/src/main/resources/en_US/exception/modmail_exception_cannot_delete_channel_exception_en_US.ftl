@@ -1,1 +1,1 @@
-"<#include "modmail_close_failed_to_delete_text_channel_exception_text"/>"
+<#include "modmail_close_failed_to_delete_text_channel_exception_text"/>

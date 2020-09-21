@@ -1,4 +1,4 @@
-<#assign warnId>${warning.warning.id}</#assign>
+<#assign warnId>${warning.warning.warnId.id}</#assign>
 <#assign reason>${warning.warning.reason}</#assign>
 <#assign warnedUserText><#if warning.warnedUser.member??>${warning.warnedUser.member.asMention}(${warning.warnedUser.member.user.id})<#else>${warning.warnedUser.aUserInAServer.id}</#if></#assign>
 <#assign warningUserText><#if warning.warningUser.member??>${warning.warningUser.member.asMention}(${warning.warningUser.member.user.id})<#else>${warning.warningUser.aUserInAServer.id}</#if></#assign>

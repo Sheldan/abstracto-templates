@@ -2,7 +2,7 @@
   <#include "member_author">
   <@member_author member=member/>,
   "description": "<@safe_include "messageDeleted_description_text"/>",
-  <@safe_include "abstracto_color"/>,
+  <#include "abstracto_color"/>,
   "fields": [
     {
       "name": "<@safe_include "messageDeleted_original_message_field_title"/>",

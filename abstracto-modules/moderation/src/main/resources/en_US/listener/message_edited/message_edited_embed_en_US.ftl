@@ -1,8 +1,8 @@
 {
   <#include "member_author">
   <@member_author member=member/>,
+  <#include "abstracto_color"/>,
   "description": "<@safe_include "messageEdited_description_text"/>",
-  <@safe_include "abstracto_color"/>,
   "fields": [
     {
       "name": "<@safe_include "messageEdited_original_message_field_title"/>",

@@ -1,7 +1,7 @@
 {
   <#include "member_author">
   <@member_author member=author.member/>,
-  <#include "modmail_color">,
+  <#include "modmail_color">
   <#if message.embeds[0].description?has_content>
   ,"description": "${message.embeds[0].description?js_string}"
   </#if>
