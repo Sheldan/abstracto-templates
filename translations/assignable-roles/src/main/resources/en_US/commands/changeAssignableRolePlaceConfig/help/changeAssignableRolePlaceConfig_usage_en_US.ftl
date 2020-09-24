@@ -1,1 +1,0 @@
-changeAssignableRolePlaceConfig <placeName> <key> <newValue>

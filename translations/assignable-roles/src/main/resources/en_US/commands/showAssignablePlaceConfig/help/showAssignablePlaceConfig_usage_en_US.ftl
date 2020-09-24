@@ -1,1 +1,0 @@
-showAssignablePlaceConfig <placeName>

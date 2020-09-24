@@ -1,1 +1,0 @@
-setAssignableRolePosition <placeName> <emote> <newPosition>

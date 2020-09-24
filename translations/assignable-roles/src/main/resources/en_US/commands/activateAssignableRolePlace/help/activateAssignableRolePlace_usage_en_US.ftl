@@ -1,1 +1,0 @@
-activateAssignableRolePlace <name>

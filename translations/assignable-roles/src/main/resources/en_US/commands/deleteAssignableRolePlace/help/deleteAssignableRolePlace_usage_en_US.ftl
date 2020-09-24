@@ -1,1 +1,0 @@
-deleteAssignableRolePlace <placeName>

@@ -8,13 +8,13 @@
 
 <#if command.help??>
 <#if command.help.templated>
-**<@safe_include "help_command_embed_command_usage"/>**: `<@safe_include "${command.name}_usage"/>`
+**<@safe_include "help_command_embed_command_usage"/>**: `${usage}`
 **<@safe_include "help_command_embed_command_detailed_help"/>**: <@safe_include "${command.name}_long_help"/>
 <#if command.help.hasExample>
 <@safe_include "help_command_embed_command_example"/>: <@safe_include "${command.name}_example"/>
 </#if>
 <#else>
-**<@safe_include "help_command_embed_command_usage"/>**: `${command.help.usage?js_string}`
+**<@safe_include "help_command_embed_command_usage"/>**: `${usage}`
 **<@safe_include "help_command_embed_command_detailed_help"/>**: ${command.help.longHelp?js_string}
 <#if command.help.hasExample>
 <@safe_include "help_command_embed_command_example"/>:${command.help.example?js_string}

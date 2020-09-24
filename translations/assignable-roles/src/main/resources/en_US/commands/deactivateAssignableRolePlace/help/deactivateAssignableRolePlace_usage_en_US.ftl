@@ -1,1 +1,0 @@
-deactivateAssignableRolePlace <name>

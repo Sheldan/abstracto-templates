@@ -1,1 +1,0 @@
-testAssignableRolePlace <placeName>

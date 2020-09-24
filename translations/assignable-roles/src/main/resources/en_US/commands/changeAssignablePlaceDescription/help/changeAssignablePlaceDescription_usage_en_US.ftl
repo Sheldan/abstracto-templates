@@ -1,1 +1,0 @@
-changeAssignablePlaceDescription <placeName> <newDescription>

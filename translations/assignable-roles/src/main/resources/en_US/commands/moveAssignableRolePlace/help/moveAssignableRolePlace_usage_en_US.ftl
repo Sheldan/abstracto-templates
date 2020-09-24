@@ -1,1 +1,0 @@
-moveAssignableRolePlace <placeName> <newChannel>
