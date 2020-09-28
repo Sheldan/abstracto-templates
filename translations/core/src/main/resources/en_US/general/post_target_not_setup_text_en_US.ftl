@@ -1,1 +1,1 @@
-Post target `${postTargetKey}` is not set up.
+Post target `${postTargetKey}` is not configured and needs the command `posttarget` to be set up.
