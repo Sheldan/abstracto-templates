@@ -1,1 +1,0 @@
-The new description to set for the assignable role place
