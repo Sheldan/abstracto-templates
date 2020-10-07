@@ -9,7 +9,7 @@
   },
   <#include "abstracto_color">,
   <#if message.content?has_content || message.embeds?size gt 0>
-   ,"description": "${message.content?js_string}
+   "description": "${message.content?js_string}
    <#list message.embeds>
         <@safe_include "starboard_post_embed_embeds_name"/>:
         <#items as embed>
