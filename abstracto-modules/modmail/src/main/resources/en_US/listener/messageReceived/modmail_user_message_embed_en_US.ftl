@@ -1,6 +1,6 @@
 {
   <#include "member_author">
-  <@member_author member=threadUser.member/>,
+  <@member_author member=member/>,
   "title": {
     "title": "<@safe_include "modmail_thread_user_message_title"/>"
   },
