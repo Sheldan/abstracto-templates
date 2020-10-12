@@ -1,0 +1,1 @@
+<#assign maxValue=model.number><#include "max_integer_value_validation_description_text">

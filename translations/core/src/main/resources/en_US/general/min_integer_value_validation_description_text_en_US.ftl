@@ -1,0 +1,1 @@
+Min number value: ${minValue}

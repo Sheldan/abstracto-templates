@@ -1,0 +1,1 @@
+Max text length: ${maxLength}
