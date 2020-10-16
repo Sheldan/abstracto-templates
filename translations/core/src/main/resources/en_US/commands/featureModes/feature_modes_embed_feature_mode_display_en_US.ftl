@@ -1,0 +1,1 @@
+${featureName} (`${featureKey}`) with mode `${featureModeName}`: ${featureModeEnabled} ${fromDefault}

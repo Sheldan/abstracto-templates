@@ -1,0 +1,1 @@
+Features have different modes. These are small flags which dictates how a feature behaves at certain parts and a feature mode of a feature can be disabled wit this command.

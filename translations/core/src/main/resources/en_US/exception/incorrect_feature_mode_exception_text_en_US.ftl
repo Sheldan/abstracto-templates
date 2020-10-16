@@ -1,0 +1,1 @@
+The current feature mode of feature ${featureName} is incorrect to execute command ${commandName}. One of the following is required: ${featureModes}
