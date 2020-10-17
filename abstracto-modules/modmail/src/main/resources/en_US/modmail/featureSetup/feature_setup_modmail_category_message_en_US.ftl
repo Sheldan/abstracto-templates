@@ -1,0 +1,1 @@
+<#assign categoryName><#if category?has_content>${category.name}<#else><#include "feature_setup_modmail_category_message_no_category"></#if></#assign><#include "feature_setup_modmail_category_message_display">

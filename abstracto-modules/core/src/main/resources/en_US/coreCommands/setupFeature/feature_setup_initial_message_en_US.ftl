@@ -1,0 +1,1 @@
+<#assign featureName><@safe_include "${featureConfig.feature.key}_feature"/></#assign><#include "feature_setup_initial_message_display">

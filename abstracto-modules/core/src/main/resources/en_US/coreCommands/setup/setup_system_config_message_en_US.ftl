@@ -1,1 +1,0 @@
-<#assign defaultValue=defaultConfig.valueAsString><@safe_include "setup_config_${configKey}"/>
