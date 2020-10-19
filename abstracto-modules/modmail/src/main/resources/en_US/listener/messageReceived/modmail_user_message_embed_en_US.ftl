@@ -9,9 +9,11 @@
     "description": "${postedMessage.contentRaw?js_string}"
   </#if>
    <#if postedMessage.attachments?size gt 0>
-   ,"imageUrl": "${postedMessage.attachments[0].proxyUrl}"
+   <#if postedMessage.contentRaw?has_content>,</#if>
+   "imageUrl": "${postedMessage.attachments[0].proxyUrl}"
    </#if>
    <#if subscribers?size gt 0>
-   ,"additionalMessage": "<#list subscribers as subscriber>${subscriber.member.asMention?js_string}<#sep>,</#list>"
+   <#if postedMessage.contentRaw?has_content || postedMessage.attachments?size gt 0>,</#if>
+   "additionalMessage": "<#list subscribers as subscriber>${subscriber.member.asMention?js_string}<#sep>,</#list>"
    </#if>
 }
