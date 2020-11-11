@@ -1,0 +1,1 @@
+The tracked emote to disable tracking for, this can either be the emote directly or the ID.

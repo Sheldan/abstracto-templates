@@ -1,0 +1,1 @@
+`true`/`false`! to show whether or not you want you want to see tracked emotes for which tracking is disabled. Default: false

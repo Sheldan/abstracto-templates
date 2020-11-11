@@ -1,0 +1,1 @@
+Static tracked emotes

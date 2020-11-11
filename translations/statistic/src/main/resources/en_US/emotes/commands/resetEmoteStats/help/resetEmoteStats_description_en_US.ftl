@@ -1,0 +1,1 @@
+Completely resets tracked emotes

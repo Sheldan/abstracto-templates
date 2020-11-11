@@ -1,0 +1,1 @@
+Shows the emotes which are being tracked

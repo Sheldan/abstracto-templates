@@ -1,0 +1,1 @@
+External animated emote stats

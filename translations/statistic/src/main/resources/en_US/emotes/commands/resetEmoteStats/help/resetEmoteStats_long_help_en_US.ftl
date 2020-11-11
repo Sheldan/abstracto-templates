@@ -1,0 +1,1 @@
+This command completely resets the stored tracked emotes and usages thereof. It will delete all tracked emotes.

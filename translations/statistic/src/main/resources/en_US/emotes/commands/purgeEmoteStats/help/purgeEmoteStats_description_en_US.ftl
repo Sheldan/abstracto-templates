@@ -1,0 +1,1 @@
+Removes the usages for one specific emote

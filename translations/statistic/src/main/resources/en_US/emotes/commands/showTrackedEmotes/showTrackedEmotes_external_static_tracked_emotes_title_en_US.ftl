@@ -1,0 +1,1 @@
+External static tracked emotes

@@ -1,0 +1,1 @@
+The tracked emote to delete, this can either be the emote directly or the ID.

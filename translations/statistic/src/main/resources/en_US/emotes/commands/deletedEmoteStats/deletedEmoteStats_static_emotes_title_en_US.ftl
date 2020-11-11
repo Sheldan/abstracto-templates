@@ -1,0 +1,1 @@
+Deleted static emote stats

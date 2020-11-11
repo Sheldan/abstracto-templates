@@ -1,1 +1,1 @@
-Part of default configuration
+default

@@ -1,0 +1,1 @@
+Synchronizes the state of the server with the database

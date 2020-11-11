@@ -1,0 +1,1 @@
+Provides the used emotes per day in a file

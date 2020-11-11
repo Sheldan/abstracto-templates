@@ -1,0 +1,1 @@
+Animated emote stats

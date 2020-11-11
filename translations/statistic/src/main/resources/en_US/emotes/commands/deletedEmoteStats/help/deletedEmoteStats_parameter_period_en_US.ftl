@@ -1,0 +1,1 @@
+The time period to retrieve the deleted emote statistics for

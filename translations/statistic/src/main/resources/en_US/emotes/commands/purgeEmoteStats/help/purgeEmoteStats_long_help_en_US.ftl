@@ -1,0 +1,1 @@
+Removes the usages from one specific emote from the database. The option period can be used to determine for how much time the usages should be deleted.

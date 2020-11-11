@@ -1,0 +1,1 @@
+Emote stats for guild: ${guildName}<#if statsSince?has_content> since ${sinceDate}</#if>

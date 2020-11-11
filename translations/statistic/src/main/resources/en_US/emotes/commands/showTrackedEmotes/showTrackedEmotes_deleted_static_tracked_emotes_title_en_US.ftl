@@ -1,0 +1,1 @@
+Deleted static tracked emotes

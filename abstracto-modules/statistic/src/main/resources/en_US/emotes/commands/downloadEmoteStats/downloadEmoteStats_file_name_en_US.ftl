@@ -1,0 +1,1 @@
+emote_stats_${guild.id}.csv

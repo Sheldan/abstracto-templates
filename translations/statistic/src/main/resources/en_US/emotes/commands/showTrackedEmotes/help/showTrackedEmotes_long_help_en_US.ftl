@@ -1,0 +1,1 @@
+Shows the emotes which are currently being tracked, which might include external emotes and already deleted emotes.

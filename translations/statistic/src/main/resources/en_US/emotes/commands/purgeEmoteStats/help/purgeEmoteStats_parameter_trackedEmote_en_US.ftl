@@ -1,0 +1,1 @@
+The tracked emote for which usages should be deleted

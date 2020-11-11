@@ -1,0 +1,1 @@
+This command disables the tracking of a tracked emote. Past usages will still show up in the stats.

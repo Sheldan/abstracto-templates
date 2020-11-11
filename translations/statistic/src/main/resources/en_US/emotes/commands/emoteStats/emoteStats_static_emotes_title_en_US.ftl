@@ -1,0 +1,1 @@
+Static emote stats

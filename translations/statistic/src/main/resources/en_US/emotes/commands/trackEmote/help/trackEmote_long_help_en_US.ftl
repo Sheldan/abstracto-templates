@@ -1,0 +1,2 @@
+This command can be used to track one emote, if it is not yet tracked. If the command has been tracked before and is still part of the tracked emotes. This will just enable tracking again.
+Beware: if its an external emote, the `externalEmotes` needs to be enabled.

@@ -1,0 +1,1 @@
+This command will the name and the ID of emotes which were previously tracked on this server, but have since been been deleted.

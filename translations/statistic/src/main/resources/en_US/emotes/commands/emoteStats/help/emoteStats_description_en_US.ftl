@@ -1,0 +1,1 @@
+Shows the emote statistics for emotes which are still available in this server

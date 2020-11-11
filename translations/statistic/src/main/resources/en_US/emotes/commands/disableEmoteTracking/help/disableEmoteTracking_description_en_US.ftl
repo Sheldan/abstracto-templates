@@ -1,0 +1,1 @@
+Disables the tracking of one individual emote

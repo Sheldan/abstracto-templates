@@ -1,0 +1,1 @@
+The time period to retrieve the external emote statistics for

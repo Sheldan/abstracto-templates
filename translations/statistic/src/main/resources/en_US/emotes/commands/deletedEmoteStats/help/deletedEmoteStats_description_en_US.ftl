@@ -1,0 +1,1 @@
+Shows the emote statistics for emotes which were deleted from this server

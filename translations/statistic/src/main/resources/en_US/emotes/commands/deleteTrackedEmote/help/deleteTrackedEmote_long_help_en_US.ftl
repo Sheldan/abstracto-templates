@@ -1,0 +1,1 @@
+Deletes a tracked emote from the database and removes all emote usages.

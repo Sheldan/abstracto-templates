@@ -1,0 +1,1 @@
+This command will show the emotes of this server which are being tracked and the amount of times they have been used.

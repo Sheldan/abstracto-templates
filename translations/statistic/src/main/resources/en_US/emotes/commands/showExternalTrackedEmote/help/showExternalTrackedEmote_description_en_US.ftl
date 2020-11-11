@@ -1,0 +1,1 @@
+Shows the image of an externally tracked emote
