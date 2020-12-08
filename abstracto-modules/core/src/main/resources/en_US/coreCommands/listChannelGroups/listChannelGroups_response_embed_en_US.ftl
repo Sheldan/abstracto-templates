@@ -9,12 +9,11 @@
   "fields": [
      <#list groups as group>
         {
-            "name": "${group.name?js_string}",
+            "name": "${group.name?js_string} (<@safe_include "channel_group_type_${group.typeKey}_name"/>)",
             "value": "
-            <#list group.channels as channel>${channel.discordChannel.asMention?js_string}<#sep>,</#list>
+            <#list group.channels as channel>${channel.discordChannel.asMention?js_string}<#sep>,<#else> <@safe_include "listChannelGroups_no_channels"/></#list>
             "
         }<#sep>,
-      <#else>
      </#list>
   ]
 }

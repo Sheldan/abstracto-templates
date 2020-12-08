@@ -1,0 +1,1 @@
+The channel group to disable repost checking for

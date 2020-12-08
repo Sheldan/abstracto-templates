@@ -1,0 +1,1 @@
+Enables the repost check for the given channel group

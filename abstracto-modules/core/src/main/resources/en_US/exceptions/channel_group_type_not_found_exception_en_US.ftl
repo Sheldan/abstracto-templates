@@ -1,0 +1,1 @@
+<#assign available>${model.availableGroupTypeKeys?join(", ")}</#assign><#include "channel_group_type_not_found_exception_text">

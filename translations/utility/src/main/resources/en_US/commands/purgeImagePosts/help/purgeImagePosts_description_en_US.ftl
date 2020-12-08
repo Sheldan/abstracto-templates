@@ -1,0 +1,1 @@
+Removes stored image hashes from the database

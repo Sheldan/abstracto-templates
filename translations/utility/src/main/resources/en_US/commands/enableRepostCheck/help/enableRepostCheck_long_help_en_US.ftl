@@ -1,0 +1,1 @@
+This command can be used to enable the repost check for a given channel group. This takes effect immediately.

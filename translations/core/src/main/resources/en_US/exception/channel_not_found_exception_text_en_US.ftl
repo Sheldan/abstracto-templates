@@ -1,1 +1,1 @@
-Channel ${channelId} not found in the database.
+Channel ${channelId?c} not found in the database.

@@ -1,0 +1,1 @@
+"description": "<@safe_include "channel_group_type_not_found_exception"/>"
