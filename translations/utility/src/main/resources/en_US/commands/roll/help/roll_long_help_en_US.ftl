@@ -1,0 +1,1 @@
+This command can be used to roll a virtual die providing a number as output. Per default this die is 6-sided, but parameters for the side count and the minimal possible value can be provided.

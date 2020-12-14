@@ -1,0 +1,1 @@
+This command simulates one round of russian roulette. When executed this command uses a random chance to determine if a shot is made.

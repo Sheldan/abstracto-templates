@@ -1,0 +1,1 @@
+Chooses one of the given inputs

@@ -1,0 +1,1 @@
+The amount of bullets the revolver holds. Default: ${defaultValue}

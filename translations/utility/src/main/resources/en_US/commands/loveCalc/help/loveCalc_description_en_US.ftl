@@ -1,0 +1,1 @@
+Calculates the love percentage between two subjects

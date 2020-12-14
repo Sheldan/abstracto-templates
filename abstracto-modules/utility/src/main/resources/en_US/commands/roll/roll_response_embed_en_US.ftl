@@ -1,0 +1,3 @@
+{
+  "additionalMessage": "${rolled?c}"
+}

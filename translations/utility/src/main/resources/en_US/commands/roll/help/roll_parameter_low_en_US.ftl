@@ -1,0 +1,1 @@
+The minimum value the die can have. Default: 1

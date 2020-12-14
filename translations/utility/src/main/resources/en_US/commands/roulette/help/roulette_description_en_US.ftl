@@ -1,0 +1,1 @@
+Plays one round of solo russian roulette
