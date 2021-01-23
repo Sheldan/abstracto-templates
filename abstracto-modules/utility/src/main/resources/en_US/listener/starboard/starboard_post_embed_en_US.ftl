@@ -28,8 +28,8 @@
   <#assign channelMention>${aChannel.id?c}</#assign>
   ,"additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
   </#if>
-  <#if message.attachmentUrls?size gt 0>
-  ,"imageUrl": "${message.attachmentUrls[0]}"
+  <#if message.attachments?size gt 0>
+  ,"imageUrl": "${message.attachments[0].proxyUrl}"
   </#if>
   ,"fields": [
     {

@@ -10,7 +10,7 @@
     },
     {
         "name": "<@safe_include "messageDeleted_message_link_field_title"/>",
-        "value": "[${messageChannel.name?js_string}](${cachedMessage.messageUrl})"
+        "value": "[${channel.name?js_string}](${cachedMessage.messageUrl})"
     }
   ]
 }

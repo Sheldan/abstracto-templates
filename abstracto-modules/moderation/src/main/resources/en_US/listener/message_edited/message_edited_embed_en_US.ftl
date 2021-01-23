@@ -10,7 +10,7 @@
     },
     {
           "name": "<@safe_include "messageEdited_new_message_field_title"/>",
-          "value": "${messageAfter.contentRaw?js_string}"
+          "value": "${messageAfter.content?js_string}"
     },
     {
         "name": "<@safe_include "messageEdited_link_field_title"/>",

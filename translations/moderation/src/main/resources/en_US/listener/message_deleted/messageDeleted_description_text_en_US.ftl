@@ -1,1 +1,1 @@
-Message from <@member_user_name member=member/> (${member.idLong?c}) removed in ${messageChannel.asMention}
+Message from <@member_user_name member=member/> (${member.idLong?c}) removed in ${channel.asMention}

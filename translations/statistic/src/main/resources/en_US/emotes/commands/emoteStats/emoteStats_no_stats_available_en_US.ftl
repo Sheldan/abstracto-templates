@@ -1,1 +1,1 @@
-No values available
+No stats available

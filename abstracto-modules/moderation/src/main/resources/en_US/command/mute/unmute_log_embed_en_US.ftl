@@ -44,7 +44,7 @@
     }
   ],
   "footer": {
-  <#assign muteId=mute.id/>
+  <#assign muteId=mute.muteId.id/>
     "text": "<@safe_include "mute_log_mute_id_footer"/>"
   },
   "timeStamp": "${unmuteDate}"
