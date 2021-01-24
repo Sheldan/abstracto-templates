@@ -1,0 +1,1 @@
+This command adds the given invite to the list of allowed invites on the server. If this command is executed - the message will immediately be deleted, but the configuration will be applied.

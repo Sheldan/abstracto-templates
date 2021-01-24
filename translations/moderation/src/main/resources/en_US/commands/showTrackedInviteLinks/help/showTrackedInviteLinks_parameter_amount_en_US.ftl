@@ -1,0 +1,1 @@
+Number to define how many filtered invites should be displayed

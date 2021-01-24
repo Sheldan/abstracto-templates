@@ -1,0 +1,1 @@
+Allows one invite to be used within the server

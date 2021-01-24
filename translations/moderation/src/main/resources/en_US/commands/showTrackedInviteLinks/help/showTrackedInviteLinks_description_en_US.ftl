@@ -1,0 +1,1 @@
+Displays the current top filtered invites

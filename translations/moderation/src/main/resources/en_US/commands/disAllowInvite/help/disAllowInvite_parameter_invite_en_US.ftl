@@ -1,0 +1,1 @@
+The invite to be removed from the list of allowed invites - this can either be the full invite URL or just the part behind the slash.

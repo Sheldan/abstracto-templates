@@ -1,0 +1,1 @@
+Removes the given invite from the list of allowed invites to be used.

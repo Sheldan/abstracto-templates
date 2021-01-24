@@ -1,0 +1,1 @@
+This command allows to remove the stored occurrences of individual or all filtered invites in this server.

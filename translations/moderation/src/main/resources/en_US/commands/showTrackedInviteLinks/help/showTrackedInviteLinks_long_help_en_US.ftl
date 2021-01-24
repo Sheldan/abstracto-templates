@@ -1,0 +1,1 @@
+This command can be used to display the current top filtered invites - the ordering is based on how many times an individual invite has been removed. Per default 5 invite links are shown, but this can be changed via the parameter.
