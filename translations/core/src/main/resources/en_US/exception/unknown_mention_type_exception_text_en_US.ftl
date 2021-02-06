@@ -1,0 +1,1 @@
+Unknown mention type. Must be one of `everyone`, `role` or `user`.

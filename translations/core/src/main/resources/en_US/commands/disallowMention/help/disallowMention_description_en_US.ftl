@@ -1,0 +1,1 @@
+Disallows the bot to use certain mentions

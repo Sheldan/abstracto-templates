@@ -1,0 +1,1 @@
+The type of mention to allow. Must be one of the following: 'everyone', 'role' or 'user'. 'everyone' also controls 'here' mentions
