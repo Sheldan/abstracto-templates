@@ -12,8 +12,8 @@
    </#list>
    ",
   </#if>
-  <#if embeddedMessage.attachmentUrls?size gt 0>
-  "imageUrl": "${embeddedMessage.attachmentUrls[0]}",
+  <#if embeddedMessage.attachments?size gt 0>
+  "imageUrl": "${embeddedMessage.attachments[0].proxyUrl}",
   </#if>
   "fields": [
     {

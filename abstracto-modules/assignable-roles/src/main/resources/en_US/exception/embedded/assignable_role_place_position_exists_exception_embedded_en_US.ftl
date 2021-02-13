@@ -1,1 +1,1 @@
-"description": "<@safe_include "assignable_role_place_position_exists_exception/>"
+"description": "<@safe_include "assignable_role_place_position_exists_exception"/>"
