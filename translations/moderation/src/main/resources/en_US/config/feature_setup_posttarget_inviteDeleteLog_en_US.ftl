@@ -1,0 +1,1 @@
+The channel in which deleted invite links should be logged to. Currently: ${currentTarget}
