@@ -1,0 +1,1 @@
+Amount of stars for starboard level 3. Default: ${defaultValue}

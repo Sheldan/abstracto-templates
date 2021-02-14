@@ -1,0 +1,1 @@
+Amount of stars necessary to reach starboard. Default: ${defaultValue}
