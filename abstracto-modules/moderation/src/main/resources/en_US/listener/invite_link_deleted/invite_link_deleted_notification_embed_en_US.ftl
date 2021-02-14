@@ -7,7 +7,7 @@
   "fields": [
     {
       "name": "<@safe_include "invite_link_deleted_invite_field_header"/>",
-      "value": "<#list invites as invite>${invite}<#sep>,</#list>"
+      "value": "<#list invites as invite><#if invite.count gt 1>${invite.count}x </#if>${invite.code}<#sep>, </#list>"
     },
     {
         "name": "<@safe_include "invite_link_deleted_message_link_title"/>",
