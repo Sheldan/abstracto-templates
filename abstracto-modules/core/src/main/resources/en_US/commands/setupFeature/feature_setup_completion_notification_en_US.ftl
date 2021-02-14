@@ -1,0 +1,1 @@
+<#assign featureName><#include "feature_${featureConfig.feature.key}"></#assign><#include "feature_setup_completion_message">

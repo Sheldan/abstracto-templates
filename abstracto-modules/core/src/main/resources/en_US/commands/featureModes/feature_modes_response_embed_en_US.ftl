@@ -5,7 +5,7 @@
   <#include "abstracto_color">,
   "description": "
 <#list featureModes as featureMode>
-<#assign featureName><@safe_include "${featureMode.featureConfig.feature.key}_feature"/></#assign>
+<#assign featureName><@safe_include "feature_${featureMode.featureConfig.feature.key}"/></#assign>
 <#assign featureKey=featureMode.featureConfig.feature.key>
 <#assign featureModeName=featureMode.featureMode.featureMode>
 <#assign featureModeEnabled>${featureMode.featureMode.enabled?string('✅', '❌')}</#assign>

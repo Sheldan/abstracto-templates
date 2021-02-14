@@ -5,8 +5,8 @@
   <#include "abstracto_color">,
   "description": "
        <#list modules as module><#assign module=module/>
-       <@safe_include "help_module_embed_module_name"/>: **${module.info.name?js_string}**
-       <@safe_include "help_module_embed_module_description"/>: ${module.info.description?js_string}
+       **${module.info.name?js_string}**
+       <#if module.info.templated?? && module.info.templated><@safe_include "module_${module.info.name}_description"/><#else>${module.info.description?js_string}</#if>
        </#list>
   ",
   "footer": {
