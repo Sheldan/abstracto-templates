@@ -1,0 +1,1 @@
+The member for whom the starboard statistics should be retrieved for. Only possible for members still in the server.

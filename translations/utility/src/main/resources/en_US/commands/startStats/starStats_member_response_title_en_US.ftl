@@ -1,0 +1,1 @@
+Star statistic for member
