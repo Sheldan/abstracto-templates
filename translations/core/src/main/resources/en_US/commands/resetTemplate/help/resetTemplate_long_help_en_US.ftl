@@ -1,0 +1,2 @@
+Removes the template customization for this server for a template identified by `templateKey`.
+This will take effect immediately. If the provided template key was not customized for this server, it will show an exception message indicating so.

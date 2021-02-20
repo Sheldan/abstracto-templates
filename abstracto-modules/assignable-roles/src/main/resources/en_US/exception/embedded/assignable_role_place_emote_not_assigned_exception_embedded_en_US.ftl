@@ -1,1 +1,0 @@
-"description": "<@safe_include "assignable_role_place_emote_not_assigned_exception"/>"

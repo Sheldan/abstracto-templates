@@ -1,0 +1,3 @@
+Sets the content of the template identified by `templateKey` for this server to the content of the **attached** plain text file. The file does not need to have any particular naming.
+If there already exists a customized template it will be overwritten, otherwise a new one will be created. This change will take effect immediately.
+The syntax of this template must be valid [Freemarker](https://freemarker.apache.org/).

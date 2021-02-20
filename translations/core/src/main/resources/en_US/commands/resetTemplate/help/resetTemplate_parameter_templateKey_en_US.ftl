@@ -1,0 +1,1 @@
+The key of the customized template to reset

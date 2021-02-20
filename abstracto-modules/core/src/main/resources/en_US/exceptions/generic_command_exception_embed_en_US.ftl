@@ -14,7 +14,7 @@
   <#if template?has_content>
   <#if template.templateModel?has_content>
     <#assign model=template.templateModel/>
-    <#include "${template.templateName}_embedded"/>
+    "description": "<@safe_include "${template.templateName}"/>"
   </#if>
   <#elseif throwable.localizedMessage?has_content>
   "description": "${throwable.localizedMessage?js_string}"

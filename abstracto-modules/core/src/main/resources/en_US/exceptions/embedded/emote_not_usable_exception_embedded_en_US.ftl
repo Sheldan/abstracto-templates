@@ -1,1 +1,0 @@
-"description": "<@safe_include "emote_not_usable_exception"/>"

@@ -1,1 +1,0 @@
-"description": "<@safe_include "channel_not_in_guild_exception"/>"

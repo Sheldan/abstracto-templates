@@ -1,1 +1,0 @@
-"description": "<@safe_include "channel_group_exists_exception"/>"

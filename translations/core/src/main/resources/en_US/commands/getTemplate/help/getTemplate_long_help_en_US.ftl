@@ -1,0 +1,2 @@
+Retrieves a used template from the database and provides it as a file.
+This template is part from the global templates and cannot be changed directly, only replaced via a custom template (via `setTemplate`) for a specific server.

@@ -1,0 +1,1 @@
+Resets a template to the global template content

@@ -1,0 +1,1 @@
+The attached file containing the content of the template

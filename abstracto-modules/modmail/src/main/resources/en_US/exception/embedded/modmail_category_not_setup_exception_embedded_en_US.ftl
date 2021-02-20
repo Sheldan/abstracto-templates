@@ -1,1 +1,0 @@
-"description": "<@safe_include "modmail_category_not_setup"/>"

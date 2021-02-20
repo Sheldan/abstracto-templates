@@ -1,0 +1,1 @@
+${serverId}-${templateKey}.ftl

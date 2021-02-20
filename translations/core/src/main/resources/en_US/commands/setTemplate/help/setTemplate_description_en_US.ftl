@@ -1,0 +1,1 @@
+Sets the content of a template only for this server
