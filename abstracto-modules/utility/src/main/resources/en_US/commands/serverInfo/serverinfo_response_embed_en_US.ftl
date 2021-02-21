@@ -29,7 +29,16 @@
             "value": "${guild.timeCreated}",
             "inline": "true"
       },
-      ${safeFieldLength(guild.emotes, 'emote_mention', 'serverinfo_embed_emotes_field_title', 'false')},
+      {
+            "name": "<@safe_include "serverinfo_embed_emote_count_title"/>",
+            "value": "${guild.emotes?size}",
+            "inline": "true"
+      },
+      {
+            "name": "<@safe_include "serverinfo_embed_emotes_title"/>",
+            "value": "<#list guild.emotes as emote>${emote.asMention}<#sep> <#else><@safe_include "serverinfo_embed_emotes_no_emotes"/></#list>",
+            "inline": "true"
+      },
       {
             "name": "<@safe_include "serverinfo_embed_features_field_title"/>",
             "value": "<#list guild.features as feature>${feature}<#else><@safe_include "serverinfo_embed_features_no_features"/></#list>",
