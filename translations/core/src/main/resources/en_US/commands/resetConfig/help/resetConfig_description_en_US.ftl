@@ -1,0 +1,1 @@
+Resets config keys/features/servers to their default configuration
