@@ -22,7 +22,7 @@
                     <#if starrer.member?has_content>
                     <#assign user>${starrer.member.asMention?js_string}</#assign> <@safe_include "starStats_starrer_entry"/>
                     <#else>
-                        <#assign user>${starrer.user.id?c}</#assign> <@safe_include "starStats_starrer_entry_left_guild"/>
+                        <#assign user>${starrer.user.userReference.id?c}</#assign> <@safe_include "starStats_starrer_entry_left_guild"/>
                     </#if>
                  <#else>
                      <@safe_include "starStats_no_starred_messages"/>
@@ -37,7 +37,7 @@
                     <#if starred.member?has_content>
                      <#assign user>${starred.member.asMention?js_string}</#assign> <@safe_include "starStats_receiver_entry"/>
                     <#else>
-                     <#assign user>${starred.user.id?c}</#assign> <@safe_include "starStats_receiver_entry_left_guild"/>
+                     <#assign user>${starred.user.userReference.id?c}</#assign> <@safe_include "starStats_receiver_entry_left_guild"/>
                     </#if>
                 <#else>
                    <@safe_include "starStats_no_starred_messages"/>

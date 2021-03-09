@@ -1,1 +1,1 @@
-${badge} - ${count} :star: [Jump!](${link}) <#include "user_left_server">
+${badge} - ${count} :star: ${user} <#include "user_left_server">

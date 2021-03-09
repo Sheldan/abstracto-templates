@@ -1,6 +1,6 @@
 {
 <#macro userDisplay user>
-  ${user.rank} <@member_user_name member=user.member/> ${user.experience.experience} ${user.experience.currentLevel.level} ${user.experience.messageCount}
+  ${user.rank} <#if user.member?has_content><@member_user_name member=user.member/> <#else>${user.experience.user.userReference.id?c}</#if> ${user.experience.experience} ${user.experience.currentLevel.level} ${user.experience.messageCount}
 </#macro>
   <#include "member_author">
   <@member_author member=member/>,

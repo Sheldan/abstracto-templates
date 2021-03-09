@@ -4,7 +4,7 @@
     "name": "<@member_user_name member=suggester/>",
     "avatar":  "${suggester.user.effectiveAvatarUrl}"
     <#else>
-    "name": "${suggesterUser.userReference.id}"
+    "name": "${suggesterUser.userReference.id?c} (<@safe_include "user_left_server"/>)"
     </#if>
   },
   <#assign user><@member_user_name member=member/></#assign>
