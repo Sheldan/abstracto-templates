@@ -1,0 +1,1 @@
+Admin mode enabled. Command unavailable to you.

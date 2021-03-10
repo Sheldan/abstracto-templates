@@ -1,0 +1,1 @@
+Either 'true' or 'false' for the admin mode state.

@@ -1,1 +1,0 @@
-Command has been disabled for this channel.

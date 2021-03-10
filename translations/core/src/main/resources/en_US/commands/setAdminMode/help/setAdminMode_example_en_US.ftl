@@ -1,0 +1,1 @@
+`setAdminMode true` in order to activate the admin mode

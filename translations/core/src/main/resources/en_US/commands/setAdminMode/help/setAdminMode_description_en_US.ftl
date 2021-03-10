@@ -1,0 +1,1 @@
+Controls admin mode for this server
