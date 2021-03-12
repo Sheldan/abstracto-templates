@@ -23,6 +23,12 @@
         <module>utility</module>
         <module>assignable-roles</module>
         <module>statistic</module>
+        <module>entertainment</module>
+        <module>link-embed</module>
+        <module>remind</module>
+        <module>starboard</module>
+        <module>suggestion</module>
+        <module>repost-detection</module>
     </modules>
 
 </project>
