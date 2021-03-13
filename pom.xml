@@ -24,6 +24,7 @@
 
     <scm>
         <url>https://maven.pkg.github.com/Sheldan/abstracto-templates</url>
+        <developerConnection>scm:git:git@github.com:Sheldan/abstracto-templates.git</developerConnection>
     </scm>
 
     <repositories>
@@ -37,5 +38,16 @@
     <properties>
         <maven.build.timestamp.format>yyyy/MM/dd HH:mm</maven.build.timestamp.format>
     </properties>
+
+    <build>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
