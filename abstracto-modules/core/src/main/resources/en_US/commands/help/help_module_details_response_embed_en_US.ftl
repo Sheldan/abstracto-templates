@@ -1,12 +1,12 @@
 {
   "title": {
-    <#assign name=module.moduleInterface.info.name/>
+    <#assign name=module.moduleDefinition.info.name/>
     "title": "<@safe_include "help_module_embed_title"/>"
   },
   <#include "abstracto_color">,
   "description": "
        <@safe_include "help_module_embed_module_name"/>: **${name?js_string}**
-       <@safe_include "help_module_embed_module_description"/>: <#if module.moduleInterface.info.templated?? && module.moduleInterface.info.templated><@safe_include "module_${name}_description"/><#else>${module.moduleInterface.info.description?js_string}</#if>
+       <@safe_include "help_module_embed_module_description"/>: <#if module.moduleDefinition.info.templated?? && module.moduleDefinition.info.templated><@safe_include "module_${name}_description"/><#else>${module.moduleDefinition.info.description?js_string}</#if>
        <@safe_include "help_module_embed_commands"/>:
        <#list module.commands as command>`${command.configuration.name?js_string}`<#sep>, <#else><@safe_include "help_module_no_commands_available"/></#list>
        <#if subModules?has_content && subModules?size gt 0>

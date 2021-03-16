@@ -1,6 +1,8 @@
 {
-  <#include "member_author">
-  <@member_author member=author/>,
+  "author": {
+    "name": "${author.name?js_string}#${author.discriminator}",
+    "avatar":  "${author.effectiveAvatarUrl}"
+   },
   <#include "abstracto_color">,
   <#if embeddedMessage.content?has_content || embeddedMessage.embeds?size gt 0>
    "description": "${embeddedMessage.content?js_string}
