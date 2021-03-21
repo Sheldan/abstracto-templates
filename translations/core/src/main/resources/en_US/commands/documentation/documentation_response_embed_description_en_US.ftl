@@ -1,0 +1,2 @@
+Documentation is available in [HTML](https://github.com/Sheldan/abstracto-docs/current) and [PDF](https://github.com/Sheldan/abstracto-docs/current/documentation.pdf).
+They are also available for older versions via https://github.com/Sheldan/abstracto-docs/$VERSION.
