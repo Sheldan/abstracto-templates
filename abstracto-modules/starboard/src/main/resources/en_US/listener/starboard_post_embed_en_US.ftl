@@ -1,12 +1,6 @@
 {
-  "author": {
-  <#if author?has_content>
-    "name": "<@member_user_name member=author/>",
-    "avatar": "${author.user.effectiveAvatarUrl}"
-  <#else>
-    "name": "${user.id?c} (<@safe_include "user_left_server"/>)"
-  </#if>
-  },
+  <#include "user_author">
+  <@user_author user=author/>,
   <#include "abstracto_color">,
   <#if message.content?has_content || message.embeds?size gt 0>
    "description": "${message.content?js_string}
@@ -25,7 +19,7 @@
   <#assign channelMention>${channel.asMention?js_string}</#assign>
   ,"additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
   <#else>
-  <#assign channelMention>${aChannel.id?c}</#assign>
+  <#assign channelMention>${sourceChannelId?c}</#assign>
   ,"additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
   </#if>
   <#if message.attachments?size gt 0>
@@ -37,7 +31,7 @@
       <#if channel?has_content>
       ,"value": "[${channel.name?js_string}](${message.messageUrl})"
       <#else>
-      ,"value": "[${aChannel.id?c}](${message.messageUrl})"
+      ,"value": "[${sourceChannelId?c}](${message.messageUrl})"
       </#if>
     }
   ],
