@@ -1,0 +1,1 @@
+Channel group ${name} has the incorrect type. The group must be of type ${correctType}.

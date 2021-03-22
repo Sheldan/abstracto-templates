@@ -1,0 +1,1 @@
+<#assign name=model.name><#assign correctType=model.correctType><#include "channel_group_incorrect_type_exception_text">
