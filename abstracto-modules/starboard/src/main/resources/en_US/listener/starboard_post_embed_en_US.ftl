@@ -10,14 +10,14 @@
             <@safe_include "starboard_post_embed_description"/>: ${embed.description?js_string} <#if embed.imageUrl?has_content> <@safe_include "starboard_post_embed_image_url"/>: ${embed.imageUrl} </#if>
         </#items>
    </#list>
-   "
+   ",
   </#if>
   <#assign emote>${starLevelEmote}</#assign>
   <#assign count>${starCount}</#assign>
   <#assign messageId>${message.messageId?c}</#assign>
   <#if channel?has_content>
   <#assign channelMention>${channel.asMention?js_string}</#assign>
-  ,"additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
+  "additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
   <#else>
   <#assign channelMention>${sourceChannelId?c}</#assign>
   ,"additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
