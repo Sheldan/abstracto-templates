@@ -27,6 +27,7 @@
         <module>repost-detection</module>
         <module>starboard</module>
         <module>suggestion</module>
+        <module>webservices</module>
     </modules>
 
 </project>
