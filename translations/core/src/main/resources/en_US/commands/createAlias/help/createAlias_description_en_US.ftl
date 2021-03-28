@@ -1,0 +1,1 @@
+Creates aliases for commands in this server

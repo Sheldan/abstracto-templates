@@ -1,0 +1,1 @@
+${existingCommandName} already uses this alias.

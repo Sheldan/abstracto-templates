@@ -1,0 +1,1 @@
+The name of the command to create an alias for. Is not allowed to be another alias.

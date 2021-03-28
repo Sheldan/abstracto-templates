@@ -23,6 +23,9 @@
 <#if command.aliases?? && command.aliases?size gt 0>
 <@safe_include "help_command_embed_command_aliases"/>: `${command.aliases?join("`, `")?js_string}`
 </#if>
+<#if serverSpecificAliases?size gt 0>
+<@safe_include "help_command_embed_command_server_aliases"/>: `${serverSpecificAliases?join("`, `")?js_string}`
+</#if>
 <#if restricted?? && restricted>
 <@safe_include "help_command_embed_command_executable_by"/>:<#if allowedRoles??> <#list allowedRoles as allowedRole> ${allowedRole.asMention?js_string}<#sep><@safe_include "help_command_embed_or"/><#else><@safe_include "help_command_embed_command_executable_by_nobody"/></#list> </#if>
 <#if immuneRoles?? ><@safe_include "help_command_embed_command_immune"/>: <#list immuneRoles as immuneRole> ${immuneRole.asMention?js_string}<#sep><@safe_include "help_command_embed_or"/><#else><@safe_include "help_command_embed_command_immune_none"/></#list> </#if>

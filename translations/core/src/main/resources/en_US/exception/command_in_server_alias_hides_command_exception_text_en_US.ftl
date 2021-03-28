@@ -1,0 +1,1 @@
+${existingCommandName} already exists as command or uses this alias.

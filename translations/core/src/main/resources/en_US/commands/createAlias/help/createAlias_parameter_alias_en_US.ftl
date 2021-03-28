@@ -1,0 +1,1 @@
+The name of the alias. Not allowed to be the name of a command or a built-in alias.
