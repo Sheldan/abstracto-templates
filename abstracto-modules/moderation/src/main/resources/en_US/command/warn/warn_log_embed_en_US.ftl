@@ -19,11 +19,11 @@
     </#if>
     {
         "name": "<@safe_include "warn_log_warn_location_field_title"/>",
-        "value": "[${channel.name?js_string}](${message.jumpUrl})"
+        "value": "[${channel.name?json_string}](${message.jumpUrl})"
     },
     {
         "name": "<@safe_include "warn_log_warn_reason_field_title"/>",
-        "value": "${reason?js_string}"
+        "value": "${reason?json_string}"
     }
   ],
   "footer": {

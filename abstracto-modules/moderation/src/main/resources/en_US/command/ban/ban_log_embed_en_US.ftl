@@ -17,11 +17,11 @@
     },
     {
         "name": "<@safe_include "ban_log_jump_link_field_title"/>",
-        "value": "[${messageChannel.name?js_string}](${message.jumpUrl})"
+        "value": "[${messageChannel.name?json_string}](${message.jumpUrl})"
     },
     {
         "name": "<@safe_include "ban_log_reason_field_title"/>",
-        "value": "${reason?js_string}"
+        "value": "${reason?json_string}"
     }
   ]
 }

@@ -20,9 +20,9 @@
   <#include "abstracto_color">,
   <#assign id>${suggestionId}</#assign>
   <#if state = "ACCEPTED" || state = "REJECTED">
-  "description": "~~${text?js_string}~~",
+  "description": "~~${text?json_string}~~",
   <#else>
-  "description": "${text?js_string}",
+  "description": "${text?json_string}",
   </#if>
   <#if state = "ACCEPTED" || state = "REJECTED">
   "fields": [
@@ -34,7 +34,7 @@
     ,
     {
         "name": "<@safe_include "suggest_reason_field_title"/>",
-        "value": "${reason?js_string}"
+        "value": "${reason?json_string}"
     }
     </#if>
   ],

@@ -17,11 +17,11 @@
     },
     {
         "name": "<@safe_include "mute_log_mute_location_field_title"/>",
-        "value": "[${contextChannel.name?js_string}](${message.jumpUrl})"
+        "value": "[${contextChannel.name?json_string}](${message.jumpUrl})"
     },
     {
         "name": "<@safe_include "mute_log_mute_reason_field_title"/>",
-        "value": "${reason?js_string}"
+        "value": "${reason?json_string}"
     },
     {
         "name": "<@safe_include "mute_log_mute_duration_field_title"/>",

@@ -11,7 +11,7 @@
     },
     {
         "name": "<@safe_include "invite_link_deleted_message_link_title"/>",
-        "value": "[${channel.name?js_string}](${message.jumpUrl})"
+        "value": "[${channel.name?json_string}](${message.jumpUrl})"
     }
   ]
 }

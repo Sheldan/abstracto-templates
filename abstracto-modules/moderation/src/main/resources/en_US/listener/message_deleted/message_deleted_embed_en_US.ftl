@@ -6,11 +6,11 @@
   "fields": [
     {
       "name": "<@safe_include "messageDeleted_original_message_field_title"/>",
-      "value": "${cachedMessage.content?js_string}"
+      "value": "${cachedMessage.content?json_string}"
     },
     {
         "name": "<@safe_include "messageDeleted_message_link_field_title"/>",
-        "value": "[${channel.name?js_string}](${cachedMessage.messageUrl})"
+        "value": "[${channel.name?json_string}](${cachedMessage.messageUrl})"
     }
   ]
 }

@@ -6,7 +6,7 @@
   "fields": [
   {
         "name": "<@safe_include "showAvatar_response_embed_user_field_title"/>",
-        "value": "${memberInfo.user.name?js_string}#${memberInfo.user.discriminator}",
+        "value": "${memberInfo.user.name?json_string}#${memberInfo.user.discriminator}",
         "inline": "true"
   },
   {

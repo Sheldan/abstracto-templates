@@ -10,12 +10,12 @@
     },
     {
         "name": "<@safe_include "remind_reminder_note_field_title"/>",
-        "value": "${reminder.text?js_string}"
+        "value": "${reminder.text?json_string}"
     },
     {
         "name": "<@safe_include "remind_reminder_link_field_title"/>",
         "value": "[<@safe_include "remind_reminder_link_content_display_text"/>](${messageUrl})"
     }
   ],
-  "additionalMessage": "${member.asMention?js_string}"
+  "additionalMessage": "${member.asMention?json_string}"
 }

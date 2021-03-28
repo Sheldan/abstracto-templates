@@ -5,7 +5,7 @@
   <#else>
   "author":
     {
-        "name": "${fullUser.user.name?js_string}#${fullUser.user.discriminator}",
+        "name": "${fullUser.user.name?json_string}#${fullUser.user.discriminator}",
         "avatar":  "${fullUser.user.effectiveAvatarUrl}"
     },
   </#if>
@@ -17,8 +17,8 @@
     "description": "<@safe_include "${template.templateName}"/>"
   </#if>
   <#elseif throwable.localizedMessage?has_content>
-  "description": "${throwable.localizedMessage?js_string}"
+  "description": "${throwable.localizedMessage?json_string}"
   <#else>
-  "description": "${throwable.class.simpleName?js_string}"
+  "description": "${throwable.class.simpleName?json_string}"
   </#if>
 }

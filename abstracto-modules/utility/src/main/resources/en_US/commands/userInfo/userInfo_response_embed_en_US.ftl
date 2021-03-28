@@ -12,7 +12,7 @@
   <#if memberInfo.nickname?has_content>
   {
         "name": "<@safe_include "userInfo_response_embed_nickname_field_title"/>",
-        "value": "${memberInfo.nickname?js_string}",
+        "value": "${memberInfo.nickname?json_string}",
         "inline": "true"
   },
   </#if>
@@ -35,7 +35,7 @@
   ,
   {
         "name": "<@safe_include "userInfo_response_embed_activity_field_title"/>",
-        "value": "<#list memberInfo.activities as activity>${activity.type?js_string}<#sep>, </#list>",
+        "value": "<#list memberInfo.activities as activity>${activity.type?json_string}<#sep>, </#list>",
         "inline": "true"
   }
   </#if>

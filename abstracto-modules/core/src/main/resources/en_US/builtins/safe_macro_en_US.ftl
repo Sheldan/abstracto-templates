@@ -1,1 +1,1 @@
-<#macro safe_include template_key><#assign rendered><#include "${template_key}"></#assign>${rendered?js_string}</#macro>
+<#macro safe_include template_key><#assign rendered><#include "${template_key}"></#assign>${rendered?json_string}</#macro>

@@ -5,5 +5,5 @@
   <@member_author member=member/>,
   <#include "abstracto_color">,
   "description": "<@safe_include "remind_reminding_description_text"/>",
-  "additionalMessage": "${member.asMention?js_string}"
+  "additionalMessage": "${member.asMention?json_string}"
 }

@@ -14,6 +14,6 @@
         }
       ]
   <#if roles?size gt 0>
-  ,"additionalMessage": "<#list roles as role>${role.role.asMention?js_string}<#sep>,</#list>"
+  ,"additionalMessage": "<#list roles as role>${role.role.asMention?json_string}<#sep>,</#list>"
   </#if>
 }

@@ -20,7 +20,7 @@
                 <#list starGiver as starrer><#assign starrer=starrer/>
                     <#assign badge>${badgeEmotes[starrer?index]}</#assign><#assign count>${starrer.starCount}</#assign>
                     <#if starrer.member?has_content>
-                    <#assign user>${starrer.member.asMention?js_string}</#assign> <@safe_include "starStats_starrer_entry"/>
+                    <#assign user>${starrer.member.asMention?json_string}</#assign> <@safe_include "starStats_starrer_entry"/>
                     <#else>
                         <#assign user>${starrer.user.userReference.id?c}</#assign> <@safe_include "starStats_starrer_entry_left_guild"/>
                     </#if>
@@ -35,7 +35,7 @@
                 <#list starReceiver as starred><#assign starred=starred/>
                     <#assign badge>${badgeEmotes[starred?index]}</#assign><#assign count>${starred.starCount}</#assign>
                     <#if starred.member?has_content>
-                     <#assign user>${starred.member.asMention?js_string}</#assign> <@safe_include "starStats_receiver_entry"/>
+                     <#assign user>${starred.member.asMention?json_string}</#assign> <@safe_include "starStats_receiver_entry"/>
                     <#else>
                      <#assign user>${starred.user.userReference.id?c}</#assign> <@safe_include "starStats_receiver_entry_left_guild"/>
                     </#if>

@@ -40,7 +40,7 @@
     },
     {
         "name": "<@safe_include "mute_log_mute_reason_field_title"/>",
-        "value": "${mute.reason?js_string}"
+        "value": "${mute.reason?json_string}"
     }
   ],
   "footer": {

@@ -1,4 +1,4 @@
 {
   <#include "modmail_color">,
-  "description": "${closingMessage?js_string}"
+  "description": "${closingMessage?json_string}"
 }

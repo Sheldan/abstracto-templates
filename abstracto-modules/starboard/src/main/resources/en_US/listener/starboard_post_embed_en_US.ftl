@@ -3,11 +3,11 @@
   <@user_author user=author/>,
   <#include "abstracto_color">,
   <#if message.content?has_content || message.embeds?size gt 0>
-   "description": "${message.content?js_string}
+   "description": "${message.content?json_string}
    <#list message.embeds>
         <@safe_include "starboard_post_embed_embeds_name"/>:
         <#items as embed>
-            <@safe_include "starboard_post_embed_description"/>: ${embed.description?js_string} <#if embed.imageUrl?has_content> <@safe_include "starboard_post_embed_image_url"/>: ${embed.imageUrl} </#if>
+            <@safe_include "starboard_post_embed_description"/>: ${embed.description?json_string} <#if embed.imageUrl?has_content> <@safe_include "starboard_post_embed_image_url"/>: ${embed.imageUrl} </#if>
         </#items>
    </#list>
    ",
@@ -16,7 +16,7 @@
   <#assign count>${starCount}</#assign>
   <#assign messageId>${message.messageId?c}</#assign>
   <#if channel?has_content>
-  <#assign channelMention>${channel.asMention?js_string}</#assign>
+  <#assign channelMention>${channel.asMention?json_string}</#assign>
   "additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
   <#else>
   <#assign channelMention>${sourceChannelId?c}</#assign>
@@ -29,7 +29,7 @@
     {
       "name": "<@safe_include "starboard_post_embed_original_field_title"/>"
       <#if channel?has_content>
-      ,"value": "[${channel.name?js_string}](${message.messageUrl})"
+      ,"value": "[${channel.name?json_string}](${message.messageUrl})"
       <#else>
       ,"value": "[${sourceChannelId?c}](${message.messageUrl})"
       </#if>

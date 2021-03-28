@@ -17,11 +17,11 @@
     },
     {
         "name": "<@safe_include "kick_log_jump_link_field_title"/>",
-        "value": "[${channel.name?js_string}](${message.jumpUrl})"
+        "value": "[${channel.name?json_string}](${message.jumpUrl})"
     },
     {
         "name": "<@safe_include "kick_log_reason_field_title"/>",
-        "value": "${reason?js_string}"
+        "value": "${reason?json_string}"
     }
   ]
 }
