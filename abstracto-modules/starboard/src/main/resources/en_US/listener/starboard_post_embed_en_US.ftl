@@ -7,7 +7,7 @@
    <#list message.embeds>
         <@safe_include "starboard_post_embed_embeds_name"/>:
         <#items as embed>
-            <@safe_include "starboard_post_embed_description"/>: ${embed.description?json_string} <#if embed.imageUrl?has_content> <@safe_include "starboard_post_embed_image_url"/>: ${embed.imageUrl} </#if>
+            <#if embed.description??> <@safe_include "starboard_post_embed_description"/>: ${embed.description?json_string} </#if> <#if embed.imageUrl?has_content> <@safe_include "starboard_post_embed_image_url"/>: ${embed.imageUrl} </#if>
         </#items>
    </#list>
    ",
@@ -24,6 +24,9 @@
   </#if>
   <#if message.attachments?size gt 0>
   ,"imageUrl": "${message.attachments[0].proxyUrl}"
+  </#if>
+  <#if message.attachments?size = 0 && message.embeds?size gt 0>
+  ,"imageUrl": "${message.embeds[0].cachedThumbnail.proxyUrl}"
   </#if>
   ,"fields": [
     {
