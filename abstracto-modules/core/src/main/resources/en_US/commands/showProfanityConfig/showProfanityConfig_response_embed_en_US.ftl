@@ -7,7 +7,7 @@
 
 <#list profanityGroup.profanities as profanity>
 <#assign profanityRegexName>${profanity.regexName?json_string}</#assign><#assign profanityRegex>${profanity.regex?json_string}</#assign><#if profanity.replacement??><#assign profanityReplacement>${profanity.replacement?json_string}</#assign></#if>
-<@safe_include "showProfanityConfig_profanity_regex_display"/>
+<@safe_include "showProfanityConfig_profanity_regex_display"/><#assign profanityReplacement=""/>
 
 <#else>
 <@safe_include "showProfanityConfig_no_profanity_regex"/>

@@ -1,1 +1,1 @@
-${profanityRegexName}: `${profanityRegex}` <#if profanityReplacement??>replaced with ${profanityReplacement}</#if>
+${profanityRegexName}: `${profanityRegex}` <#if profanityReplacement?has_content>replaced with ${profanityReplacement}</#if>
