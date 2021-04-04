@@ -24,9 +24,10 @@
   </#if>
   <#if message.attachments?size gt 0>
   ,"imageUrl": "${message.attachments[0].proxyUrl}"
-  </#if>
-  <#if message.attachments?size = 0 && message.embeds?size gt 0>
+  <#elseif message.attachments?size = 0 && message.embeds?size gt 0 && message.embeds[0].cachedThumbnail??>
   ,"imageUrl": "${message.embeds[0].cachedThumbnail.proxyUrl}"
+  <#elseif message.attachments?size = 0 && message.embeds?size gt 0 && message.embeds[0].cachedImageInfo??>
+  ,"imageUrl": "${message.embeds[0].cachedImageInfo.proxyUrl}"
   </#if>
   ,"fields": [
     {
