@@ -1,0 +1,1 @@
+Shows an overview about the current profanity check configuration

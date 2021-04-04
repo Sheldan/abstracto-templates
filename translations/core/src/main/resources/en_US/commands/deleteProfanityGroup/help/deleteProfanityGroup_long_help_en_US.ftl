@@ -1,0 +1,1 @@
+Deletes the profanity group and all the profanity regexes which are associated with it.

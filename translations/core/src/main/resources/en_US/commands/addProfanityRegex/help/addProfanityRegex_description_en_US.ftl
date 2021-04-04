@@ -1,0 +1,1 @@
+Creates a profanity regex with optional replacement in a profanity group

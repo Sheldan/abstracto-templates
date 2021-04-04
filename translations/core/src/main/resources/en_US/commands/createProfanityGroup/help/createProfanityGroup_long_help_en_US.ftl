@@ -1,0 +1,2 @@
+This command can be used to create a profanity group. This profanity group can then be used to group profanity regexes together.
+The name needs to be unique per server and deleting the group deletes all of the profanities in this group.
