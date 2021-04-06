@@ -25,7 +25,7 @@
   <#else>
   <#assign channelMention>${sourceChannelId?c}</#assign>
   "additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
-  </#if>
+  </#if>,
   <#if message.attachments?size gt 0>
   "imageUrl": "${message.attachments[0].proxyUrl}",
   <#elseif message.attachments?size = 0 && message.embeds?size gt 0 && message.embeds[0].cachedThumbnail??>
