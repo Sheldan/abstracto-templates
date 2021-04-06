@@ -24,16 +24,16 @@
   "additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
   <#else>
   <#assign channelMention>${sourceChannelId?c}</#assign>
-  ,"additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
+  "additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
   </#if>
   <#if message.attachments?size gt 0>
-  ,"imageUrl": "${message.attachments[0].proxyUrl}"
+  "imageUrl": "${message.attachments[0].proxyUrl}",
   <#elseif message.attachments?size = 0 && message.embeds?size gt 0 && message.embeds[0].cachedThumbnail??>
-  ,"imageUrl": "${message.embeds[0].cachedThumbnail.proxyUrl}"
+  "imageUrl": "${message.embeds[0].cachedThumbnail.proxyUrl}",
   <#elseif message.attachments?size = 0 && message.embeds?size gt 0 && message.embeds[0].cachedImageInfo??>
-  ,"imageUrl": "${message.embeds[0].cachedImageInfo.proxyUrl}"
+  "imageUrl": "${message.embeds[0].cachedImageInfo.proxyUrl}",
   </#if>
-  ,"fields": [
+  "fields": [
     {
       "name": "<@safe_include "starboard_post_embed_original_field_title"/>"
       <#if channel?has_content>

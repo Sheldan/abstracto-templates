@@ -17,11 +17,11 @@
    ",
   </#if>
   <#if embeddedMessage.attachments?size gt 0>
-  ,"imageUrl": "${embeddedMessage.attachments[0].proxyUrl}"
+  "imageUrl": "${embeddedMessage.attachments[0].proxyUrl}",
   <#elseif embeddedMessage.attachments?size = 0 && embeddedMessage.embeds?size gt 0 && embeddedMessage.embeds[0].cachedThumbnail??>
-  ,"imageUrl": "${embeddedMessage.embeds[0].cachedThumbnail.proxyUrl}"
+  "imageUrl": "${embeddedMessage.embeds[0].cachedThumbnail.proxyUrl}",
   <#elseif embeddedMessage.attachments?size = 0 && embeddedMessage.embeds?size gt 0 && embeddedMessage.embeds[0].cachedImageInfo??>
-  ,"imageUrl": "${embeddedMessage.embeds[0].cachedImageInfo.proxyUrl}"
+  "imageUrl": "${embeddedMessage.embeds[0].cachedImageInfo.proxyUrl}",
   </#if>
   "fields": [
     {
