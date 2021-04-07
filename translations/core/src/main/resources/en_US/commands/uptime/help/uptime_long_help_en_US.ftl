@@ -1,0 +1,1 @@
+This command is used to show the uptime and the start date of the bot
