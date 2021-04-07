@@ -1,0 +1,1 @@
+The text to mock or a message which has been replied to

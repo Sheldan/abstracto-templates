@@ -1,0 +1,2 @@
+This command can be used to mock a text or a message. In order to mock a text, you need to provide the text as a parameter to the command.
+If you want to mock a specific message, you need to reply to that message when executing this command. In case both are present, the message reply has precedence.
