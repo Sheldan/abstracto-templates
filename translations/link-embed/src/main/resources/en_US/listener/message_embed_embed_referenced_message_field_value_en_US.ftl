@@ -1,0 +1,1 @@
+[message](${referencedMessageLink}) by ${repliedToAuthorMention}

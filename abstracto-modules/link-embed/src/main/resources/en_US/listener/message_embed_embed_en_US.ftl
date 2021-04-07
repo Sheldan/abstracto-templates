@@ -31,6 +31,15 @@
       <#assign messageLink>${embeddedMessage.messageUrl}</#assign>
       "value": "<@safe_include "message_embed_embed_quoted_by_field_value"/>"
     }
+    <#if embeddedMessage.referencedMessage??>
+    ,
+    {
+        <#assign referencedMessageLink=embeddedMessage.referencedMessage.messageUrl/>
+        <#assign repliedToAuthorMention>${r"<@"}${embeddedMessage.referencedMessage.author.authorId?c}${r">"}</#assign>
+        "name": "<@safe_include "message_embed_embed_referenced_message_field_title"/>",
+        "value": "<@safe_include "message_embed_embed_referenced_message_field_value"/>"
+    }
+    </#if>
   ],
   "timeStamp": "${embeddedMessage.timeCreated}"
 }
