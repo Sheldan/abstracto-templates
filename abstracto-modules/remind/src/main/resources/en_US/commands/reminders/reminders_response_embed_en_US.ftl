@@ -5,16 +5,21 @@
    "title": {
       "title": "<@safe_include "reminders_reminders_embed_title"/>"
     },
-   "fields": [
-       <#list reminders as reminder><#assign reminder=reminder/>
-           {
-           <#assign id>${reminder.id}</#assign>
-           <#assign reminderTargetDate>${formatDate(reminder.targetDate,"yyyy-MM-dd HH:mm:ss")}</#assign>
-           <#assign reminderText=reminder.text/>
-            "name": "<@safe_include "reminders_reminder_field_title"/>",
-            "value": "<@safe_include "reminders_due_on"/>"
-           }
-       <#sep>,
-       </#list>
-   ]
+    <#if reminders?size = 0>
+        "description": "<@safe_include "reminders_no_reminders"/>"
+    <#else>
+    "fields": [
+           <#list reminders as reminderDisplay><#assign reminderDisplay=reminderDisplay/>
+               {
+               <#assign id>${reminderDisplay.reminder.id}</#assign>
+               <#assign reminderTargetDate>${formatDate(reminderDisplay.reminder.targetDate,"yyyy-MM-dd HH:mm:ss")}</#assign>
+               <#assign reminderText=reminderDisplay.reminder.text/>
+               <#assign messageLink=reminderDisplay.message.jumpUrl/>
+                "name": "<@safe_include "reminders_reminder_field_title"/>",
+                "value": "<@safe_include "reminders_due_on"/>"
+               }
+           <#sep>,
+           </#list>
+       ]
+    </#if>
 }

@@ -1,1 +1,1 @@
-Due on ${reminderTargetDate} with text ${reminderText}
+Due on ${reminderTargetDate} with text `${reminderText}` started [here](${messageLink})
