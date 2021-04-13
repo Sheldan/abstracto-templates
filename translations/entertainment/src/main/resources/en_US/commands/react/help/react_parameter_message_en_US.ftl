@@ -1,0 +1,1 @@
+The message to add reactions to. Must be provided via replying to a message, when using the command.

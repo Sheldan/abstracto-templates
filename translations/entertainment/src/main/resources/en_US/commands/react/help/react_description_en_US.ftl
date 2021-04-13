@@ -1,0 +1,1 @@
+Adds reactions representing the text to a given message
