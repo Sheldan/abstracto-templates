@@ -1,0 +1,1 @@
+Adds a command to a channel group

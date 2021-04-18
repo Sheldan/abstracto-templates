@@ -1,0 +1,1 @@
+The channel group to remove the command from

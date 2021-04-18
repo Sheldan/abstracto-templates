@@ -1,0 +1,2 @@
+This command can be used to change the member and channel group cooldowns for a channel group.
+This can be done by providing the channel group name and the two respective cooldowns with a duration format.

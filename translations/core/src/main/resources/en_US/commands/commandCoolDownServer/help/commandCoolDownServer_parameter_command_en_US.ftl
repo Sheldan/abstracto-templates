@@ -1,0 +1,1 @@
+The command to change the server cooldown for

@@ -1,0 +1,1 @@
+Server cooldown: ${serverCooldown}

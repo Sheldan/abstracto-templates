@@ -1,0 +1,1 @@
+The duration to set the cooldown to

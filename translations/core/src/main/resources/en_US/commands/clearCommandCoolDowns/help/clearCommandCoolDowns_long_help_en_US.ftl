@@ -1,0 +1,1 @@
+This command can be used to reset the currently active cooldowns on this server

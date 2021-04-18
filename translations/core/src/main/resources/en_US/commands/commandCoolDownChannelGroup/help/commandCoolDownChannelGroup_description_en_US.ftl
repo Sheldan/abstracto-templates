@@ -1,0 +1,1 @@
+Changes the channel group and member cooldown in a channel group

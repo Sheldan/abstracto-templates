@@ -1,0 +1,2 @@
+Adds a command to a channel group. This can then be used for various purposes, for example to disable the command or set a cooldown for the command for the channels.
+The command `disableCommand` does this under the hood as well.

@@ -1,0 +1,1 @@
+The duration for the whole channel group to be used.

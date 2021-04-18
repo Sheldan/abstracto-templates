@@ -1,0 +1,1 @@
+This command can be used to set the cooldown of a command for the whole server

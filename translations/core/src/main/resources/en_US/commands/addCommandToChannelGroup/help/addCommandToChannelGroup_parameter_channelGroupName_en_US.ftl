@@ -1,0 +1,1 @@
+The name of the channel group to add the command to

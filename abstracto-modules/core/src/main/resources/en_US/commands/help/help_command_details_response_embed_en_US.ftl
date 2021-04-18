@@ -26,6 +26,24 @@
 <#if serverSpecificAliases?size gt 0>
 <@safe_include "help_command_embed_command_server_aliases"/>: `${serverSpecificAliases?join("`, `")?json_string}`
 </#if>
+<#if cooldowns??>
+<@safe_include "help_command_embed_command_cooldowns"/>:
+<#if cooldowns.serverCoolDown?has_content>
+<#assign serverCooldown>${fmtDuration(cooldowns.serverCoolDown)}</#assign>
+<@safe_include "help_command_embed_command_cooldown_server"/>
+
+</#if>
+<#if cooldowns.channelCoolDown?has_content>
+<#assign channelCooldown>${fmtDuration(cooldowns.channelCoolDown)}</#assign>
+<@safe_include "help_command_embed_command_cooldown_channel"/>
+
+</#if>
+<#if cooldowns.memberCoolDown?has_content>
+<#assign memberCooldown>${fmtDuration(cooldowns.memberCoolDown)}</#assign>
+<@safe_include "help_command_embed_command_cooldown_member"/>
+
+</#if>
+</#if>
 <#if restricted?? && restricted>
 <@safe_include "help_command_embed_command_executable_by"/>:<#if allowedRoles??> <#list allowedRoles as allowedRole> ${allowedRole.asMention?json_string}<#sep><@safe_include "help_command_embed_or"/><#else><@safe_include "help_command_embed_command_executable_by_nobody"/></#list> </#if>
 <#if immuneRoles?? ><@safe_include "help_command_embed_command_immune"/>: <#list immuneRoles as immuneRole> ${immuneRole.asMention?json_string}<#sep><@safe_include "help_command_embed_or"/><#else><@safe_include "help_command_embed_command_immune_none"/></#list> </#if>

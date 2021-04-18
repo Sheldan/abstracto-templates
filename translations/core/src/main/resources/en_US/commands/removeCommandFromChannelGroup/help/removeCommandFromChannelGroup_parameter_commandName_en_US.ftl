@@ -1,0 +1,1 @@
+The command to remove from the channel group
