@@ -10,7 +10,9 @@
     },
   </#if>
   <#include "exception_color">,
-  "preventEmptyEmbed": "true",
+  "metaConfig" : {
+    "preventEmptyEmbed": "true"
+  },
   <#if template?has_content>
   <#if template.templateModel?has_content>
     <#assign model=template.templateModel/>
