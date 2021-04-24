@@ -28,6 +28,7 @@
         <module>starboard</module>
         <module>suggestion</module>
         <module>webservices</module>
+        <module>logging</module>
     </modules>
 
 </project>
