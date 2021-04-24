@@ -8,11 +8,6 @@
         "inline": "true"
   },
   {
-        "name": "<@safe_include "showEmote_response_embed_emote_link_field_title"/>",
-        "value": "[<@safe_include "showEmote_response_embed_emote_link_field_text"/>](${emote.imageUrl})",
-        "inline": "true"
-  },
-  {
           "name": "<@safe_include "showEmote_response_embed_emote_link_field_title"/>",
           "value": "${emote.imageUrl}",
           "inline": "true"
