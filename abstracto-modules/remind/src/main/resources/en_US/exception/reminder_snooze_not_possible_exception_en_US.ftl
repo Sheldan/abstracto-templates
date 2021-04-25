@@ -1,0 +1,1 @@
+<#include "reminder_snooze_not_possible_exception_text">

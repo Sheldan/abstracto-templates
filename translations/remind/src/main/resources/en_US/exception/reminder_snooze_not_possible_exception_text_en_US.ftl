@@ -1,0 +1,1 @@
+Snooze not possible. Reminder is still in progress.

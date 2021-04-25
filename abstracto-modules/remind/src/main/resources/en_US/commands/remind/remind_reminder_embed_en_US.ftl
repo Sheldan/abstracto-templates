@@ -17,5 +17,5 @@
         "value": "[<@safe_include "remind_reminder_link_content_display_text"/>](${messageUrl})"
     }
   ],
-  "additionalMessage": "${member.asMention?json_string}"
+  "additionalMessage": "${member.asMention?json_string} 🔔"
 }

@@ -1,1 +1,1 @@
-You wanted to be reminded.
+Reminder ID ${reminder.id?c}
