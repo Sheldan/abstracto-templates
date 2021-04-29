@@ -3,7 +3,7 @@
     <#include "user_author">
     <@user_author user=author/>
   <#else>
-    <@safe_include "deleted_user_author"/>
+    <#include "deleted_user_author"/>
   </#if>,
   <#include "abstracto_color">,
   <#if embeddedMessage.content?has_content || embeddedMessage.embeds?size gt 0>

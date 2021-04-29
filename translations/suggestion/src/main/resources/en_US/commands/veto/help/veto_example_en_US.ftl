@@ -1,0 +1,1 @@
+`veto 1 not okay` in order to veto the suggestion `1` with the reason `not okay`

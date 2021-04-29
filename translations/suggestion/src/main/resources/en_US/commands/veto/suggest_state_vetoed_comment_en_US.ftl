@@ -1,0 +1,1 @@
+🛑 Suggestion ${suggestionId?c} has been vetoed

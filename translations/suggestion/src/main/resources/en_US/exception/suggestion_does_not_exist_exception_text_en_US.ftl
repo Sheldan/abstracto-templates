@@ -1,1 +1,1 @@
-Suggestion ${suggestionId} does not exist.
+Suggestion ${suggestionId?c} does not exist.
