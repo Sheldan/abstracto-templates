@@ -1,1 +1,1 @@
-Sets the role which should not gain experience.
+Sets a role to cause members with this role to not gain experience

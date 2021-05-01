@@ -1,1 +1,1 @@
-Re-enables the experience gain for the specified role.
+Re-enables the experience gain for a specified role
