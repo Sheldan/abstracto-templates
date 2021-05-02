@@ -1,0 +1,1 @@
+Everyone role not allowed to be used as a role.
