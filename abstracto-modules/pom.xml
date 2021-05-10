@@ -29,6 +29,7 @@
         <module>suggestion</module>
         <module>webservices</module>
         <module>logging</module>
+        <module>invite-filter</module>
     </modules>
 
 </project>

@@ -1,5 +1,5 @@
 Makes the given role affected by certain commands like `ban`, `warn` or `mute`.
-When a feature name is used, all commands of this feature will be changed.
-Not all commands actually support this functionality.
+This is done by 'effects', an effect is something which can be applied to members, and all the available effects can be
+shown via the command `showEffects`.
 By default all roles are affected by the commands.
 The provided role can either be a role ID or a the mention of the role.

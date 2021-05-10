@@ -1,0 +1,1 @@
+Getting kicked from the server

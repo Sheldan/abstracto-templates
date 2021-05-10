@@ -1,1 +1,1 @@
-Makes a role affected by certain commands/features
+Makes a role affected by effects

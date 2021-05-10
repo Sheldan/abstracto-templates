@@ -46,21 +46,19 @@
 </#if>
 <#if restricted?? && restricted>
 <@safe_include "help_command_embed_command_executable_by"/>:<#if allowedRoles??> <#list allowedRoles as allowedRole> ${allowedRole.asMention?json_string}<#sep><@safe_include "help_command_embed_or"/><#else><@safe_include "help_command_embed_command_executable_by_nobody"/></#list> </#if>
-<#if immuneRoles?? ><@safe_include "help_command_embed_command_immune"/>: <#list immuneRoles as immuneRole> ${immuneRole.asMention?json_string}<#sep><@safe_include "help_command_embed_or"/><#else><@safe_include "help_command_embed_command_immune_none"/></#list> </#if>
 <#else>
 <@safe_include "help_command_embed_command_not_restricted"/>
 </#if>
+
+<#if effects??><@safe_include "help_command_embed_command_effects"/>: <#list effects as effect> <@safe_include "effect_type_${effect}"/><#sep>,<#else><@safe_include "help_command_embed_command_effects_none"/></#list> </#if>
 
 </#if>
 **<@safe_include "help_command_embed_command_parameters"/>**:
 <#if command.parameters??>
 <#list command.parameters as parameter><#assign parameter=parameter>
-<@safe_include "help_command_embed_command_description"/> `${parameter.name?json_string}`: <#if parameter.templated?? && parameter.templated><@safe_include "${command.name}_parameter_${parameter.name}"/><#else>${(parameter.description?json_string)!""}</#if>
-<#list parameter.validators as validator><#assign validator=validator><#assign model=validator.templateModel/><@safe_include "${validator.templateName}"/>
-</#list>
-
-<@safe_include "help_command_embed_command_optional"/><#sep>
-
+<@safe_include "help_command_embed_command_description"/> `${parameter.name?json_string}`: <#if parameter.templated?? && parameter.templated><@safe_include "${command.name}_parameter_${parameter.name}"/><#else>${(parameter.description?json_string)!""}</#if> <@safe_include "help_command_embed_command_optional"/>
+<#list parameter.validators as validator><#assign validator=validator><#assign model=validator.templateModel/><@safe_include "${validator.templateName}"/></#list>
+<#sep>
 <#else>
 <@safe_include "help_command_embed_command_no_parameters"/>
 </#list>

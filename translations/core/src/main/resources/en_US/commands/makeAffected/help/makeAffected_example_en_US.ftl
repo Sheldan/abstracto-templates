@@ -1,1 +1,1 @@
-`makeAffected ban @Staff` in order so the role `Staff` can be banned via the command (where @Staff is a role mention)
+`makeAffected ban @Staff` in order so the role `Staff` can be banned (where @Staff is a role mention)

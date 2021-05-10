@@ -1,0 +1,1 @@
+The effect to make the role immune against.

@@ -1,1 +1,1 @@
-Optional: ${parameter.optional?string('yes', 'no')}
+${parameter.optional?string('(Optional)', '')}

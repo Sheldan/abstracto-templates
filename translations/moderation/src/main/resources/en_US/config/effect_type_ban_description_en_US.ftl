@@ -1,0 +1,1 @@
+Getting banned from the server

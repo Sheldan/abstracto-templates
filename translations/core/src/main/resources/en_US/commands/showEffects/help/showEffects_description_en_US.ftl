@@ -1,0 +1,1 @@
+Shows the currently possible effects
