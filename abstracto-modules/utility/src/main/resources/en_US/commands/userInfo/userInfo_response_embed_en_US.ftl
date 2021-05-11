@@ -23,12 +23,12 @@
   },
   {
         "name": "<@safe_include "userInfo_response_embed_joined_field_title"/>",
-        "value": "${formatDate(memberInfo.timeJoined, "yyyy-MM-dd HH:mm:ss")}",
+        "value": "${formatDate(memberInfo.timeJoined, "yyyy-MM-dd HH:mm:ss zz")}",
         "inline": "true"
   },
   {
         "name": "<@safe_include "userInfo_response_embed_registered_field_title"/>",
-        "value": "${formatDate(memberInfo.timeCreated, "yyyy-MM-dd HH:mm:ss")}",
+        "value": "${formatDate(memberInfo.timeCreated, "yyyy-MM-dd HH:mm:ss zz")}",
         "inline": "true"
   }
   <#if memberInfo.activities?size gt 0>

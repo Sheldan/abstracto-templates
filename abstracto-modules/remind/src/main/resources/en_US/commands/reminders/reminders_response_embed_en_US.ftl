@@ -12,7 +12,7 @@
            <#list reminders as reminderDisplay><#assign reminderDisplay=reminderDisplay/>
                {
                <#assign id>${reminderDisplay.reminder.id}</#assign>
-               <#assign reminderTargetDate>${formatDate(reminderDisplay.reminder.targetDate,"yyyy-MM-dd HH:mm:ss")}</#assign>
+               <#assign reminderTargetDate>${formatDate(reminderDisplay.reminder.targetDate,"yyyy-MM-dd HH:mm:ss zz")}</#assign>
                <#assign reminderText=reminderDisplay.reminder.text/>
                <#assign messageLink=reminderDisplay.message.jumpUrl/>
                 "name": "<@safe_include "reminders_reminder_field_title"/>",

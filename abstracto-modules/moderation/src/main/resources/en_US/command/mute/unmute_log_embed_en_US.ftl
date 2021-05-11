@@ -32,7 +32,7 @@
     },
     {
         "name": "<@safe_include "unMute_log_muted_since_field_title"/>",
-        "value": "${formatDate(mute.muteDate, "yyyy-MM-dd HH:mm:ss")}"
+        "value": "${formatDate(mute.muteDate, "yyyy-MM-dd HH:mm:ss zz")}"
     },
     {
         "name": "<@safe_include "mute_log_mute_duration_field_title"/>",

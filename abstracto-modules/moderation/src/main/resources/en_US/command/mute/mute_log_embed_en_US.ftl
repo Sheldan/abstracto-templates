@@ -29,7 +29,7 @@
     },
     {
         "name": "<@safe_include "mute_log_muted_until_field_title"/>",
-        "value": "${formatDate(muteTargetDate, "yyyy-MM-dd HH:mm:ss")}"
+        "value": "${formatDate(muteTargetDate, "yyyy-MM-dd HH:mm:ss zz")}"
     }
   ],
   "footer": {
