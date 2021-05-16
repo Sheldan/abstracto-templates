@@ -1,0 +1,1 @@
+The channel in which detected profanities should be logged to. Currently: ${currentTarget}

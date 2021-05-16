@@ -1,0 +1,1 @@
+The amount of votes necessary to decide a profanity report. Default: ${defaultValue}

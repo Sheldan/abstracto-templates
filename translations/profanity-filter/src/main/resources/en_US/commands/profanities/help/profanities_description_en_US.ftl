@@ -1,0 +1,1 @@
+Shows a overview over the profanities of a member
