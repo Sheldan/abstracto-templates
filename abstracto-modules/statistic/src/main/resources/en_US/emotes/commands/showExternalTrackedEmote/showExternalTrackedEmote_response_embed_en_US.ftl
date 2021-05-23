@@ -10,7 +10,7 @@
       },
       {
           "name": "<@safe_include "showExternalTrackedEmote_response_embed_emote_id_field_title"/>",
-          "value": "${trackedEmoteId.emoteId?c}"
+          "value": "${trackedEmoteId.id?c}"
       },
       {
           "name": "<@safe_include "showExternalTrackedEmote_response_embed_link_field_title"/>",
