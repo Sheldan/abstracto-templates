@@ -1,1 +1,1 @@
-Shows you your current experience information.
+Shows yours or others experience in this server

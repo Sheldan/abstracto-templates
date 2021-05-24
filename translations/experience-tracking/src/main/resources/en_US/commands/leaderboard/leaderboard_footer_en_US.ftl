@@ -1,0 +1,1 @@
+Use leaderboard <page> to view more of the leaderboard
