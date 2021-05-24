@@ -1,0 +1,1 @@
+The channel the suggestion reminder should be posted in. Currently: ${currentTarget}
