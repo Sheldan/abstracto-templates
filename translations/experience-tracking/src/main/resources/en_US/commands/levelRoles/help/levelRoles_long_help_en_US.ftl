@@ -1,0 +1,1 @@
+Shows the current configuration at which level which role is awarded

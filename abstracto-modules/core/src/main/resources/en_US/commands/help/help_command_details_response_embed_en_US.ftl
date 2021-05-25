@@ -57,7 +57,9 @@
 <#if command.parameters??>
 <#list command.parameters as parameter><#assign parameter=parameter>
 <@safe_include "help_command_embed_command_description"/> `${parameter.name?json_string}`: <#if parameter.templated?? && parameter.templated><@safe_include "${command.name}_parameter_${parameter.name}"/><#else>${(parameter.description?json_string)!""}</#if> <@safe_include "help_command_embed_command_optional"/>
-<#list parameter.validators as validator><#assign validator=validator><#assign model=validator.templateModel/><@safe_include "${validator.templateName}"/></#list>
+<#list parameter.validators as validator><#assign validator=validator><#assign model=validator.templateModel/><@safe_include "${validator.templateName}"/>
+
+</#list>
 <#sep>
 <#else>
 <@safe_include "help_command_embed_command_no_parameters"/>
