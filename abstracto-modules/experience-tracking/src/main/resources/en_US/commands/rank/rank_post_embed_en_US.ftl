@@ -5,17 +5,17 @@
   "fields": [
     {
         "name": "<@safe_include "rank_xp_field_title"/>",
-        "value": "${rankUser.experience.experience}",
+        "value": "${rankUser.experience}",
         "inline": "true"
     },
     {
         "name": "<@safe_include "rank_level_field_title"/>",
-        "value": "${rankUser.experience.currentLevel.level}",
+        "value": "${rankUser.level}",
         "inline": "true"
     },
     {
         "name": "<@safe_include "rank_messages_field_title"/>",
-        "value": "${rankUser.experience.messageCount}",
+        "value": "${rankUser.messageCount}",
         "inline": "true"
     },
     {
