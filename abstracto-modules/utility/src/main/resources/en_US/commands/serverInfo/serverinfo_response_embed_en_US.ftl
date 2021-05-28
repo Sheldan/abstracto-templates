@@ -30,6 +30,16 @@
             "inline": "true"
       },
       {
+            "name": "<@safe_include "serverinfo_embed_text_channel_count_field_title"/>",
+            "value": "${guild.textChannels?size}",
+            "inline": "true"
+      },
+      {
+            "name": "<@safe_include "serverinfo_embed_voice_channel_count_field_title"/>",
+            "value": "${guild.voiceChannels?size}",
+            "inline": "true"
+      },
+      {
             "name": "<@safe_include "serverinfo_embed_emote_count_title"/>",
             "value": "${guild.emotes?size}",
             "inline": "true"
@@ -41,7 +51,7 @@
       },
       {
             "name": "<@safe_include "serverinfo_embed_features_field_title"/>",
-            "value": "<#list guild.features as feature>${feature}<#else><@safe_include "serverinfo_embed_features_no_features"/></#list>",
+            "value": "<#list guild.features as feature>${feature}<#sep>, <#else><@safe_include "serverinfo_embed_features_no_features"/></#list>",
             "inline": "true"
       }
   ]
