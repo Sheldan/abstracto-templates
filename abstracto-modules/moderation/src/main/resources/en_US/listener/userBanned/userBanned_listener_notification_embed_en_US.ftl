@@ -5,7 +5,7 @@
   "fields": [
     {
       "name": "Banned user",
-      "value": ""<@user_detail user=unBannedUser/>"
+      "value": ""<@user_detail user=bannedUser/>"
     }
     <#if banningUser??>
     ,

@@ -12,7 +12,7 @@
     {
       "name": "<@safe_include "unMute_log_unmuted_user_field_title"/>",
       <#if unMutedUser?has_content>
-        "value": "<@full_member_info member=mutingUser/>"
+        "value": "<@full_member_info member=unMutedUser/>"
       <#else>
         "value": "<@safe_include "user_left_server"/> (${mute.mutedUser.userReference.id?c})"
       </#if>
