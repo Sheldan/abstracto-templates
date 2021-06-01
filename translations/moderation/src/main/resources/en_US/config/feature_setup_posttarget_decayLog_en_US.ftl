@@ -1,1 +1,1 @@
-The channel in which decayed warnings should be logged to. Currently: ${currentTarget}
+The channel to which decayed warnings should be logged to. Currently: ${currentTarget}

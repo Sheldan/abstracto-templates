@@ -1,0 +1,1 @@
+The channel to which report reactions notifications should be posted to. Currently: ${currentTarget}

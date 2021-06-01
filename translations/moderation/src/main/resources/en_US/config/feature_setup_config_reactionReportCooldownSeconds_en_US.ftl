@@ -1,0 +1,1 @@
+The amount of seconds a report will not be re-created, but the report count incremented. Default: ${defaultValue}
