@@ -1,0 +1,1 @@
+The text the user note should have

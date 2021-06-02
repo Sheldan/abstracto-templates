@@ -1,0 +1,1 @@
+This command can be used to delete individual user notes via their ID.
