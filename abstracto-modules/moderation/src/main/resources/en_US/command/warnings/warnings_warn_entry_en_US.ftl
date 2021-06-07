@@ -7,5 +7,5 @@
 <#include "warnings_warn_entry_text">
 <#if warning.warning.decayed>
 <#assign decayDate>${formatDate(warning.warning.decayDate, "yyyy-MM-dd HH:mm:ss zz")}</#assign>
-<#include "warnings_warn_is_decayed">
+ <#include "warnings_warn_is_decayed">
 </#if>
