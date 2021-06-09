@@ -26,10 +26,12 @@
                 "value": "<@safe_include "user_left_server"/> (${mute.mutingUser.userReference.id?c})"
          </#if>
     },
+    <#if messageUrl??>
     {
         "name": "<@safe_include "mute_log_mute_location_field_title"/>",
         "value": "[Link](${messageUrl})"
     },
+    </#if>
     {
         "name": "<@safe_include "unMute_log_muted_since_field_title"/>",
         "value": "${formatDate(mute.muteDate, "yyyy-MM-dd HH:mm:ss zz")}"
