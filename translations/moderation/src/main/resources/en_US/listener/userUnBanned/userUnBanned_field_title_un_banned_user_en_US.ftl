@@ -1,1 +1,1 @@
-Un-banned user
+Unbanned user

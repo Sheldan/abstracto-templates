@@ -1,1 +1,1 @@
-User was un-banned.
+User was unbanned.
