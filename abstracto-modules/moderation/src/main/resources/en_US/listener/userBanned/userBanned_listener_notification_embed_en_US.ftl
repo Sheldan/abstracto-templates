@@ -1,23 +1,23 @@
 {
   <#include "user_detail">
   <#include "abstracto_color">,
-  "description" : "User was banned.",
+  "description" : "<@safe_include "userBanned_description"/>",
   "fields": [
     {
-      "name": "Banned user",
-      "value": ""<@user_detail user=bannedUser/>"
+      "name": "<@safe_include "userBanned_field_title_banned_user"/>",
+      "value": "<@user_detail user=bannedUser/>"
     }
     <#if banningUser??>
     ,
     {
-        "name": "Banning user",
+        "name": "<@safe_include "userBanned_field_title_banning_user"/>",
         "value": "<@user_detail user=banningUser/>"
     }
     </#if>
     <#if reason??>
     ,
     {
-        "name": "reason",
+        "name": "<@safe_include "userBanned_field_title_reason"/>",
         "value": "${reason}"
     }
     </#if>

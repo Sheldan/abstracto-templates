@@ -1,16 +1,16 @@
 {
   <#include "user_detail">
   <#include "abstracto_color">,
-  "description" : "User was un-banned.",
+  "description" : "<@safe_include "userUnBanned_description"/>",
   "fields": [
     {
-      "name": "Un-Banned user",
+      "name": "<@safe_include "userUnBanned_field_title_un_banned_user"/>",
       "value": "<@user_detail user=unBannedUser/>"
     }
     <#if unBanningUser??>
     ,
     {
-        "name": "Un-banning user",
+        "name": "<@safe_include "userUnBanned_field_title_un_banning_user"/>",
         "value": "<@user_detail user=unBanningUser/>"
     }
     </#if>

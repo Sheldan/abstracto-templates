@@ -2,7 +2,7 @@
   <#include "user_detail">
   <#include "full_member_info">
   "title": {
-    "title": "<@safe_include "ban_log_title"/>"
+    "title": "<@safe_include "unBan_log_title"/>"
   },
   <#include "moderation_action_color">,
   "fields": [
