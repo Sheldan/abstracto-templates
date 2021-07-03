@@ -1,1 +1,1 @@
-Sets the category under which the mod mail threads should be created.
+Sets the category under which the modmail threads should be created.

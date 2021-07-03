@@ -1,1 +1,1 @@
-The note with which this mod mail thread is being closed.
+The note with which this modmail thread is being closed.

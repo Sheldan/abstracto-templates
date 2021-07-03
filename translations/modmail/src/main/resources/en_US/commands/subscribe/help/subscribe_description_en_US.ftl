@@ -1,1 +1,1 @@
-Subscribes to the current mod mail thread.
+Subscribes to the current modmail thread.

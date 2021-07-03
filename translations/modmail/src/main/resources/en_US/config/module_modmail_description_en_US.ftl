@@ -1,1 +1,1 @@
-Commands to be used for mod mail.
+Commands to be used for modmail.

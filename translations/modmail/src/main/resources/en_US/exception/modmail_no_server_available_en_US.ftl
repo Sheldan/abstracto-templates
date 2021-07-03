@@ -1,1 +1,1 @@
-No server for mod mail available.
+No server for modmail available.

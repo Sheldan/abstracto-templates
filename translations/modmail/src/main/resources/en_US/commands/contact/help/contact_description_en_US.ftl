@@ -1,1 +1,1 @@
-Opens a mod mail thread with the given user.
+Opens a modmail thread with the given user.

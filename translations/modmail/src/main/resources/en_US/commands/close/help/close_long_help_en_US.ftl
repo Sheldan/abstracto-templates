@@ -1,1 +1,1 @@
-Closes the mod mail thread, which  means: logging the messages to mod mail log (if `modmail_logging` is enabled), deleting the channel the thread was in and notifying the use that the thread was closed.
+Closes the modmail thread, which  means: logging the messages to modmail log (if `modmail_logging` is enabled), deleting the channel the thread was in and notifying the use that the thread was closed.

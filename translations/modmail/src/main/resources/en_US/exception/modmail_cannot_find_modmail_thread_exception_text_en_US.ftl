@@ -1,1 +1,1 @@
-Cannot find mod mail thread with id ${id}.
+Cannot find modmail thread with id ${id}.

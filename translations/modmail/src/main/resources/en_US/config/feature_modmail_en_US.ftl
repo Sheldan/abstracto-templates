@@ -1,1 +1,1 @@
-Mod mail
+Modmail

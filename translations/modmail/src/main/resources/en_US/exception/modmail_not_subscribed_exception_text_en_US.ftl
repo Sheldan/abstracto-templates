@@ -1,1 +1,1 @@
-You are not subscribed to this mod mail thread.
+You are not subscribed to this modmail thread.
