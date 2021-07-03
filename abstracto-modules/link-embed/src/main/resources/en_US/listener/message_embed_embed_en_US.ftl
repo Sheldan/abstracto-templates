@@ -41,5 +41,17 @@
     }
     </#if>
   ],
+  <#if useButton>
+  "buttons": [
+    {
+        "label": "<@safe_include "message_embed_button_delete"/>",
+        "id": "${buttonConfigModel.buttonId}",
+        "buttonStyle": "danger",
+        "metaConfig": {
+            "persistCallback": false
+        }
+    }
+  ],
+  </#if>
   "timeStamp": "${embeddedMessage.timeCreated}"
 }

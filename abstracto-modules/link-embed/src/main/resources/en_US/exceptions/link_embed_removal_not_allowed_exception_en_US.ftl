@@ -1,0 +1,1 @@
+<#include "link_embed_removal_not_allowed_exception_text">
