@@ -14,6 +14,6 @@
    </#if>
    <#if subscribers?size gt 0>
    <#if postedMessage.contentRaw?has_content || postedMessage.attachments?size gt 0>,</#if>
-   "additionalMessage": "<#list subscribers as subscriber>${subscriber.member.asMention?json_string}<#sep>,</#list>"
+   "additionalMessage": "<#list subscribers as subscriber>${subscriber.asMention?json_string}<#sep>, </#list>"
    </#if>
 }
