@@ -1,0 +1,1 @@
+<#include "ban_notification_not_possible_text">
