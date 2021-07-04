@@ -1,1 +1,1 @@
-You are already subscribed to this mod mail thread.
+You are already subscribed to this modmail thread.

@@ -1,1 +1,1 @@
-Mod mail thread has been closed
+Modmail thread has been closed.

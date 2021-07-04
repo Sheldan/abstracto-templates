@@ -1,1 +1,1 @@
-The channel towards which the closed mod mail threads should be logged to. (In the appropriate mode) Currently: ${currentTarget}
+The channel towards which the closed modmail threads should be logged to. (In the appropriate mode) Currently: ${currentTarget}

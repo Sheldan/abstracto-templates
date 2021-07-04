@@ -1,1 +1,1 @@
-The channel which should be used to notify the responsible people about new mod mail threads. Currently: ${currentTarget}
+The channel which should be used to notify the responsible people about new modmail threads. Currently: ${currentTarget}

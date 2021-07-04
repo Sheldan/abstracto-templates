@@ -1,1 +1,1 @@
-Mod mail category is not correctly set up.
+Modmail category is not correctly set up.

@@ -1,1 +1,1 @@
-Failed to create mod mail thread.
+Failed to create modmail thread.

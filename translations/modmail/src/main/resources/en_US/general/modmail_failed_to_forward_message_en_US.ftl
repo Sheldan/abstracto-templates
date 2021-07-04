@@ -1,1 +1,1 @@
-Failed to forward message. Existing mod mail thread has been deleted. Send another message to start a new one.
+Failed to forward message. Existing modmail thread has been deleted. Send another message to start a new one.

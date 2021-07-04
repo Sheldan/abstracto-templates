@@ -1,1 +1,1 @@
-A new mod mail thread has been opened.
+A new modmail thread has been opened.

@@ -1,1 +1,1 @@
-Closes the mod mail thread and notifies the user.
+Closes the modmail thread and notifies the user.

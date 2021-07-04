@@ -1,1 +1,1 @@
-The category id to be used for creating mod mail text channels.
+The category id to be used for creating modmail text channels.

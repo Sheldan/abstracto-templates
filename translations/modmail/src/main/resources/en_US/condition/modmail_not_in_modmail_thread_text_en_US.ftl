@@ -1,1 +1,1 @@
-Not in a mod mail thread.
+Not in a modmail thread.
