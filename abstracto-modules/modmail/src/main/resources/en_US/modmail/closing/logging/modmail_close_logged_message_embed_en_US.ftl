@@ -1,6 +1,6 @@
 {
-  <#include "member_author">
-  <@member_author member=author/>,
+  <#include "user_author">
+  <@user_author user=author/>,
   <#include "modmail_color">
   <#if message.embeds[0].description?has_content>
   ,"description": "${message.embeds[0].description?json_string}"
