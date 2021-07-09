@@ -1,1 +1,1 @@
-Creates the messages containing the assignable roles in the description and the emotes as reactions
+Creates the message containing the assignable roles in the description and the buttons (if any).

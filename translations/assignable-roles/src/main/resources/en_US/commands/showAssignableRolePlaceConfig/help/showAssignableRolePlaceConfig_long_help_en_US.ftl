@@ -1,0 +1,2 @@
+Shows all of the possible configurations of the given assignable role place.
+This includes: the assignable roles (emote, description and awarded role), where or not the place is configured as `unique` and which limitations the roles have.

@@ -1,1 +1,1 @@
-The configuration which should be changed, can either be `inline`, `autoRemove`, `active` or `unique`. This key is not case sensitive.
+The configuration which should be changed, can only be `unique`. This key is not case sensitive.

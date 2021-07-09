@@ -1,1 +1,0 @@
-Switches the embed appearance of the roles for a assignable role place to be more spread out

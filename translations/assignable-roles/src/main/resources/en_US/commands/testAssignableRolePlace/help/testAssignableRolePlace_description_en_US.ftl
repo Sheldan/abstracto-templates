@@ -1,1 +1,0 @@
-Tests an assignable role place and displays how it would look

@@ -1,1 +1,1 @@
-The emote to be used for reactions. This emote can be a default emote or an emote in a server the bot is in.
+The emote to be used for the button. This can be a default emoji or an emote of a server the bot is in.

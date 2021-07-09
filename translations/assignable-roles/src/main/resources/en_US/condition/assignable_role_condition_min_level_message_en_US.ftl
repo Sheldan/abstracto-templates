@@ -1,0 +1,1 @@
+You need to be at least level ${minLevel} to receive the role ${roleMention}.

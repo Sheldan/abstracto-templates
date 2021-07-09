@@ -1,1 +1,0 @@
-#${rolePosition}: ${emoteMention} with ${roleMention}: `${roleDescription}`.

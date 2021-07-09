@@ -1,2 +1,1 @@
-Moves the assignable role place to another channel.
-This change only comes into effect the next time the assignable role place is setup the next time.
+Moves the assignable role place to another channel and is execute immediately if the assignable role place is already setup.

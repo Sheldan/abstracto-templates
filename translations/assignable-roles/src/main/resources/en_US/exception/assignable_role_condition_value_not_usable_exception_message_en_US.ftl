@@ -1,0 +1,1 @@
+The given value is not usable for the assignable role condition.

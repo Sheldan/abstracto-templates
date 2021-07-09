@@ -1,1 +1,1 @@
-Activates an assignable role place again, meaning reacting to the reactions will assign the configured roles.
+Activates the buttons for an assignable role place again.

@@ -1,1 +1,1 @@
-Activates an assignable role place again, meaning reacting to the reactions will not assign the configured roles and will automatically remove any added reactions.
+Deactivates the buttons of an assignable role place again.

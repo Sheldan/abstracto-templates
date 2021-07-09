@@ -1,1 +1,1 @@
-Activates an assignable place
+Activates an assignable role place

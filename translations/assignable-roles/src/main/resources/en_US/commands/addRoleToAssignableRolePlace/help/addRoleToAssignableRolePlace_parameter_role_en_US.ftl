@@ -1,1 +1,1 @@
-The role to assign the member reacting.
+The role to assign the member clicking.

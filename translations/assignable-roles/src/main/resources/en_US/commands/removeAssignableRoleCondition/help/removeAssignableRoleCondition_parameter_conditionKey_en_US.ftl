@@ -1,0 +1,1 @@
+The condition to remove. Only supported value is `min_level`

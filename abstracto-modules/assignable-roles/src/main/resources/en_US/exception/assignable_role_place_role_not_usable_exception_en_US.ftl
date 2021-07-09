@@ -1,1 +1,0 @@
-<#assign roleMention=model.role.roleRepr/><#include "assignable_role_place_role_not_usable_exception_text">

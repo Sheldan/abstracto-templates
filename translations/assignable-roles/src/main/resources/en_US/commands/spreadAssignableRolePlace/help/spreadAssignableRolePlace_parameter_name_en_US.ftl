@@ -1,1 +1,0 @@
-The name of the assignable place in which the emotes should be displayed spread out.

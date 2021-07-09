@@ -1,1 +1,0 @@
-Swaps the position of two emotes in an assignable place

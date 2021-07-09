@@ -1,0 +1,1 @@
+${roleMention}: `${roleDescription}`. ${emoteMention} ${conditionText}

@@ -1,1 +1,0 @@
-User ${userId} was not found in the assigned users.
