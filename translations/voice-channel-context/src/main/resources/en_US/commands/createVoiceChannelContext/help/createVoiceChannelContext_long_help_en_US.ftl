@@ -1,0 +1,2 @@
+This command can be used to link a voice channel to a role. This means, that the role will be added to the members who join this voice channel.
+The role can then be used to provide 'view channel' permission to another channel to be used as a context channel.

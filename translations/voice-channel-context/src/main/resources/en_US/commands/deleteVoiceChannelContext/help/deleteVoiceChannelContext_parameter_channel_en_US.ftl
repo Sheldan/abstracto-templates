@@ -1,0 +1,2 @@
+The voice channel for which a voice channel context should be removed. You can mention voice channels by typing '#!' and then continuing with the voice channel name.
+The name or the channel ID is also a possibility.
