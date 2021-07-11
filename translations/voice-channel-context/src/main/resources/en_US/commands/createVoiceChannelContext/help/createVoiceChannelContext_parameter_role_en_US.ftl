@@ -1,1 +1,1 @@
-The role to apply to members joining to the voice channel
+The role to apply to members joining the voice channel
