@@ -1,1 +1,1 @@
-This command can be used to remove a voice channel context. So that the given voice channel does not have a role associated with it.
+This command can be used to remove a voice channel context so that the given voice channel does not have a role associated with it.
