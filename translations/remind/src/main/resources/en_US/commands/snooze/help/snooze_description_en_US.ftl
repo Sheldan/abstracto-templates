@@ -1,1 +1,1 @@
-Re-schedules a reminder
+Reschedules a reminder

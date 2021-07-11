@@ -1,1 +1,1 @@
-Un-bans users via ID
+Unbans users via ID

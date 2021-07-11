@@ -1,1 +1,1 @@
-The use to open a modmail thread for.
+The user to open a modmail thread for.

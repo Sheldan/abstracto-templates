@@ -1,3 +1,3 @@
 Shows the currently configured feature modes and their respective configuration: Whether or not they are enabled or not and if they are part of the default configuration.
 If the current value is part of the default configuration, this means that if the default config is changed, this value changes as well.
-If its not part of the default configuration, this means that this value was chosen for the server and that it will not be changed if the default configuration changes
+If it's not part of the default configuration, this means that this value was chosen for the server and that it will not be changed if the default configuration changes

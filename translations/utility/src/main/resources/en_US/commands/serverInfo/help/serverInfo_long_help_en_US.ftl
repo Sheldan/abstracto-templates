@@ -1,1 +1,1 @@
-Shows the ID, owner, member count, role count, features and emotes of the server.
+Shows the ID, owner, member count, role count, voice and text channels count, creation time, features and emotes of the server.

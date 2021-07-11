@@ -1,1 +1,1 @@
-Command cool downs
+Command cooldowns

@@ -1,1 +1,1 @@
-The ID of the reminder you want to re-schedule
+The ID of the reminder you want to reschedule

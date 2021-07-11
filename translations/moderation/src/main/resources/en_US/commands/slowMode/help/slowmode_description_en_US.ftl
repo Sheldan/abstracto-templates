@@ -1,1 +1,1 @@
-Sets the slow mode of the the current (or given channel) to the given duration.
+Sets the slow mode of the current (or given channel) to the given duration.

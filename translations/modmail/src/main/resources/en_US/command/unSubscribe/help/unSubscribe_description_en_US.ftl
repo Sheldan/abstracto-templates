@@ -1,1 +1,1 @@
-Un-subscribes from the current modmail thread.
+Unsubscribes from the current modmail thread.

@@ -1,1 +1,1 @@
-Shows 10 places of the leader board of this server.
+Shows 10 places of the leaderboard of this server.

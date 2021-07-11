@@ -1,1 +1,1 @@
-The channel to which un-bans should be logged to. Currently: ${currentTarget}
+The channel to which unbans should be logged to. Currently: ${currentTarget}

@@ -1,1 +1,1 @@
-Shows the current leader board of starboard posts
+Shows the current leaderboard of starboard posts

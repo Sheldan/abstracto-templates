@@ -1,1 +1,1 @@
-Prints the latency between the bot and discord.
+Prints the latency between the bot and Discord.
