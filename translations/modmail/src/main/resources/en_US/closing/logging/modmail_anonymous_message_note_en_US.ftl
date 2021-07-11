@@ -1,1 +1,1 @@
-The following message was sent anonymous.
+The following message was sent anonymously.

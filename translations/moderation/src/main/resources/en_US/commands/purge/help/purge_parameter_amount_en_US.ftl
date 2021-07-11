@@ -1,1 +1,1 @@
-Amount of messages do delete.
+Amount of messages to delete.

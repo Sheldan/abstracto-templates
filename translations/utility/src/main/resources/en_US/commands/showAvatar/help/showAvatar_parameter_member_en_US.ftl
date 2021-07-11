@@ -1,1 +1,1 @@
-The member you want to see the avatar for. If not provided will use the member executing the command.
+The member you want to see the avatar for. If not provided it will use the member executing the command.

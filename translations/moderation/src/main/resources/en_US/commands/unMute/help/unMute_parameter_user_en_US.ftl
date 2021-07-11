@@ -1,1 +1,1 @@
-The member to un-mute.
+The member to unmute.

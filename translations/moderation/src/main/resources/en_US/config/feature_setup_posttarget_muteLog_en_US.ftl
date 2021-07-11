@@ -1,1 +1,1 @@
-The channel to which mutes should be logged to. Un-mutes will also be in this channel. Currently: ${currentTarget}
+The channel to which mutes should be logged to. Unmutes will also be in this channel. Currently: ${currentTarget}

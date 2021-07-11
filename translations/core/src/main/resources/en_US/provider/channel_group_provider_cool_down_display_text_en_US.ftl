@@ -1,2 +1,2 @@
-Channel cool down: ${channelCoolDown}
-Member cool down: ${memberCoolDown}
+Channel cooldown: ${channelCoolDown}
+Member cooldown: ${memberCoolDown}

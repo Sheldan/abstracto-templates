@@ -1,1 +1,1 @@
-Creates notes for  members of the server
+Creates notes for members of the server

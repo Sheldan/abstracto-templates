@@ -1,2 +1,2 @@
 This command can be used to delete a suggestion. This is only possible by the creator of the suggestion and for a certain period after the suggestion has been created (default 1 hour).
-This will delete the message containing the suggestion and from the database. No further action is possible on this suggestion.
+This will delete the message containing the suggestion and remove it from the database. No further action is possible on this suggestion.
