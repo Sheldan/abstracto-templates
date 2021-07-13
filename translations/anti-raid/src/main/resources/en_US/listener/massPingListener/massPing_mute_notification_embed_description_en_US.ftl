@@ -1,0 +1,1 @@
+${memberMention} was muted for mentioning ${mentionCount} members.

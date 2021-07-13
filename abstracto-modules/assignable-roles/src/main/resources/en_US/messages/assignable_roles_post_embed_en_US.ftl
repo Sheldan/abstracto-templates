@@ -7,7 +7,7 @@
       {
           "label": "${role.description?json_string}",
           "id": "${role.componentId}",
-          "buttonStyle": "primary",
+          "buttonStyle": "secondary",
           <#if role.emoteMarkDown??>
           "emoteMarkdown": "${role.emoteMarkDown?json_string}",
           </#if>

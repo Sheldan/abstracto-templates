@@ -32,6 +32,7 @@
         <module>invite-filter</module>
         <module>profanity-filter</module>
         <module>voice-channel-context</module>
+        <module>anti-raid</module>
     </modules>
 
 </project>

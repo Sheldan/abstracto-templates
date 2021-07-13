@@ -1,0 +1,1 @@
+The channel in which mass ping mutes should be logged to. Currently: ${currentTarget}
