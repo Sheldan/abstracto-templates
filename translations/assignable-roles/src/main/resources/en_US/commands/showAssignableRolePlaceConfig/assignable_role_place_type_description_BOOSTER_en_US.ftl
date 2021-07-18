@@ -1,0 +1,1 @@
+This is a booster only assignable role place.

@@ -1,0 +1,1 @@
+This is a normal assignable role place.

@@ -1,0 +1,1 @@
+Defines the type of this assignable role place. Possible values `default` and `booster`.
