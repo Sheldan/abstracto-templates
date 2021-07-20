@@ -1,0 +1,1 @@
+${randomText?substring(0, 10)}
