@@ -1,1 +1,1 @@
-<#include "assignable_role_booster_place_member_not_boosted_exception_message">
+<#include "assignable_role_booster_place_member_not_boosting_exception_message">
