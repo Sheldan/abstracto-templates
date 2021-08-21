@@ -15,12 +15,12 @@
   },
   {
         "name": "<@safe_include "profanityListener_report_embed_profanity_type_field_title"/>",
-        "value": "${profanityGroupKey}",
+        "value": "${profanityGroupKey?json_string}",
         "inline": "true"
   },
   {
         "name": "<@safe_include "profanityListener_report_embed_message_content_field_title"/>",
-        "value": "${profaneMessage.contentRaw}",
+        "value": "${profaneMessage.contentRaw?json_string}",
         "inline": "true"
   }
   ]
