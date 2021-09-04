@@ -53,5 +53,13 @@
     }
   ],
   </#if>
+  <#if mentionsReferencedMessage?has_content>
+  "metaConfig": {
+    "mentionsReferencedMessage": ${mentionsReferencedMessage?string('true', 'false')}
+  },
+  </#if>
   "timeStamp": "${embeddedMessage.timeCreated}"
+  <#if referencedMessageId?has_content>
+    ,"referencedMessageId": "${referencedMessageId?c}"
+  </#if>
 }
