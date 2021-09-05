@@ -1,19 +1,25 @@
 {
   <#assign id>${suggestionId}</#assign>
   "additionalMessage": "<@safe_include "suggest_state_${state?lower_case}_comment"/>",
-  <#if reason?has_content || message?? && message.attachments?size gt 0>
-      <#include "abstracto_color">,
-      <#if message?? && message.attachments?size gt 0>
-        "imageUrl": "${message.attachments[0].proxyUrl}",
-      </#if>
-      <#if reason?has_content>
-      "fields": [
-        {
-            "name": "<@safe_include "suggest_reason_field_title"/>",
-            "value": "${reason?json_string}"
-        }
-      ],
-      </#if>
+  <#include "abstracto_color">,
+  <#if message?? && message.attachments?size gt 0>
+    "imageUrl": "${message.attachments[0].proxyUrl}",
   </#if>
+  "fields": [
+  <#if reason?has_content>
+    {
+        "name": "<@safe_include "suggest_reason_field_title"/>",
+        "value": "${reason?json_string}"
+    },
+  </#if>
+    {
+        "name": "<@safe_include "suggestion_agreements_field_title"/>",
+        "value": "${agreeVotes?c}"
+    },
+    {
+        "name": "<@safe_include "suggestion_disagreements_field_title"/>",
+        "value": "${disAgreeVotes?c}"
+    }
+  ],
   "referencedMessageId": "${originalMessageId?c}"
 }

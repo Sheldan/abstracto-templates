@@ -1,0 +1,1 @@
+There are ${agreements} agreeing and ${disagreements} disagreeing members.

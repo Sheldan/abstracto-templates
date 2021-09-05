@@ -1,0 +1,1 @@
+Your vote has been reset.
