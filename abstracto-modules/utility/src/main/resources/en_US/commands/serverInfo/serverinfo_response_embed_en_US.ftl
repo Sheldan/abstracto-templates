@@ -45,8 +45,13 @@
             "inline": "true"
       },
       {
-            "name": "<@safe_include "serverinfo_embed_emotes_title"/>",
-            "value": "<#list guild.emotes as emote>${emote.asMention}<#sep> <#else><@safe_include "serverinfo_embed_emotes_no_emotes"/></#list>",
+            "name": "<@safe_include "serverinfo_embed_static_emotes_title"/>",
+            "value": "<#list staticEmotes as emote>${emote.markDown}<#sep> <#else><@safe_include "serverinfo_embed_emotes_no_emotes"/></#list>",
+            "inline": "true"
+      },
+      {
+            "name": "<@safe_include "serverinfo_embed_animated_emotes_title"/>",
+            "value": "<#list animatedEmotes as emote>${emote.markDown}<#sep> <#else><@safe_include "serverinfo_embed_emotes_no_emotes"/></#list>",
             "inline": "true"
       },
       {
