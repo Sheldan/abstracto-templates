@@ -1,0 +1,1 @@
+Do you really want to reset the emote stats?

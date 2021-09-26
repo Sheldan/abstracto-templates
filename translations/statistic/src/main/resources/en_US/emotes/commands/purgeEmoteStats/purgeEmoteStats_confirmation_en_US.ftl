@@ -1,0 +1,1 @@
+Do you really want to purge the emote stats?

@@ -1,0 +1,1 @@
+Dou you really want to purge reports?
