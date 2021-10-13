@@ -1,3 +1,4 @@
+<#include "format_instant">
 {
   <#include "member_author">
   <@member_author member=memberInfo/>,
@@ -23,12 +24,12 @@
   },
   {
         "name": "<@safe_include "userInfo_response_embed_joined_field_title"/>",
-        "value": "${formatDate(memberInfo.timeJoined, "yyyy-MM-dd HH:mm:ss zz")}",
+        "value": "<@format_instant_date_time instant=joinDate/>",
         "inline": "true"
   },
   {
         "name": "<@safe_include "userInfo_response_embed_registered_field_title"/>",
-        "value": "${formatDate(memberInfo.timeCreated, "yyyy-MM-dd HH:mm:ss zz")}",
+        "value": "<@format_instant_date_time instant=creationDate/>",
         "inline": "true"
   }
   <#if memberInfo.activities?size gt 0>

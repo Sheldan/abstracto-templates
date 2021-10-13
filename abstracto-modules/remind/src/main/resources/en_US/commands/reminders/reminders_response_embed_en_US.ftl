@@ -1,3 +1,4 @@
+<#include "format_instant">
 {
   <#include "member_author">
   <@member_author member=member/>,
@@ -12,7 +13,7 @@
            <#list reminders as reminderDisplay><#assign reminderDisplay=reminderDisplay/>
                {
                <#assign id>${reminderDisplay.reminder.id}</#assign>
-               <#assign reminderTargetDate>${formatDate(reminderDisplay.reminder.targetDate,"yyyy-MM-dd HH:mm:ss zz")}</#assign>
+               <#assign reminderTargetDate><@format_instant_date_time instant=reminderDisplay.reminder.targetDate/></#assign>
                <#assign reminderText=reminderDisplay.reminder.text/>
                <#assign messageLink=reminderDisplay.message.jumpUrl/>
                 "name": "<@safe_include "reminders_reminder_field_title"/>",

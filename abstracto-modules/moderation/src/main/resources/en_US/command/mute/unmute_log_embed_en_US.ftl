@@ -1,5 +1,6 @@
+<#include "full_member_info">
+<#include "format_instant">
 {
-  <#include "full_member_info">
   <#if unMutedUser?has_content>
       <#include "member_author">
       <@member_author member=unMutedUser/>,
@@ -34,7 +35,7 @@
     </#if>
     {
         "name": "<@safe_include "unMute_log_muted_since_field_title"/>",
-        "value": "${formatDate(mute.muteDate, "yyyy-MM-dd HH:mm:ss zz")}"
+        "value": "<@format_instant_date_time instant=mute.muteDate/>"
     },
     {
         "name": "<@safe_include "mute_log_mute_duration_field_title"/>",

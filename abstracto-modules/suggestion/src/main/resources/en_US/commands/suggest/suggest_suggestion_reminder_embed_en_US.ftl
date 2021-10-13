@@ -1,6 +1,7 @@
+<#include "format_instant">
 {
   <#assign suggestionId=suggestionId>
-  <#assign suggestionDate>${formatDate(suggestionCreationDate, "yyyy-MM-dd HH:mm:ss zz")}</#assign>
+  <#assign suggestionDate><@format_instant_date_time instant=suggestionCreationDate/></#assign>
   <#assign suggestionLink=suggestionMessage.jumpUrl>
   <#assign agreements=suggestionInfo.agreements>
   <#assign disagreements=suggestionInfo.disagreements>
