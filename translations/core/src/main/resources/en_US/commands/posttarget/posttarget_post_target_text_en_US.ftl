@@ -1,1 +1,1 @@
-Post target ${postTargetName} points to ${channelMention}.
+Post target ${postTargetName} points to ${channelMention}. (${statusIndicator})

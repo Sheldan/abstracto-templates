@@ -1,0 +1,1 @@
+The amount of days after which reactions for starboard are ignored after. Default: ${defaultValue}

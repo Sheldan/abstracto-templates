@@ -1,0 +1,1 @@
+${memberMention} raised to a new level ${newLevel} on infractions with ${newPoints}.
