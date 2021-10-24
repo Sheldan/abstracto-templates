@@ -1,1 +1,0 @@
-Deletes messages of a member and kicks them
