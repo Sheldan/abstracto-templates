@@ -1,3 +1,4 @@
+<#include "format_instant">
 {
   "title": {
     "title": "<#assign name=guild.name><@safe_include "serverinfo_embed_title"/>"
@@ -26,7 +27,7 @@
       },
       {
             "name": "<@safe_include "serverinfo_embed_created_field_title"/>",
-            "value": "${guild.timeCreated}",
+            "value": "<@format_instant_date_time instant=timeCreated/>",
             "inline": "true"
       },
       {
