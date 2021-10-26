@@ -1,0 +1,1 @@
+The emote for which to show the emote statistics. Use the ID for deleted or external emotes.

@@ -1,0 +1,1 @@
+Shows the emote stats for a single emote

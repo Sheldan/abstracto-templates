@@ -1,0 +1,1 @@
+Shows usages of the given emote for the given duration only.
