@@ -1,5 +1,5 @@
 {
-  <#include "assignable_place_color">,
+  <#include "abstracto_color">,
   <#assign text><#include "${commandName}_confirmation"></#assign>
   "description": "${text?json_string}",
   "buttons": [

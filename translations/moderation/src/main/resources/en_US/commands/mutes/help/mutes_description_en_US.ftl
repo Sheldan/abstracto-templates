@@ -1,0 +1,1 @@
+Shows all the warnings on the server
