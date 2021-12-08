@@ -1,9 +1,11 @@
 {
-  "title": {
-    "title": "<@safe_include "help_command_embed_title"/>"
-  },
-  <#include "abstracto_color">,
-  "description": "<@safe_include "help_command_embed_command_name"/>: **${command.name?json_string}**
+    "embeds": [
+        {
+            "title": {
+                "title": "<@safe_include "help_command_embed_title"/>"
+            },
+            <#include "abstracto_color">,
+            "description": "<@safe_include "help_command_embed_command_name"/>: **${command.name?json_string}**
 <@safe_include "help_command_embed_command_description"/>: <#if command.templated> <@safe_include "${command.name}_description"/> <#else> ${command.description?json_string} </#if>
 
 <#if command.help??>
@@ -67,5 +69,7 @@
 <#else>
 <@safe_include "help_command_embed_command_no_parameters"/>
 </#if>
-  "
+"
+        }
+    ]
 }

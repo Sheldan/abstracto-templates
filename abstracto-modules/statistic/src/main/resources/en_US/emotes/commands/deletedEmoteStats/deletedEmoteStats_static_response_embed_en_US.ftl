@@ -1,7 +1,11 @@
 {
-  "title": {
-    "title": "<@safe_include "deletedEmoteStats_static_emotes_title"/>"
-  },
-  <#include "statistic_color">,
-  "description": "<#list staticEmotes as emote>`${emote.trackedEmote.emoteName}:${emote.trackedEmote.trackedEmoteId.id?c}`x${emote.result.amount?c}<#sep>, </#list>"
+    "embeds": [
+        {
+            "title": {
+                "title": "<@safe_include "deletedEmoteStats_static_emotes_title"/>"
+            },
+            <#include "statistic_color">,
+            "description": "<#list staticEmotes as emote>`${emote.trackedEmote.emoteName}:${emote.trackedEmote.trackedEmoteId.id?c}`x${emote.result.amount?c}<#sep>, </#list>"
+        }
+    ]
 }

@@ -1,44 +1,48 @@
 <#include "format_instant">
 {
-  <#include "member_author">
-  <@member_author member=memberInfo/>,
-  <#include "abstracto_color">,
-  "thumbnail":  "${memberInfo.user.effectiveAvatarUrl}",
-  "fields": [
-  {
-        "name": "<@safe_include "userInfo_response_embed_id_field_title"/>",
-        "value": "${memberInfo.user.id}",
-        "inline": "true"
-  },
-  <#if memberInfo.nickname?has_content>
-  {
-        "name": "<@safe_include "userInfo_response_embed_nickname_field_title"/>",
-        "value": "${memberInfo.nickname?json_string}",
-        "inline": "true"
-  },
-  </#if>
-  {
-        "name": "<@safe_include "userInfo_response_embed_status_field_title"/>",
-        "value": "${memberInfo.onlineStatus.key}",
-        "inline": "true"
-  },
-  {
-        "name": "<@safe_include "userInfo_response_embed_joined_field_title"/>",
-        "value": "<@format_instant_date_time instant=joinDate/>",
-        "inline": "true"
-  },
-  {
-        "name": "<@safe_include "userInfo_response_embed_registered_field_title"/>",
-        "value": "<@format_instant_date_time instant=creationDate/>",
-        "inline": "true"
-  }
-  <#if memberInfo.activities?size gt 0>
-  ,
-  {
-        "name": "<@safe_include "userInfo_response_embed_activity_field_title"/>",
-        "value": "<#list memberInfo.activities as activity>${activity.type?json_string}<#sep>, </#list>",
-        "inline": "true"
-  }
-  </#if>
-  ]
+    "embeds": [
+        {
+            <#include "member_author">
+            <@member_author member=memberInfo/>,
+            <#include "abstracto_color">,
+            "thumbnail":  "${memberInfo.user.effectiveAvatarUrl}",
+            "fields": [
+                {
+                    "name": "<@safe_include "userInfo_response_embed_id_field_title"/>",
+                    "value": "${memberInfo.user.id}",
+                    "inline": "true"
+                },
+                <#if memberInfo.nickname?has_content>
+                {
+                    "name": "<@safe_include "userInfo_response_embed_nickname_field_title"/>",
+                    "value": "${memberInfo.nickname?json_string}",
+                    "inline": "true"
+                },
+                </#if>
+                {
+                    "name": "<@safe_include "userInfo_response_embed_status_field_title"/>",
+                    "value": "${memberInfo.onlineStatus.key}",
+                    "inline": "true"
+                },
+                {
+                    "name": "<@safe_include "userInfo_response_embed_joined_field_title"/>",
+                    "value": "<@format_instant_date_time instant=joinDate/>",
+                    "inline": "true"
+                },
+                {
+                    "name": "<@safe_include "userInfo_response_embed_registered_field_title"/>",
+                    "value": "<@format_instant_date_time instant=creationDate/>",
+                    "inline": "true"
+                }
+                <#if memberInfo.activities?size gt 0>
+                ,
+                {
+                    "name": "<@safe_include "userInfo_response_embed_activity_field_title"/>",
+                    "value": "<#list memberInfo.activities as activity>${activity.type?json_string}<#sep>, </#list>",
+                    "inline": "true"
+                }
+                </#if>
+            ]
+        }
+    ]
 }

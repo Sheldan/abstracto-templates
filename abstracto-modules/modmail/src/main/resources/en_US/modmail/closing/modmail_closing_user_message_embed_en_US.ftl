@@ -1,4 +1,8 @@
 {
-  <#include "modmail_color">,
-  "description": "${closingMessage?json_string}"
+    "embeds": [
+        {
+            <#include "modmail_color">,
+            "description": "${closingMessage?json_string}"
+        }
+    ]
 }

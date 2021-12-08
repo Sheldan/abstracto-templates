@@ -1,1 +1,1 @@
-The channel to log infraction notifications to. Default: ${defaultValue}
+The channel to log infraction notifications to. Default: ${currentTarget}

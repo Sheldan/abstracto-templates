@@ -1,8 +1,12 @@
 {
-  <#include "abstracto_color">,
-  <#assign text><#include "${commandName}_confirmation"></#assign>
-  "description": "${text?json_string}",
-  "buttons": [
+    "embeds": [
+        {
+            <#include "abstracto_color">,
+            <#assign text><#include "${commandName}_confirmation"></#assign>
+            "description": "${text?json_string}"
+        }
+    ],
+    "buttons": [
       {
           "label": "<@safe_include "command_confirmation_message_confirm_field_title"/>",
           "id": "${confirmButtonId}",

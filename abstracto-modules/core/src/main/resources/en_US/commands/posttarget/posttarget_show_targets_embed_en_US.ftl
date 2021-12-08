@@ -1,9 +1,11 @@
 {
-  "title": {
-    "title": "<@safe_include "posttarget_embed_title"/>"
-  },
-  <#include "success_color">,
-  "description": "
+    "embeds": [
+        {
+            "title": {
+                "title": "<@safe_include "posttarget_embed_title"/>"
+            },
+            <#include "success_color">,
+            "description": "
 <#list postTargets as postTarget><#assign postTarget=postTarget/>
 <#assign postTargetName>${postTarget.postTarget.name?json_string}</#assign>
 <#assign statusIndicator>${postTarget.disabled?string('❌', '✅')}</#assign>
@@ -14,4 +16,6 @@
 <@safe_include "posttarget_no_post_targets_found"/>
 </#list>
 "
+        }
+    ]
 }

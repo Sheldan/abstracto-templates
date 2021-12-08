@@ -1,6 +1,8 @@
 {
-  <#include "success_color">,
-  "description": "
+    "embeds": [
+        {
+            <#include "success_color">,
+            "description": "
 <#list profanityGroups as profanityGroup><#assign profanityGroup=profanityGroup/>
 <#assign profanityGroupName>${profanityGroup.groupName?json_string}</#assign>
 <@safe_include "showProfanityConfig_group_description"/>
@@ -16,4 +18,6 @@
 <@safe_include "showProfanityConfig_no_profanity_groups"/>
 </#list>
 "
+        }
+    ]
 }

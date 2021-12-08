@@ -1,9 +1,15 @@
 {
-  <#include "abstracto_color">,
-  "metaConfig" : {
-    "preventEmptyEmbed": "true",
-    "ephemeral": true
-  },
-  <#assign model=templateModel/>
-  "description": "<@safe_include "${templateName}"/>"
+    "embeds": [
+        {
+            <#include "abstracto_color">,
+            "metaConfig" : {
+                "preventEmptyEmbed": "true"
+            },
+            <#assign model=templateModel/>
+            "description": "<@safe_include "${templateName}"/>"
+        }
+    ],
+    "messageConfig": {
+        "ephemeral": true
+    }
 }
