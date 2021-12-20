@@ -1,4 +1,5 @@
 <#include "format_instant">
+<#assign decayed=warning.warning.decayed/>
 <#assign warnId>${warning.warning.warnId.id}</#assign>
 <#assign reason>${warning.warning.reason}</#assign>
 <#assign warnedUserText><#if warning.warnedUser.member??>${warning.warnedUser.member.asMention}(${warning.warnedUser.member.user.id})<#else>${warning.warnedUser.userId?c}</#if></#assign>
