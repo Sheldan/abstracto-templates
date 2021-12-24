@@ -21,10 +21,10 @@
             },
             <#include "success_color">,
             "description": "<#list userNotes as note><#assign note=note/>
-<#assign user><#if note.fullUser.member?has_content>${note.fullUser.member.asMention?json_string}<#else>${note.fullUser.aUserInAServer.userReference.id?c}</#if></#assign>
-<#assign noteText>${note.note.note?json_string}</#assign>
-<#assign noteId>${note.note.userNoteId.id}</#assign>
-<#assign date><@format_instant_date_time instant=note.note.created/></#assign>
+<#assign user><#if note.member.memberMention?has_content>${note.member.memberMention}<#else>${note.member.userId?c}</#if></#assign>
+<#assign noteText>${note.note?json_string}</#assign>
+<#assign noteId>${note.noteId}</#assign>
+<#assign date><@format_instant_date_time instant=note.created/></#assign>
 <@safe_include "user_notes_note_entry"/><#else><@safe_include "user_notes_no_notes"/>
 </#list>"
         }

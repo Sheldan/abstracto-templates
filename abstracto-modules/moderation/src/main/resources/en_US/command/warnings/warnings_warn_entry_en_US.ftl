@@ -1,13 +1,14 @@
 <#include "format_instant">
-<#assign decayed=warning.warning.decayed/>
-<#assign warnId>${warning.warning.warnId.id}</#assign>
-<#assign reason>${warning.warning.reason}</#assign>
-<#assign warnedUserText><#if warning.warnedUser.member??>${warning.warnedUser.member.asMention}(${warning.warnedUser.member.user.id})<#else>${warning.warnedUser.userId?c}</#if></#assign>
-<#assign warningUserText><#if warning.warningUser.member??>${warning.warningUser.member.asMention}(${warning.warningUser.member.user.id})<#else>${warning.warningUser.userId?c}</#if></#assign>
-<#assign warnDate><@format_instant_date_time instant=warning.warning.warnDate/></#assign>
+<#assign decayed=warning.decayed/>
+<#assign warnId=warning.warnId/>
+<#assign reason=warning.reason/>
+<#assign warnedUserText><#if warning.warnedUser.memberMention??>${warning.warnedUser.memberMention}(${warning.warnedUser.userId})<#else>${warning.warnedUser.userId?c}</#if></#assign>
+<#assign warningUserText><#if warning.warningUser.memberMention??>${warning.warningUser.memberMention}(${warning.warnedUser.userId})<#else>${warning.warningUser.userId?c}</#if></#assign>
+<#assign warnDate><@format_instant_date_time instant=warning.warnDate/></#assign>
 
 <#include "warnings_warn_entry_text">
-<#if warning.warning.decayed>
-<#assign decayDate><@format_instant_date_time instant=warning.warning.decayDate/></#assign>
+
+<#if decayed>
+<#assign decayDate><@format_instant_date_time instant=warning.decayDate/></#assign>
  <#include "warnings_warn_is_decayed">
 </#if>
