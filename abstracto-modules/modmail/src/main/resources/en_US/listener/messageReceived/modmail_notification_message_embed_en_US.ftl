@@ -19,7 +19,7 @@
     ],
     "messageConfig": {
         "allowsRoleMention": true
-    },
+    }
     <#if roles?size gt 0>
     ,"additionalMessage": "<#list roles as role>${role.role.asMention?json_string}<#sep>,</#list>"
     </#if>
