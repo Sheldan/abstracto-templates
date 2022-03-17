@@ -1,1 +1,1 @@
-Modmail threads will be created in category `${category}`.
+Modmail threads will be created in category ${category}.

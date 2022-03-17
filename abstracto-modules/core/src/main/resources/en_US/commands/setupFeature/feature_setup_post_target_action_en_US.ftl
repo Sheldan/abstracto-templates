@@ -1,1 +1,1 @@
-<#assign postTargetKey>${param.postTargetKey}</#assign><#assign channel>${param.channel.asMention}</#assign><@safe_include "feature_setup_post_target_action_display"/>
+<#assign postTargetKey>${param.postTargetKey}</#assign><#assign channel>${param.channelAsMention}</#assign><@safe_include "feature_setup_post_target_action_display"/>

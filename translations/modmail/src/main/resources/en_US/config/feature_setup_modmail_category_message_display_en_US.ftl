@@ -1,1 +1,1 @@
-The ID of the category you want to create the modmail threads in. Currently the used category is: ${categoryName}
+The ID of the category you want to create the modmail threads in. Currently the used category is: ${categoryMention}

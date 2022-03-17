@@ -1,1 +1,1 @@
-<#assign featureName><#include "feature_${featureConfig.feature.key}"></#assign><#include "feature_setup_cancellation_message">
+<#assign featureName><#include "feature_${featureKey}"></#assign><#include "feature_setup_cancellation_message">
