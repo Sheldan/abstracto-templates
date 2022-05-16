@@ -1,1 +1,1 @@
-The interval which should be the time between each allowed message in the channel. Use 'off', to disable slow mode.
+The duration between each allowed message in the channel. Use 'off', to disable slow mode.

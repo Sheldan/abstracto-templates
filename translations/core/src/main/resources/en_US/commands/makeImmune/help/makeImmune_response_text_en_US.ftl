@@ -1,0 +1,1 @@
+Role has been made immune against the effect.

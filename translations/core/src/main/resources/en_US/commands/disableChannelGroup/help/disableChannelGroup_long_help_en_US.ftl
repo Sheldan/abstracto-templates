@@ -1,0 +1,1 @@
+This command can be used to disable a channel group. How a disabled channel group behaves depends on what kind of channel group it is.

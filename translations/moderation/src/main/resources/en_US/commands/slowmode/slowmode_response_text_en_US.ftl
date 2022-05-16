@@ -1,0 +1,1 @@
+Slow mode setting has been changed.

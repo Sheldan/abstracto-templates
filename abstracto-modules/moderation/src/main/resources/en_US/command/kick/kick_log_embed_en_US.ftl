@@ -17,10 +17,12 @@
                     "name": "<@safe_include "kick_log_kicking_user_field_title"/>",
                     "value": "<@full_member_info member=member/>"
                 },
+                <#if messsage?has_content>
                 {
                     "name": "<@safe_include "kick_log_jump_link_field_title"/>",
                     "value": "[${channel.name?json_string}](${message.jumpUrl})"
                 },
+                </#if>
                 {
                     "name": "<@safe_include "kick_log_reason_field_title"/>",
                     "value": "${reason?json_string}"

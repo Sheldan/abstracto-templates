@@ -1,0 +1,1 @@
+Profanity regex has been removed.

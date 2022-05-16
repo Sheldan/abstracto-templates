@@ -1,0 +1,1 @@
+Enables a channel group

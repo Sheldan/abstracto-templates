@@ -1,0 +1,1 @@
+Retrieves a template from the database

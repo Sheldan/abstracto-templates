@@ -1,0 +1,1 @@
+Disables a channel group

@@ -16,10 +16,12 @@
                     "name": "<@safe_include "ban_log_banning_user_field_title"/>",
                     "value": "<@full_member_info member=banningMember/>"
                 },
+                <#if commandMessage?has_content>
                 {
                     "name": "<@safe_include "ban_log_jump_link_field_title"/>",
                     "value": "[${commandMessage.channel.name?json_string}](${commandMessage.jumpUrl})"
                 },
+                </#if>
                 {
                     "name": "<@safe_include "ban_log_reason_field_title"/>",
                     "value": "${reason?json_string}"

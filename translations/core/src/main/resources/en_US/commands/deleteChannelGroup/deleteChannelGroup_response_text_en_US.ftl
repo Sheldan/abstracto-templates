@@ -1,0 +1,1 @@
+Channel group has been deleted.

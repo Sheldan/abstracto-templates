@@ -8,8 +8,8 @@
             <#include "abstracto_color">,
             <#assign id>${suggestionId}</#assign>
             "description": "${text?json_string}",
-            <#if message?? && message.attachments?size gt 0>
-            "imageUrl": "${message.attachments[0].proxyUrl}",
+            <#if attachmentURL?has_content>
+            "imageUrl": "${attachmentURL}",
             </#if>
             "footer": {
                 "text": "<@safe_include "suggest_suggestion_id_footer"/>"

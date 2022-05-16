@@ -4,5 +4,10 @@
     <#if statsSince?has_content>
     <#assign sinceDate><@format_instant_long_date instant=statsSince/></#assign>
     </#if>
-    "additionalMessage": "<@safe_include "downloadEmoteStats_response_embed_text"/>"
+    "additionalMessage": "<@safe_include "downloadEmoteStats_response_embed_text"/>",
+    "files": [
+        {
+            "filename: "${serverId}-${templateKey}.ftl"
+        }
+    ]
 }

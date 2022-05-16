@@ -1,0 +1,1 @@
+Profanity group has been deleted.

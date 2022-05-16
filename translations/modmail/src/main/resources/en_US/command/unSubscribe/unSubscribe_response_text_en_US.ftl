@@ -1,0 +1,1 @@
+You will no longer receive notifications about new messages.

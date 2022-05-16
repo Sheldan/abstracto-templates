@@ -18,10 +18,12 @@
                     "name": "<@safe_include "mute_log_muting_user_field_title"/>",
                     "value": "<@full_member_info member=mutingUser/>"
                 },
+                <#if message?has_content>
                 {
                     "name": "<@safe_include "mute_log_mute_location_field_title"/>",
                     "value": "[${contextChannel.name?json_string}](${message.jumpUrl})"
                 },
+                </#if>
                 {
                     "name": "<@safe_include "mute_log_mute_reason_field_title"/>",
                     "value": "${reason?json_string}"

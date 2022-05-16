@@ -1,0 +1,1 @@
+Channel has been added to the channel group.
