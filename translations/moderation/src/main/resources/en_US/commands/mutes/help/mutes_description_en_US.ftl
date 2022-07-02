@@ -1,1 +1,1 @@
-Shows all the warnings on the server
+Shows all the mutes on the server

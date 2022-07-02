@@ -1,0 +1,1 @@
+The amount of infraction points for a mute. Default: ${defaultValue}

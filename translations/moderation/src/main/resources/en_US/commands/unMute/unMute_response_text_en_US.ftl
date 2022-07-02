@@ -1,1 +1,1 @@
-Member has been un-muted.
+Member has been unmuted.

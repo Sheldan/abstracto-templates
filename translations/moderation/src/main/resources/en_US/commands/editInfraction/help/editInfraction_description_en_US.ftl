@@ -1,0 +1,1 @@
+Enables you to edit the reason for warnings/bans/kicks etc.

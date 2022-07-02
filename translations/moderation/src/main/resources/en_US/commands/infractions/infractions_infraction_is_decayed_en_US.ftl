@@ -1,0 +1,1 @@
+This infraction was decayed on ${decayDate}.

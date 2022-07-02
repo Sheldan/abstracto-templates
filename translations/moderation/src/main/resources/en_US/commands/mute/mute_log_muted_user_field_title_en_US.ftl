@@ -1,1 +1,1 @@
-Muted user
+User

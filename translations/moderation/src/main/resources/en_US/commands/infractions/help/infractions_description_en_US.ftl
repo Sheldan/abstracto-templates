@@ -1,0 +1,1 @@
+Shows all in fractions of a member or the whole server
