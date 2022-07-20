@@ -1,0 +1,1 @@
+You get to have payday! If you are not on cooldown you will receive credits.

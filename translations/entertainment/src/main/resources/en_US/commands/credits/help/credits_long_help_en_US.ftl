@@ -1,0 +1,1 @@
+Shows your current amount of credits

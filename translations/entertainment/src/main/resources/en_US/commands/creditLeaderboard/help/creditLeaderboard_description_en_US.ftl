@@ -1,0 +1,1 @@
+Shows the leaderboard of the credits in this server

@@ -1,0 +1,1 @@
+Three symbols! Your bid has been multiplied * 10!

@@ -1,0 +1,1 @@
+JACKPOT! 226! Your bid has been multiplied * 50!

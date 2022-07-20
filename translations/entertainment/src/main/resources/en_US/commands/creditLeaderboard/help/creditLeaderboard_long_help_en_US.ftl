@@ -1,0 +1,1 @@
+Can be used to show the complete leaderboard of credits in this server.

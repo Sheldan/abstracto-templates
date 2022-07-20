@@ -33,6 +33,7 @@
         <module>profanity-filter</module>
         <module>voice-channel-context</module>
         <module>anti-raid</module>
+        <module>custom-command</module>
     </modules>
 
 </project>

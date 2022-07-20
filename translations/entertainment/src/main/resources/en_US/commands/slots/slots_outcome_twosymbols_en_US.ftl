@@ -1,0 +1,1 @@
+Two consecutive symbols! Your bid has been multiplied * 2!

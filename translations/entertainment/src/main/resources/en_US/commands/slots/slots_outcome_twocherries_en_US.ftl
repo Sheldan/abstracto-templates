@@ -1,0 +1,1 @@
+Two cherries! Your bid has been multiplied * 3!

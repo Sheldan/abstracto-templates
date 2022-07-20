@@ -1,0 +1,1 @@
+Payday is on cooldown. Please try again in ${retryDuration}

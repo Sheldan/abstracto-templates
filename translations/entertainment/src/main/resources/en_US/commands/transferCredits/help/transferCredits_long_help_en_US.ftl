@@ -1,0 +1,1 @@
+Transfers the given amount to the target user.

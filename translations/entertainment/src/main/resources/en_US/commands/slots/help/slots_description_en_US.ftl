@@ -1,0 +1,1 @@
+Play slots with your current credits.

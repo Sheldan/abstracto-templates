@@ -1,0 +1,1 @@
+Transfers credit to another user

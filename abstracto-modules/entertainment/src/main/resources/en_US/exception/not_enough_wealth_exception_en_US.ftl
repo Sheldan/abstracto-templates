@@ -1,0 +1,1 @@
+<#include "not_enough_wealth_exception_text">
