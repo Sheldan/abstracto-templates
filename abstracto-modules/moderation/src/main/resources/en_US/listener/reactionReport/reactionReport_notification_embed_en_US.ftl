@@ -14,7 +14,7 @@
             <#elseif reportedMessage.attachments?size = 0 && reportedMessage.embeds?size gt 0 && reportedMessage.embeds[0].cachedImageInfo??>
                 ,"imageUrl": "${reportedMessage.embeds[0].cachedImageInfo.proxyUrl}"
             </#if>
-<#if singularMessage>,
+<#if singularMessage>
             ,"fields": [
                 {
                     "name": "<@safe_include "reactionReport_notification_embed_report_counter_field_title"/>",

@@ -7,7 +7,7 @@
     "additionalMessage": "<@safe_include "downloadEmoteStats_response_embed_text"/>",
     "files": [
         {
-            "filename: "${serverId}-${templateKey}.ftl"
+            "fileName": "${serverId}-emotestats.csv"
         }
     ]
 }
