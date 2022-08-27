@@ -3,25 +3,26 @@
     "embeds": [
         {
             <#include "member_author">
-            <@member_author member=memberInfo/>,
+            <#include "member_avatar">
+            <@member_display_author member=memberDisplay/>,
             <#include "abstracto_color">,
-            "thumbnail":  "${memberInfo.user.effectiveAvatarUrl}",
+            "thumbnail":  "<@member_display_avatar member=memberDisplay/>",
             "fields": [
                 {
                     "name": "<@safe_include "userInfo_response_embed_id_field_title"/>",
-                    "value": "${memberInfo.user.id}",
+                    "value": "${id?c}",
                     "inline": "true"
                 },
-                <#if memberInfo.nickname?has_content>
+                <#if memberDisplay.nickname?has_content>
                 {
                     "name": "<@safe_include "userInfo_response_embed_nickname_field_title"/>",
-                    "value": "${memberInfo.nickname?json_string}",
+                    "value": "${memberDisplay.nickname?json_string}",
                     "inline": "true"
                 },
                 </#if>
                 {
                     "name": "<@safe_include "userInfo_response_embed_status_field_title"/>",
-                    "value": "${memberInfo.onlineStatus.key}",
+                    "value": "${onlineStatus?json_string}",
                     "inline": "true"
                 },
                 {
@@ -34,11 +35,27 @@
                     "value": "<@format_instant_date_time instant=creationDate/>",
                     "inline": "true"
                 }
-                <#if memberInfo.activities?size gt 0>
+                <#if roles?size gt 0>
+                ,
+                {
+                    "name": "<@safe_include "userInfo_response_embed_roles_field_title"/>",
+                    "value": "<#list roles as role>${role.roleMention?json_string}<#sep>, </#list>",
+                    "inline": "true"
+                }
+                </#if>
+                <#if activities?size gt 0>
                 ,
                 {
                     "name": "<@safe_include "userInfo_response_embed_activity_field_title"/>",
-                    "value": "<#list memberInfo.activities as activity>${activity.type?json_string}<#sep>, </#list>",
+                    "value": "<#list activities as activity>${activity?json_string}<#sep>, </#list>",
+                    "inline": "true"
+                }
+                </#if>
+                <#if customStatus?has_content || customEmoji?has_content>
+                ,
+                {
+                    "name": "<@safe_include "userInfo_response_embed_custom_status_field_title"/>",
+                    "value": "<#if customEmoji?has_content>${customEmoji?json_string} </#if><#if customStatus?has_content>${customStatus?json_string}</#if>",
                     "inline": "true"
                 }
                 </#if>
