@@ -2,7 +2,8 @@
     "embeds": [
         {
             <#include "member_author">
-            <@member_author member=member/>,
+            <#include "member_avatar">
+            <@member_display_author member=memberNameDisplay/>,
             <#include "abstracto_color">,
             "description": "<@safe_include "remind_reminder_description"/>",
             "fields": [
@@ -21,5 +22,9 @@
             ]
         }
     ],
-    "additionalMessage": "${member.asMention?json_string} 🔔"
+<#assign participantsMentions><#list reminderParticipants as participant>${participant.memberMention}<#sep>, </#list></#assign>
+    "additionalMessage": "${memberNameDisplay.memberMention?json_string} 🔔
+
+${participantsMentions}
+"
 }

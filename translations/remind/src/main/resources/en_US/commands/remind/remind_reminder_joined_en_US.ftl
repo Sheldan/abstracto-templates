@@ -1,0 +1,1 @@
+You joined the reminder and will also be notified at ${targetDate}. Click the button again to not be notified anymore.
