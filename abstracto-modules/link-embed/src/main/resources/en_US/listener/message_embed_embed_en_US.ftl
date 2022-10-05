@@ -18,7 +18,7 @@
             </#list>
             ",
             </#if>
-            <#if embeddedMessage.attachments?size gt 0>
+            <#if embeddedMessage.attachments?size gt 0 && !embeddedMessage.attachments[0].spoiler>
             "imageUrl": "${embeddedMessage.attachments[0].proxyUrl}",
             <#elseif embeddedMessage.attachments?size = 0 && embeddedMessage.embeds?size gt 0 && embeddedMessage.embeds[0].cachedThumbnail??>
             "imageUrl": "${embeddedMessage.embeds[0].cachedThumbnail.proxyUrl}",
@@ -57,6 +57,9 @@
             }
         }
     ]
+    </#if>
+    <#if embeddedMessage.attachments?size gt 0 && embeddedMessage.attachments[0].spoiler>
+    ,"additionalMessage": "||${embeddedMessage.attachments[0].proxyUrl?json_string}||"
     </#if>
 <#if referencedMessageId?has_content && mentionsReferencedMessage?has_content>
     ,"referencedMessageId": "${referencedMessageId?c}",
