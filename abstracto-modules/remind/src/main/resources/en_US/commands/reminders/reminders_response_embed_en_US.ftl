@@ -14,10 +14,12 @@
             "fields": [
                 <#list reminders as reminderDisplay><#assign reminderDisplay=reminderDisplay/>
                 {
-                    <#assign id>${reminderDisplay.reminder.id}</#assign>
-                    <#assign reminderTargetDate><@format_instant_date_time instant=reminderDisplay.reminder.targetDate/></#assign>
-                    <#assign reminderText=reminderDisplay.reminder.text/>
+                    <#assign id>${reminderDisplay.id}</#assign>
+                    <#assign reminderTargetDate><@format_instant_date_time instant=reminderDisplay.targetDate/></#assign>
+                    <#assign reminderText=reminderDisplay.text/>
                     <#assign messageLink=reminderDisplay.message.jumpUrl/>
+                    <#assign joined=reminderDisplay.joined/>
+                    <#assign joinedText><#if joined><@safe_include "reminder_joined_text"/></#if></#assign>
                     "name": "<@safe_include "reminders_reminder_field_title"/>",
                     "value": "<@safe_include "reminders_due_on"/>"
                 }
