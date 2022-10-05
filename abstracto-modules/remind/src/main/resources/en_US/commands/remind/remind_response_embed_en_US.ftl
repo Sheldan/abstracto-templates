@@ -1,3 +1,4 @@
+<#include "format_instant">
 {
     "embeds": [
         {
@@ -6,6 +7,7 @@
             <#include "member_avatar">
             <@member_display_author member=memberDisplay/>,
             <#include "abstracto_color">,
+            <#assign reminderTargetDate><@format_instant_date_time instant=reminder.targetDate/></#assign>
             <#if message?has_content>
                 <#assign messageUrl>${message.jumpUrl}</#assign>
                 "description": "<@safe_include "remind_reminding_description_text"/>"

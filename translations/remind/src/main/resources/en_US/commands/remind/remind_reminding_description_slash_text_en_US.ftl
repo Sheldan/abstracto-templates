@@ -1,1 +1,1 @@
-Scheduled reminder with ID ${id} to remind you of `${reminderText}`.
+Scheduled reminder with ID ${id} to remind you of `${reminderText}` at ${reminderTargetDate}.
