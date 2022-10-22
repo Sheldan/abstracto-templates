@@ -1,0 +1,1 @@
+Creates a thread reader link for easier reading
