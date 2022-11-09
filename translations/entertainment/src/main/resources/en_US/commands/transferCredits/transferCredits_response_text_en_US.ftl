@@ -1,1 +1,1 @@
-Credits have been transfered.
+${creditsCount} credits from ${sourceUser} have been transferred to ${targetUser}.
