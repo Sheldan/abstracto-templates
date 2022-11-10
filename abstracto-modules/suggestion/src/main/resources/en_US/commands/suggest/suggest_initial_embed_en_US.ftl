@@ -1,3 +1,4 @@
+<#include "format_instant">
 {
     "embeds": [
         {
@@ -7,7 +8,10 @@
             <#assign user><@user_user_name user=suggester/></#assign>
             <#include "abstracto_color">,
             <#assign id>${suggestionId}</#assign>
-            "description": "${text?json_string}",
+            <#if autoEvaluationEnabled>
+                <#assign suggestionAutoEvaluateDate><@format_instant_date_time instant=autoEvaluationTargetDate/></#assign>
+            </#if>
+            "description": "${text?json_string}<#if autoEvaluationEnabled><@safe_include "suggest_auto_evaluation_hint"/></#if>",
             <#if attachmentURL?has_content>
             "imageUrl": "${attachmentURL}",
             </#if>
