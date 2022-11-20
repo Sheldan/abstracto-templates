@@ -1,0 +1,1 @@
+The time in seconds between counting the experience. This prevents people from spamming message in a short period of time and leveling up. Default: ${defaultValue}
