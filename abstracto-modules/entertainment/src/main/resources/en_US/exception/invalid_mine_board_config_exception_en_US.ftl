@@ -1,0 +1,1 @@
+<#include "invalid_mine_board_config_exception_text">

@@ -1,0 +1,1 @@
+You lost! You put ${creditAmount} credits on the line and got back ${changedCreditAmount}!

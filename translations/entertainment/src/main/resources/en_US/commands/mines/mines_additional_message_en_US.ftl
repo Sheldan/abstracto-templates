@@ -1,0 +1,1 @@
+${totalMines} Mines. ${stateText}

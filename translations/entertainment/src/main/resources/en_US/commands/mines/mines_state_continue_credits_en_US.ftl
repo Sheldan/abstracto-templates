@@ -1,0 +1,1 @@
+Continue... Playing for ${creditAmount} credits.

@@ -1,0 +1,1 @@
+Invalid mines configuration: Width and height at least 1 and at most 5 each. There must at least one mine and at least one field without a mine!

@@ -1,0 +1,1 @@
+Play a game of to find mines in a field

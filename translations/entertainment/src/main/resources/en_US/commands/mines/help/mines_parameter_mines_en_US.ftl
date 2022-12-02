@@ -1,0 +1,1 @@
+Amount of mines which will be put in the field
