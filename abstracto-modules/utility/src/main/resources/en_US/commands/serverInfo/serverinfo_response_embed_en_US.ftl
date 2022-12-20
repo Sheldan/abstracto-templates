@@ -44,7 +44,7 @@
                 },
                 {
                     "name": "<@safe_include "serverinfo_embed_emote_count_title"/>",
-                    "value": "${guild.emotes?size}",
+                    "value": "${guild.emojis?size}",
                     "inline": "true"
                 },
                 {
