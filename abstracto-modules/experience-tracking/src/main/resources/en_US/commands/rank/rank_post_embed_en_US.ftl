@@ -29,6 +29,11 @@
                     "name": "<@safe_include "rank_rank_field_title"/>",
                     "value": "${rankUser.rank}",
                     "inline": "true"
+                },
+                {
+                    "name": "<@safe_include "rank_level_progress_field_title"/>",
+                    "value": "${inLevelExperience} <#list 1..currentLevelPercentage/10?floor as cent>🔹</#list><#if (currentLevelPercentage % 10) gt 4>🔸<#else>▫</#if><#assign restCent></#assign><#list 0..(10 - currentLevelPercentage/10?ceiling) as cent><#if cent gt 0>▫</#if>️</#list> ${nextLevelExperience - experienceForCurrentLevel}",
+                    "inline": "false"
                 }
             ]
         }
