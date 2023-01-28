@@ -1,0 +1,1 @@
+Configure whether to receive level up notifications

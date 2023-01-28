@@ -1,0 +1,1 @@
+You can use this command to configure whether you receive level up notifications congratulating about a level up.
