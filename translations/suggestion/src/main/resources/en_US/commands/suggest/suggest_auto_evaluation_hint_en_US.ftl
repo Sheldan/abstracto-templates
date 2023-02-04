@@ -1,2 +1,2 @@
 
-Auto evaluated at: ${suggestionAutoEvaluateDate}
+> Voting end: ${suggestionAutoEvaluateDate}

@@ -1,0 +1,1 @@
+Percentage at which suggestions are evaluated as accepted. Default: ${defaultValue}
