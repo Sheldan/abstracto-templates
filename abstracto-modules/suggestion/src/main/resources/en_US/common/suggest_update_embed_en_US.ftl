@@ -5,6 +5,7 @@
             <#if message?? && message.attachments?size gt 0>
             "imageUrl": "${message.attachments[0].proxyUrl}",
             </#if>
+            "description": "<@safe_include "suggest_text_label"/>: ${text}",
             "fields": [
             <#if reason?has_content>
                 {
@@ -14,11 +15,11 @@
                 </#if>
                 {
                     "name": "<@safe_include "suggestion_agreements_field_title"/>",
-                    "value": "${agreeVotes?c}"
+                    "value": "👍 ${agreeVotes?c} (${agreementPercentage?ceiling}%)"
                 },
                 {
                     "name": "<@safe_include "suggestion_disagreements_field_title"/>",
-                    "value": "${disAgreeVotes?c}"
+                    "value": "👎 ${disAgreeVotes?c} (${disAgreementPercentage?ceiling}%)"
                 }
             ]
         }
