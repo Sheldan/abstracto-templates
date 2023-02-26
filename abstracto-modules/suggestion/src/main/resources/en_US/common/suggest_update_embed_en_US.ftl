@@ -5,13 +5,18 @@
             <#if message?? && message.attachments?size gt 0>
             "imageUrl": "${message.attachments[0].proxyUrl}",
             </#if>
-            "description": "<@safe_include "suggest_text_label"/>: ${text}",
+            "description": "<@safe_include "suggest_text_label"/>: ${text}"
+            <#if reason?has_content || buttonsActive>,
             "fields": [
-            <#if reason?has_content>
+                <#if reason?has_content>
                 {
                     "name": "<@safe_include "suggest_reason_field_title"/>",
                     "value": "${reason?json_string}"
-                },
+                }
+                </#if>
+                <#if buttonsActive>
+                <#if reason?has_content>
+                    ,
                 </#if>
                 {
                     "name": "<@safe_include "suggestion_agreements_field_title"/>",
@@ -21,7 +26,9 @@
                     "name": "<@safe_include "suggestion_disagreements_field_title"/>",
                     "value": "👎 ${disAgreeVotes?c} (${disAgreementPercentage?ceiling}%)"
                 }
+                </#if>
             ]
+            </#if>
         }
     ],
     "referencedMessageId": "${originalMessageId?c}",
