@@ -59,8 +59,9 @@
                 },
                 {
                     "name": "<@safe_include "serverinfo_embed_features_field_title"/>",
-                    "value": "<#list guild.features as feature>${feature}<#sep>, <#else><@safe_include "serverinfo_embed_features_no_features"/></#list>",
-                    "inline": "true"
+                    "value": "<#list guild.features as feature>${feature}<#sep> <#else><@safe_include "serverinfo_embed_features_no_features"/></#list>",
+                    "inline": "true",
+                    "valueSplitLength": 250
                 }
             ]
         }

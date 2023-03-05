@@ -3,9 +3,9 @@
     "embeds": [
         {
             <#include "member_author">
-            <#include "member_avatar">
-            <@member_display_author member=memberDisplay/>,
+            <@member_display_user_author member=memberDisplay/>,
             <#include "abstracto_color">,
+            <#include "member_avatar">
             "thumbnail":  "<@member_display_avatar member=memberDisplay/>",
             "fields": [
                 {
@@ -39,8 +39,9 @@
                 ,
                 {
                     "name": "<@safe_include "userInfo_response_embed_roles_field_title"/>",
-                    "value": "<#list roles as role>${role.roleMention?json_string}<#sep>, </#list>",
-                    "inline": "true"
+                    "value": "<#list roles as role>${role.roleMention?json_string}<#sep> </#list>",
+                    "inline": "true",
+                    "valueSplitLength": 250
                 }
                 </#if>
                 <#if activities?size gt 0>
