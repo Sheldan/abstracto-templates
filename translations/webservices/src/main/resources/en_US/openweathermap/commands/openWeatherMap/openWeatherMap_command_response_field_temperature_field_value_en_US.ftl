@@ -1,0 +1,1 @@
+<#if temperature??>${temperature}°C</#if> <#if displayTemperaturRange>(${minTemperature}°C - ${maxTemperature}°C)</#if>

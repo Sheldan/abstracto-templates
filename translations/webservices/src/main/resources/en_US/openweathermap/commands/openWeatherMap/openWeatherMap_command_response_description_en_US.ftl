@@ -1,0 +1,1 @@
+Weather in ${locationName}, ${countryKey}: ${weatherIcon} ${weatherKey} - ${weatherDescription}

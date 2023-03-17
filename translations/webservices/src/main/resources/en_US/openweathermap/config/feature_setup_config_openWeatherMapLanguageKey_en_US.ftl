@@ -1,0 +1,1 @@
+Language key used to display the weather. Default: ${defaultValue}
