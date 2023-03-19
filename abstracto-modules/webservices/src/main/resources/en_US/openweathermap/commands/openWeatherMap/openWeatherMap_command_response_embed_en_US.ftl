@@ -12,6 +12,7 @@
             <#assign weatherIcon>${weatherMap[mainWeather]!""}</#assign>
             <#assign weatherKey=mainWeather!"">
             <#assign weatherDescription=description!"">
+            <#assign weatherLocationLink>https://openweathermap.org/city/${locationId?c}</#assign>
             "description": "<@safe_include "openWeatherMap_command_response_description"/>",
             "fields": [
                 <#if temperature??>

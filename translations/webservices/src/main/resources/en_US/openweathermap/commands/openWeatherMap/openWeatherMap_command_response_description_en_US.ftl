@@ -1,1 +1,1 @@
-Weather in ${locationName}, ${countryKey}: ${weatherIcon} ${weatherKey} - ${weatherDescription}
+Weather in [${locationName}, ${countryKey}](${weatherLocationLink}): ${weatherIcon} ${weatherKey} - ${weatherDescription}
