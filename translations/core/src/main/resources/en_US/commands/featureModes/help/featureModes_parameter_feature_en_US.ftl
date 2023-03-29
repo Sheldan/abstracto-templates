@@ -1,1 +1,1 @@
-The feature to enable the feature mode for.
+The feature to show the feature modes for
