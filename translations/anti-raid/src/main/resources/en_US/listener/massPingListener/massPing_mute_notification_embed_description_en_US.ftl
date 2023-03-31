@@ -1,1 +1,1 @@
-${memberMention} was muted for mentioning ${mentionCount} members.
+${memberMention} has been muted for mentioning ${mentionCount} members.

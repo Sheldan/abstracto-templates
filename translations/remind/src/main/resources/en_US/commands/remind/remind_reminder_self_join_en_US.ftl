@@ -1,1 +1,1 @@
-You cannot join yourself.
+You cannot join your own reminder.

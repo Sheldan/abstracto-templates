@@ -1,1 +1,1 @@
-The member the credits should be transfered to
+The member the credits should be transferred to

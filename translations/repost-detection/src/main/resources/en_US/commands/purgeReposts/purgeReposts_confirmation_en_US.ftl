@@ -1,1 +1,1 @@
-Dou you really want to purge reports?
+Do you really want to purge reports?

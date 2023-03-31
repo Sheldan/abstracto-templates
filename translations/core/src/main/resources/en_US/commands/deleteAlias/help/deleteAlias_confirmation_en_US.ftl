@@ -1,1 +1,1 @@
-Do you want to delete the alias?
+Do you really want to delete the alias?

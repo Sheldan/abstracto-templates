@@ -1,1 +1,1 @@
-Channel has been removed from channel group.
+Channel has been removed from the channel group.

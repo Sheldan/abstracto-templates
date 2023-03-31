@@ -1,1 +1,1 @@
-${user} has note ${noteId} on ${date} with text `${noteText}`.
+${user} has had note ID ${noteId} set on ${date} with the text `${noteText}`.

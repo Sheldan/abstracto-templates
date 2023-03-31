@@ -1,1 +1,1 @@
-Do you really want to remove the role from the experience system? A re-calculation is being done, this can take a while depending on the members having the role.
+Do you really want to remove the role from the experience system? Every current member will lose the role and this might take a bit depending on the amount of members.

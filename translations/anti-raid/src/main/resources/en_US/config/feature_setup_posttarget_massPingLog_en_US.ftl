@@ -1,1 +1,1 @@
-The channel in which mass ping mutes should be logged to. Currently: ${currentTarget}
+The channel in which mutes following a mass mention should be logged to. Currently: ${currentTarget}
