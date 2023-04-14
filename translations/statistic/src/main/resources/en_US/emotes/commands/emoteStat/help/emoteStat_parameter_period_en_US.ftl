@@ -1,1 +1,1 @@
-The time period to retrieve the emote statistic for
+The time period to retrieve the emote statistics for

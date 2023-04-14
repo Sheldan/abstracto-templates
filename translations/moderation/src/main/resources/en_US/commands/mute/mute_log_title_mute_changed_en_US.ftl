@@ -1,1 +1,1 @@
-User mute has been changed
+User mute duration has been changed

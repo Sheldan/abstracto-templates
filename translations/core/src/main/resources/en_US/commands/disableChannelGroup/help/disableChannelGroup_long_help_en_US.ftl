@@ -1,1 +1,1 @@
-This command can be used to disable a channel group. How a disabled channel group behaves depends on what kind of channel group it is.
+This command can be used to disable a channel group. How a disabled channel group/channel in channel group behaves depends on what kind of channel group it is.

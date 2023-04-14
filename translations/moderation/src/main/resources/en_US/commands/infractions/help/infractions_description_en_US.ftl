@@ -1,1 +1,1 @@
-Shows all in fractions of a member or the whole server
+Shows all infractions of a member or of the whole server

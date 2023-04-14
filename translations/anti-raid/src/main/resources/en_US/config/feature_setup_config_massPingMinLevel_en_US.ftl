@@ -1,1 +1,1 @@
-The min level of members to get muted automatically because of a mass mention. Only considered when the feature 'experience' is enabled. Default: ${defaultValue}
+The minimum level of members that will be automatically muted following a mass mention. Only considered when the feature 'experience' is enabled. Default: ${defaultValue}

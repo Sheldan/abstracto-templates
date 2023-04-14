@@ -1,1 +1,1 @@
-Please wait a bit between reporting.
+Please wait a bit before reporting again.
