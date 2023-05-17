@@ -2,7 +2,7 @@
     "embeds": [
         {
             <#include "member_author">
-            <@member_author member=member/>,
+            <@member_display_author member=executingMemberDisplay/>,
             <#include "modmail_color">,
             "description": "<@safe_include "modmail_thread_already_exists"/>",
             "fields": [
