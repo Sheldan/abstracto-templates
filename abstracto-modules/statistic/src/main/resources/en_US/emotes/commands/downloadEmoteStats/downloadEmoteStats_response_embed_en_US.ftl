@@ -7,7 +7,8 @@
     "additionalMessage": "<@safe_include "downloadEmoteStats_response_embed_text"/>",
     "files": [
         {
-            "fileName": "${serverId}-emotestats.csv"
+            "fileName": "<@safe_include "downloadEmoteStats_file_name"/>",
+            "fileContent": "<@safe_include "downloadEmoteStats_file_content"/>"
         }
     ]
 }

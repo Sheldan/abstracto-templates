@@ -1,1 +1,1 @@
-emote_stats_${guild.id}.csv
+emote_stats_${serverId}.csv
