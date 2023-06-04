@@ -34,7 +34,7 @@
     <#if allowAdditions && options?size lt 20>,
     "buttons": [
         {
-            "label": "add option",
+            "label": "<@safe_include "poll_message_button_add_option_label"/>",
             "position": 2,
             "id": "${addOptionButtonId}",
             "buttonStyle": "secondary",
