@@ -1,0 +1,1 @@
+The channel where server polls should be posted to. Currently: ${currentTarget}

@@ -1,0 +1,1 @@
+Option: `${option.label}` <#if showDecisions>votes: ${option.votes} (${option.percentage}%)</#if>

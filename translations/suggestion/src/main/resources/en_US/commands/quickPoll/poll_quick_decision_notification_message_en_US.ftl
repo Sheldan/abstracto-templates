@@ -1,0 +1,1 @@
+Submitted! You have chosen the options: <#list chosenValues as chosenValue>${chosenValue}<#sep>, </#list>

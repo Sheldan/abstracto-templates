@@ -1,0 +1,1 @@
+Whether to allow adding new options

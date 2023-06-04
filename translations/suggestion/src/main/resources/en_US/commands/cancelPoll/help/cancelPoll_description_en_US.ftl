@@ -1,0 +1,1 @@
+Cancels a server poll

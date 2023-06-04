@@ -1,0 +1,1 @@
+Closes a server poll

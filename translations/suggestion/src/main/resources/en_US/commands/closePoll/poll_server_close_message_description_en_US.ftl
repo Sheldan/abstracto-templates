@@ -1,0 +1,1 @@
+Poll ${pollId} has been closed.

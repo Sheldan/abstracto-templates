@@ -1,0 +1,1 @@
+Whether to show the votes in the poll message

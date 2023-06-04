@@ -1,0 +1,1 @@
+<#include "poll_cancellation_not_possible_exception_text">

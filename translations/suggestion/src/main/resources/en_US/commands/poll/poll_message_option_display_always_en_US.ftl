@@ -1,0 +1,1 @@
+Option: `${option.label}` votes: ${option.votes} (${option.percentage}%)

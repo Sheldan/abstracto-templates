@@ -1,0 +1,1 @@
+The ID of the server poll to cancel

@@ -1,0 +1,1 @@
+Not possible to remove poll.

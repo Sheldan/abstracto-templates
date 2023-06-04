@@ -1,0 +1,2 @@
+> Voting end: ${formattedEndDate}
+

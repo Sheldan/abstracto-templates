@@ -1,0 +1,1 @@
+The duration for how long it should be possible to add votes
