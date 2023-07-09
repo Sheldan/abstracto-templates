@@ -1,0 +1,1 @@
+The user in this server who is associated with this streamer.

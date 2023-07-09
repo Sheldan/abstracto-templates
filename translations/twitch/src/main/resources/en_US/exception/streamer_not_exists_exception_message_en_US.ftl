@@ -1,0 +1,1 @@
+Streamer was not found on Twitch. Only use the name of the Streamer.

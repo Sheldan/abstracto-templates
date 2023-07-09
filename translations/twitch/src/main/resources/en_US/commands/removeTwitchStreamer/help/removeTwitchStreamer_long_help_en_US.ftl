@@ -1,0 +1,1 @@
+This command can be used to remove a particular streamer from the server notifications.

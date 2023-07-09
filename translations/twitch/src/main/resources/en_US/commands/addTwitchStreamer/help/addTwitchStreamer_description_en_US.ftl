@@ -1,0 +1,1 @@
+Adds a streamer to the notifications

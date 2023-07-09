@@ -1,0 +1,1 @@
+Removes a streamer from this server

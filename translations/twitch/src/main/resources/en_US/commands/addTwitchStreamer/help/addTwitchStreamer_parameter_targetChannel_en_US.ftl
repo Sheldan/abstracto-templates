@@ -1,0 +1,1 @@
+Which channel the notification should be posted in

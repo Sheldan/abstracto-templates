@@ -1,0 +1,1 @@
+`${name}` ([Page](${streamerURL})): ${targetChannel} ${showNotificationsDisplay}.
