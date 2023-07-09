@@ -6,8 +6,7 @@
     <#assign title=currentSection.title>
     <#assign thumbnail=currentSection.thumbnailURL>
     <#assign viewerCount=currentSection.viewerCount>
-      <#assign roleMention="<@&766751512009244712>"/>
-    "additionalMessage": "<@safe_include "twitch_streamer_go_live_notification_text"/> ${roleMention}",
+    "additionalMessage": "<@safe_include "twitch_streamer_go_live_notification_text"/>",
     "embeds": [
         {
             <#include "twitch_color">,
