@@ -1,0 +1,1 @@
+Shows information about a server poll
