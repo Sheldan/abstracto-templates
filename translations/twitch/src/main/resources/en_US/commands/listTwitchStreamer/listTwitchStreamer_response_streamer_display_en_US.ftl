@@ -1,1 +1,1 @@
-`${name}` ([Page](${streamerURL})): ${targetChannel} ${showNotificationsDisplay}.
+`${name}` ([Page](${streamerURL})): ${(targetChannel)!"No channel set"}  ${showNotificationsDisplay}.
