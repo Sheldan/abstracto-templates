@@ -15,7 +15,7 @@
                 "title": "${title?json_string}"
             },
             "description": "<@safe_include "twitch_streamer_go_live_notification_current_section"/> <#if pastSections?? && pastSections?size gt 0><@safe_include "twitch_streamer_go_live_notification_past_sections"/></#if>",
-            "imageUrl": "${thumbnail}"
+            "imageUrl": "${thumbnail}?${randomString}"
         }
     ],
     "messageConfig": {
