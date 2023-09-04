@@ -28,8 +28,16 @@
                     "inline": "true"
                 }
                 </#if>
-                <#if humidity??>
+                <#if windSpeed??>
                 <#if temperature??>,</#if>
+                {
+                    "name": "<@safe_include "openWeatherMap_command_response_field_wind_field_title"/>",
+                    "value": "${windSpeed}m/s",
+                    "inline": "true"
+                }
+                </#if>
+                <#if humidity??>
+                <#if windSpeed?? || temperature??>,</#if>
                 {
                     "name": "<@safe_include "openWeatherMap_command_response_field_humidity_field_title"/>",
                     "value": "${humidity}%",
