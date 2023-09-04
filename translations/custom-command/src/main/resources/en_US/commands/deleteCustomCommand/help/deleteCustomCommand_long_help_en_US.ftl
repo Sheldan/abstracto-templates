@@ -1,0 +1,1 @@
+Deletes a custom command if exists for this server.

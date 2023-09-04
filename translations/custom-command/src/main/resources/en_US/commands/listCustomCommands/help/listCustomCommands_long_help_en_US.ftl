@@ -1,0 +1,1 @@
+Shows all custom commands of the server with their response

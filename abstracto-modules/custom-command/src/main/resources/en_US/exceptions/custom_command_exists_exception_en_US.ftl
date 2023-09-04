@@ -1,0 +1,1 @@
+<#include "custom_command_exists_exception_text">

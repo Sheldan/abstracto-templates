@@ -1,0 +1,1 @@
+This command searches through the current custom commands and shows the custom command that matches the given name.
