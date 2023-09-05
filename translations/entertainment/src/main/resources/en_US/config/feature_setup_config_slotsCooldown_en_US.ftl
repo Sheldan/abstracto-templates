@@ -1,1 +1,0 @@
-The cooldown between each slot in seconds. Default: ${defaultValue}

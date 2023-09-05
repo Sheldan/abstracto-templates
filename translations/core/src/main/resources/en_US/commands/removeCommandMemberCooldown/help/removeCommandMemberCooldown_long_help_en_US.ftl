@@ -1,0 +1,1 @@
+This removes the cooldown that is applied to each member when they execute the command. The cooldown is the same on the whole server.

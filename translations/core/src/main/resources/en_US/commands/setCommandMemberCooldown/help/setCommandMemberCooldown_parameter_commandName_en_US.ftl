@@ -1,0 +1,1 @@
+The command name to set the cooldown for

@@ -1,0 +1,1 @@
+The command name to remove the cooldown for.

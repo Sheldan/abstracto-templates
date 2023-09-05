@@ -1,0 +1,1 @@
+The duration the cooldown should be

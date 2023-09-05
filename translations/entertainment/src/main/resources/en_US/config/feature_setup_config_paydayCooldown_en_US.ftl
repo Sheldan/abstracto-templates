@@ -1,1 +1,0 @@
-The cooldown between each payday in seconds. Default: ${defaultValue}

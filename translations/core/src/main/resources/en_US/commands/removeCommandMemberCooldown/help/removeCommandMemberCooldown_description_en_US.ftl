@@ -1,0 +1,1 @@
+Removes the server wide cooldown for an individual member

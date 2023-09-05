@@ -1,0 +1,1 @@
+This command sets the cooldown for a given command to the given duration on the whole server for all members individually.
