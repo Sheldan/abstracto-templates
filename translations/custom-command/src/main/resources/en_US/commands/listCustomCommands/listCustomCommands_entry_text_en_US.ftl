@@ -1,1 +1,1 @@
-Command: `${name}` created by ${creator} with response `${content}`.
+Command: **${name}** with response `${content}`.
