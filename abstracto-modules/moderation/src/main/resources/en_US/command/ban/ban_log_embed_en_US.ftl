@@ -3,6 +3,7 @@
         {
             <#include "user_detail">
             <#include "full_member_info">
+            <#assign bannedUserName=bannedUser.name>
             "title": {
                 "title": "<@safe_include "ban_log_title"/>"
             },
