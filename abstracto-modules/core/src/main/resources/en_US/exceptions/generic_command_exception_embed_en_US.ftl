@@ -1,3 +1,4 @@
+<#include "user_user_name">
 {
     "embeds": [
         {
@@ -7,7 +8,7 @@
             <#else>
             "author":
             {
-                "name": "${fullUser.user.name?json_string}#${fullUser.user.discriminator}",
+                "name": "<@user_user_name user=fullUser.user/>",
                 "avatar":  "${fullUser.user.effectiveAvatarUrl}"
             },
             </#if>

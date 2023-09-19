@@ -1,1 +1,1 @@
-<#macro user_user_name user>${user.name?json_string}#${user.discriminator}</#macro>
+<#macro user_user_name user>${user.name?json_string}<#if user.discriminator?number gt 0>#${user.discriminator}</#if></#macro>

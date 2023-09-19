@@ -7,8 +7,9 @@
             "imageUrl":  "${memberInfo.user.effectiveAvatarUrl}",
             "fields": [
                 {
+                    <#include "member_user_name">
                     "name": "<@safe_include "showAvatar_response_embed_user_field_title"/>",
-                    "value": "${memberInfo.user.name?json_string}#${memberInfo.user.discriminator}",
+                    "value": "<@member_member_name member=memberInfo/>",
                     "inline": "true"
                 },
                 {
