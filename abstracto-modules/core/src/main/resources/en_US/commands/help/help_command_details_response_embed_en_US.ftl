@@ -10,22 +10,32 @@
 
 <#if command.help??>
 <#if command.help.templated>
+<#if command.slashCommandOnly><@safe_include "help_command_embed_command_slash_command_only"/></#if>
+<#if command.messageCommandOnly><@safe_include "help_command_embed_command_message_command_only"/></#if>
+
+<#if !command.slashCommandOnly>
 **<@safe_include "help_command_embed_command_usage"/>**: `${usage}`
+</#if>
 **<@safe_include "help_command_embed_command_detailed_help"/>**: <@safe_include "${command.name}_long_help"/>
-<#if command.help.hasExample>
+<#if command.help.hasExample && !command.slashCommandOnly>
 <@safe_include "help_command_embed_command_example"/>: <@safe_include "${command.name}_example"/>
 </#if>
 <#else>
+<#if command.slashCommandOnly><@safe_include "help_command_embed_command_slash_command_only"/></#if>
+<#if command.messageCommandOnly><@safe_include "help_command_embed_command_message_command_only"/></#if>
+
+<#if !command.slashCommandOnly>
 **<@safe_include "help_command_embed_command_usage"/>**: `${usage}`
+</#if>
 **<@safe_include "help_command_embed_command_detailed_help"/>**: ${command.help.longHelp?json_string}
-<#if command.help.hasExample>
+<#if command.help.hasExample && !command.slashCommandOnly>
 <@safe_include "help_command_embed_command_example"/>:${command.help.example?json_string}
 </#if>
 </#if>
-<#if command.aliases?? && command.aliases?size gt 0>
+<#if command.aliases?? && command.aliases?size gt 0 && !command.slashCommandOnly>
 <@safe_include "help_command_embed_command_aliases"/>: `${command.aliases?join("`, `")?json_string}`
 </#if>
-<#if serverSpecificAliases?size gt 0>
+<#if serverSpecificAliases?size gt 0 && !command.slashCommandOnly>
 <@safe_include "help_command_embed_command_server_aliases"/>: `${serverSpecificAliases?join("`, `")?json_string}`
 </#if>
 <#if cooldowns??>
