@@ -27,11 +27,11 @@
                     "name": "<@safe_include "ban_log_reason_field_title"/>",
                     "value": "${reason?json_string}"
                 }
-                <#if deletionDays gt 0>
+                <#if deletionDuration?has_content>
                 ,
                 {
-                    "name": "<@safe_include "ban_log_deletion_days_field_title"/>",
-                    "value": "${deletionDays?c}"
+                    "name": "<@safe_include "ban_log_deletion_duration_field_title"/>",
+                    "value": "${fmtDuration(deletionDuration)}"
                 }
                 </#if>
             ]

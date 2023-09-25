@@ -1,2 +1,0 @@
-This command can be used to ban a user and delete their messages for at most 7 days.
-If a time period is provided, only the day portion will be considered. For example: 1d20h will only delete messages for one day.
