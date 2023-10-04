@@ -1,1 +1,1 @@
-Please wait ${executeIn}.
+Please try again ${executeIn}.
