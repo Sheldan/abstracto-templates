@@ -5,7 +5,7 @@
             <#if message?? && message.attachments?size gt 0>
             "imageUrl": "${message.attachments[0].proxyUrl}",
             </#if>
-            "description": "<@safe_include "suggest_text_label"/>: ${text}"
+            "description": "<@safe_include "suggest_text_label"/>: ${text?json_string}"
             <#if reason?has_content || buttonsActive>,
             "fields": [
                 <#if reason?has_content>
