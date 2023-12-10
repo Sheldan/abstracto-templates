@@ -1,0 +1,1 @@
+The channel the giveaway should be posted in

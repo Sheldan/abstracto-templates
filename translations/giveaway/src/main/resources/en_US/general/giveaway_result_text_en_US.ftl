@@ -1,0 +1,1 @@
+Congratulations ${memberMentions}! You won **${prize}**!! :tada::tada:

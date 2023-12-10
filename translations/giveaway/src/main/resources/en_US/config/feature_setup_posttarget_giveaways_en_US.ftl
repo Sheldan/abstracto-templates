@@ -1,0 +1,1 @@
+The channel to create giveaways in. Currently: ${currentTarget}

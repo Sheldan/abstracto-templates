@@ -1,0 +1,1 @@
+The giveaway has been cancelled.
