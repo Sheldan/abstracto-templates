@@ -1,0 +1,1 @@
+${userCount} people have paid their respects to **${text}**.

@@ -1,0 +1,1 @@
+The amount of time it should be possible to press F

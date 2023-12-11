@@ -1,0 +1,1 @@
+${user} has paid their respects.
