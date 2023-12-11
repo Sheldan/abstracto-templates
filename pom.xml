@@ -5,7 +5,7 @@
 
     <groupId>dev.sheldan.abstracto-templates</groupId>
     <artifactId>templates</artifactId>
-    <version>1.4.24-SNAPSHOT</version>
+    <version>1.4.25-SNAPSHOT</version>
 
     <modules>
         <module>abstracto-modules</module>
