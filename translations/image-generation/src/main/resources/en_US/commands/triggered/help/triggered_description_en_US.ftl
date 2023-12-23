@@ -1,0 +1,1 @@
+Responds with a GIF representing how triggered a user is

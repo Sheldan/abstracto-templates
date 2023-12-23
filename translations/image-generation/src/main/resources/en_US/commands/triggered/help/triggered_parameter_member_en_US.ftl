@@ -1,0 +1,1 @@
+The member whose avatar to use.

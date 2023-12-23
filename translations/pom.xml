@@ -36,6 +36,7 @@
         <module>custom-command</module>
         <module>twitch</module>
         <module>giveaway</module>
+        <module>image-generation</module>
     </modules>
 
 </project>
