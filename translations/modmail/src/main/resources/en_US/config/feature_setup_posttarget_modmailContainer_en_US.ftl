@@ -1,0 +1,1 @@
+The channel which should contain the modmail threads. (In the appropriate mode). This must be a channel that can contain threads. Currently: ${currentTarget}
