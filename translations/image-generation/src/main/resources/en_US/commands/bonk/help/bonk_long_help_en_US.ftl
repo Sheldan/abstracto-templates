@@ -1,0 +1,1 @@
+This command creates a GIF containing the avatar of the user and a newspaper to indicate bonking.
