@@ -1,0 +1,1 @@
+<#include "modmail_thread_closed_exception_text">

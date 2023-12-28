@@ -1,0 +1,1 @@
+Thread has been closed. Please archive the thread again and open a new one with the contact command.
