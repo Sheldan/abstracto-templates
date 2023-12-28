@@ -1,0 +1,1 @@
+Searches for definitions in a public English dictionary

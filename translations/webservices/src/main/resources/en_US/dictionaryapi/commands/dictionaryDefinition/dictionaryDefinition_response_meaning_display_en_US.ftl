@@ -1,0 +1,1 @@
+${meaning} <#if hasExample>*Example: ${example}*</#if>

@@ -1,0 +1,1 @@
+Searches for articles on Wikipedia
