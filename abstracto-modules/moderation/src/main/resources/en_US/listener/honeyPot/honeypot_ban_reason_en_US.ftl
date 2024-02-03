@@ -1,0 +1,1 @@
+<#include "honeypot_ban_reason_text">
