@@ -1,4 +1,4 @@
-name: Publishes a new version of the application
+name: Publishes a new version of the templates
 on: workflow_dispatch
 jobs:
   publish:
