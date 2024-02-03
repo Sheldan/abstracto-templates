@@ -21,10 +21,11 @@
     </distributionManagement>
 
     <scm>
-        <url>https://maven.pkg.github.com/Sheldan/abstracto-templates</url>
-        <developerConnection>scm:git:git@github.com:Sheldan/abstracto-templates.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <connection>scm:git:${project.scm.url}</connection>
+        <developerConnection>scm:git:${project.scm.url}</developerConnection>
+        <url>https://github.com/Sheldan/abstracto-templates.git</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <repositories>
         <repository>
