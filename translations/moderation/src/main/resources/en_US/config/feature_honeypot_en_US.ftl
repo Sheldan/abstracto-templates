@@ -1,1 +1,1 @@
-Honey pot
+Honeypot
