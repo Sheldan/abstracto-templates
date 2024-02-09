@@ -1,0 +1,1 @@
+The amount of seconds the user can be member of the server to be ignored by the honeypot check. Default: ${defaultValue}
