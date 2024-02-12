@@ -1,0 +1,1 @@
+Whether you want to have sticky roles.

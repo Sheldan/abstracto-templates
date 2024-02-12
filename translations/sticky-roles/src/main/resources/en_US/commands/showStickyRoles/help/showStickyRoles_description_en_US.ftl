@@ -1,0 +1,1 @@
+Shows the current sticky role configuration

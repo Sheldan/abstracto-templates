@@ -1,0 +1,1 @@
+Changes whether a role should be sticky

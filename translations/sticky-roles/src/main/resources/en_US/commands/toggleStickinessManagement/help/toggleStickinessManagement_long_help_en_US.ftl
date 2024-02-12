@@ -1,0 +1,1 @@
+This command can be used to configure if another member should maintain their roles if they leave and rejoin.

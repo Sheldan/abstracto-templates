@@ -37,6 +37,7 @@
         <module>twitch</module>
         <module>giveaway</module>
         <module>image-generation</module>
+        <module>sticky-roles</module>
     </modules>
 
 </project>

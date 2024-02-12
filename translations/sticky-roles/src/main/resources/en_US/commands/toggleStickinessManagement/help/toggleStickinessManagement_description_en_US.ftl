@@ -1,0 +1,1 @@
+Change whether another member should have sticky roles

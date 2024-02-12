@@ -1,0 +1,1 @@
+This command can be used to configure whether your roles should be maintained if you are leaving and re-joining.

@@ -1,0 +1,1 @@
+Changed sticky role configuration.

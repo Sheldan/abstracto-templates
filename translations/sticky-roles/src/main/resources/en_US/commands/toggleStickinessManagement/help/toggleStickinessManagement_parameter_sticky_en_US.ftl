@@ -1,0 +1,1 @@
+Whether they should have sticky roles

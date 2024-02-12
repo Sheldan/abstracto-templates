@@ -1,0 +1,1 @@
+This command can be used to create the role in the configuration, and also to change whether the role should be maintained when members leave and re-join.
