@@ -1,0 +1,1 @@
+removes the member from a channel once they reach the level

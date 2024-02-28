@@ -1,0 +1,1 @@
+<#assign rolePing="<@&${parameters.roleId?c}>">Removes ${rolePing}

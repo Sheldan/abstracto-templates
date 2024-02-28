@@ -1,0 +1,1 @@
+<#assign channelMention="<#${parameters.channelId?c}>"> Adds member to ${channelMention}
