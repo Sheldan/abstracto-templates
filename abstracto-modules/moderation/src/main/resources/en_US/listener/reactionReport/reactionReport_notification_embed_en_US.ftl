@@ -33,5 +33,15 @@
                 "persistCallback": false
             }
         }
+        <#if moderationActionComponents?size gt 0>,</#if>
+        <#list moderationActionComponents as moderactionAction>
+        {
+            "label": "<@safe_include "moderation_action_${moderactionAction.action}_button_label"/>",
+            "id": "${moderactionAction.componentId}",
+            "buttonStyle": "danger",
+            "metaConfig": {
+                "persistCallback": false
+            }
+        }<#sep>,</#list>
     ]
 }

@@ -1,9 +1,6 @@
 {
     "embeds": [
         {
-            <#include "full_member_info">
-            <#include "member_author">
-            <@member_author member=warnedMember/>,
             "title": {
                 "title": "<@safe_include "warn_log_title"/>"
             },
@@ -11,18 +8,12 @@
             "fields": [
                 {
                     "name": "<@safe_include "warn_log_warned_user_field_title"/>",
-                    "value": "<@full_member_info member=warnedMember/>"
+                    "value": "${warnedMember.memberMention}"
                 },
-                <#if member?has_content>
+                <#if warningMember?has_content>
                 {
                     "name": "<@safe_include "warn_log_warning_user_field_title"/>",
-                    "value": "<@full_member_info member=member/>"
-                },
-                </#if>
-                <#if message?has_content>
-                {
-                    "name": "<@safe_include "warn_log_warn_location_field_title"/>",
-                    "value": "[${channel.name?json_string}](${message.jumpUrl})"
+                    "value": "${warningMember.memberMention}"
                 },
                 </#if>
                 {

@@ -1,10 +1,7 @@
-<#include "full_member_info">
 <#include "format_instant">
-<#include "member_author">
 {
     "embeds": [
         {
-            <@member_author member=mutedUser/>,
             "title": {
             <#if durationChanged>
                 "title": "<@safe_include "mute_log_title_mute_changed"/>"
@@ -13,13 +10,12 @@
             <#elseif muted>
                 "title": "<@safe_include "mute_log_title_muted"/>"
             </#if>
-
             },
             <#include "moderation_action_color">,
             "fields": [
                 {
                     "name": "<@safe_include "mute_log_muted_user_field_title"/>",
-                    "value": "<@full_member_info member=mutedUser/>"
+                    "value": "${mutedUser.memberMention}"
                 },
                 <#if mutingUser?has_content>
                 {
@@ -28,7 +24,7 @@
                     <#elseif muteEnded>
                         "name": "<@safe_include "mute_log_unmuting_user_field_title"/>",
                     </#if>
-                    "value": "<@full_member_info member=mutingUser/>"
+                    "value": "${mutingUser.memberMention}"
                 }
                 </#if>
                 <#if reason?has_content>,
@@ -40,7 +36,7 @@
                 <#if muted && !durationChanged>,
                 {
                     "name": "<@safe_include "mute_log_mute_duration_field_title"/>",
-                    "value": "${fmtDuration(muteDuration)}"
+                    "value": "${fmtDuration(duration)}"
                 },
                 {
                     "name": "<@safe_include "mute_log_muted_until_field_title"/>",

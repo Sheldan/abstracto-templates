@@ -1,9 +1,6 @@
 {
     "embeds": [
         {
-            <#include "user_detail">
-            <#include "full_member_info">
-            <#assign bannedUserName=bannedUser.name>
             "title": {
                 "title": "<@safe_include "ban_log_title"/>"
             },
@@ -11,18 +8,12 @@
             "fields": [
                 {
                     "name": "<@safe_include "ban_log_banned_user_field_title"/>",
-                    "value": "<@user_detail user=bannedUser/>"
+                    "value": "${bannedUser.userMention}"
                 },
                 {
                     "name": "<@safe_include "ban_log_banning_user_field_title"/>",
-                    "value": "<@full_member_info member=banningMember/>"
+                    "value": "${banningMember.memberMention}"
                 },
-                <#if commandMessage?has_content>
-                {
-                    "name": "<@safe_include "ban_log_jump_link_field_title"/>",
-                    "value": "[${commandMessage.channel.name?json_string}](${commandMessage.jumpUrl})"
-                },
-                </#if>
                 {
                     "name": "<@safe_include "ban_log_reason_field_title"/>",
                     "value": "${reason?json_string}"

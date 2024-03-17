@@ -1,9 +1,6 @@
 {
     "embeds": [
         {
-            <#include "full_member_info">
-            <#include "member_author">
-            <@member_author member=kickedUser/>,
             "title": {
                 "title": "<@safe_include "kick_log_title"/>"
             },
@@ -11,18 +8,12 @@
             "fields": [
                 {
                     "name": "<@safe_include "kick_log_kicked_user_field_title"/>",
-                    "value": "<@full_member_info member=kickedUser/>"
+                    "value": "${kickedMember.memberMention}"
                 },
                 {
                     "name": "<@safe_include "kick_log_kicking_user_field_title"/>",
-                    "value": "<@full_member_info member=member/>"
+                    "value": "${kickingMember.memberMention}"
                 },
-                <#if messsage?has_content>
-                {
-                    "name": "<@safe_include "kick_log_jump_link_field_title"/>",
-                    "value": "[${channel.name?json_string}](${message.jumpUrl})"
-                },
-                </#if>
                 {
                     "name": "<@safe_include "kick_log_reason_field_title"/>",
                     "value": "${reason?json_string}"
