@@ -21,4 +21,14 @@
             }
         }
     ]
+    <#if leaderboardUrl?has_content>
+    ,"buttons": [
+        {
+            "label": "<@safe_include "leaderboard_leaderboard_button_label"/>",
+            <#assign leaderboardUrl=leaderboardUrl>
+            "url": "${leaderboardUrl}",
+            "buttonStyle": "link"
+        }
+    ]
+    </#if>
 }
