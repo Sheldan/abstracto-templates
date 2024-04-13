@@ -20,11 +20,13 @@
                     "inline": "true"
                 },
                 </#if>
+                <#if onlineStatus?has_content>
                 {
                     "name": "<@safe_include "userInfo_response_embed_status_field_title"/>",
                     "value": "${onlineStatus?json_string}",
                     "inline": "true"
                 },
+                </#if>
                 {
                     "name": "<@safe_include "userInfo_response_embed_joined_field_title"/>",
                     "value": "<@format_instant_date_time instant=joinDate/>",
@@ -35,7 +37,7 @@
                     "value": "<@format_instant_date_time instant=creationDate/>",
                     "inline": "true"
                 }
-                <#if roles?size gt 0>
+                <#if roles?has_content && roles?size gt 0>
                 ,
                 {
                     "name": "<@safe_include "userInfo_response_embed_roles_field_title"/>",
@@ -44,7 +46,7 @@
                     "valueSplitLength": 250
                 }
                 </#if>
-                <#if activities?size gt 0>
+                <#if activities?has_content && activities?size gt 0>
                 ,
                 {
                     "name": "<@safe_include "userInfo_response_embed_activity_field_title"/>",
