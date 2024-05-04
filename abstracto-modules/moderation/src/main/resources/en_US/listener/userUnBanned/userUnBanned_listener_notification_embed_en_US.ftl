@@ -16,6 +16,13 @@
                     "value": "<@user_detail user=unBanningUser/>"
                 }
                 </#if>
+                <#if reason??>
+                ,
+                {
+                "name": "<@safe_include "userUnBanned_field_title_reason"/>",
+                "value": "${reason}"
+                }
+                </#if>
             ]
         }
     ]

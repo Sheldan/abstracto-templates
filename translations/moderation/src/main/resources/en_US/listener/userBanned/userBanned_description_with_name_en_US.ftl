@@ -1,0 +1,1 @@
+User ${bannedUserName} was banned.

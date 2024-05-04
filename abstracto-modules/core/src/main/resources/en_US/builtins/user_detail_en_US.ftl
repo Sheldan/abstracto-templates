@@ -1,1 +1,1 @@
-<#macro user_detail user>${user.name?json_string}<#if user.discriminator?number gt 0>#${user.discriminator}</#if> (${user.idLong?c})</#macro>
+<#macro user_detail user><#if user.name?has_content>${user.name?json_string}<#if user.discriminator?has_content && user.discriminator != '0000'>#${user.discriminator}</#if><#else>${user.userMention}</#if> (${user.id?c})</#macro>

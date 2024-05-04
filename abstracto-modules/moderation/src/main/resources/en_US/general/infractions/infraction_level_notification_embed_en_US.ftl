@@ -1,7 +1,6 @@
 {
     "embeds": [
         {
-            <#include "user_detail">
             <#include "full_member_info">
             <#include "moderation_action_color">,
             <#assign newLevel=newLevel>

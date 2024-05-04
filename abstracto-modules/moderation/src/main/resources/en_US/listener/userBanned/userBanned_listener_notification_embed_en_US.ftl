@@ -3,8 +3,12 @@
         {
             <#include "user_detail">
             <#include "abstracto_color">,
-            <#assign bannedUserName=bannedUser.name>
-            "description" : "<@safe_include "userBanned_description"/>",
+            <#if bannedUser.name?has_content>
+                <#assign bannedUserName=bannedUser.name>
+                "description" : "<@safe_include "userBanned_description_with_name"/>",
+            <#else>
+                "description" : "<@safe_include "userBanned_description"/>",
+            </#if>
             "fields": [
                 {
                     "name": "<@safe_include "userBanned_field_title_banned_user"/>",
