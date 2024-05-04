@@ -19,7 +19,7 @@
                 },
                 <#if mutingUser?has_content>
                 {
-                    <#if muted>
+                    <#if muted || durationChanged>
                         "name": "<@safe_include "mute_log_muting_user_field_title"/>",
                     <#elseif muteEnded>
                         "name": "<@safe_include "mute_log_unmuting_user_field_title"/>",
