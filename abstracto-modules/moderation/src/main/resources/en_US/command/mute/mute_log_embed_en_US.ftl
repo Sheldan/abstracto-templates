@@ -1,4 +1,5 @@
 <#include "format_instant">
+<#include "member_detail">
 {
     "embeds": [
         {
@@ -15,16 +16,16 @@
             "fields": [
                 {
                     "name": "<@safe_include "mute_log_muted_user_field_title"/>",
-                    "value": "${mutedUser.memberMention}"
+                    "value": "<@member_detail member=mutedMember/>"
                 },
-                <#if mutingUser?has_content>
+                <#if mutingMember?has_content>
                 {
                     <#if muted || durationChanged>
                         "name": "<@safe_include "mute_log_muting_user_field_title"/>",
                     <#elseif muteEnded>
                         "name": "<@safe_include "mute_log_unmuting_user_field_title"/>",
                     </#if>
-                    "value": "${mutingUser.memberMention}"
+                    "value": "<@member_detail member=mutingMember/>"
                 }
                 </#if>
                 <#if reason?has_content>,

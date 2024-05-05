@@ -1,0 +1,1 @@
+<#macro member_detail member><#if member.name?has_content>${member.name?json_string}<#if member.discriminator?has_content && member.discriminator != '0000'>#${member.discriminator}</#if><#else>${member.memberMention}</#if> (${member.userId?c})</#macro>
