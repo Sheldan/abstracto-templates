@@ -1,8 +1,6 @@
 {
     "embeds": [
         {
-            <#include "member_author">
-            <@member_author member=member/>,
             <#include "exception_color">,
             "metaConfig" : {
                 "preventEmptyEmbed": "true"
