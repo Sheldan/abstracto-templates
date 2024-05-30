@@ -1,8 +1,8 @@
 {
     "embeds": [
         {
-            <#include "member_author">
-            <@member_author member=member/>,
+            <#include "user_author">
+            <@user_detail_author user=userDisplay/>,
             "title": {
                 "title": "<@safe_include "modmail_thread_user_message_title"/>"
             },

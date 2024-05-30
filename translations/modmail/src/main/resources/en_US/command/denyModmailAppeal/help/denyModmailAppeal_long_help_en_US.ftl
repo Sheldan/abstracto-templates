@@ -1,0 +1,1 @@
+Rejects the appeal, closes the modmail thread and bans the user from the appeal server.

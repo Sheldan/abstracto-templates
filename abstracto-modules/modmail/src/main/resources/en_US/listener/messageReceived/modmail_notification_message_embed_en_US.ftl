@@ -1,13 +1,12 @@
+<#include "user_detail">
 {
     "embeds": [
         {
-            <#include "member_author">
-            <@member_author member=member/>,
             "title": {
                 "title": "<@safe_include "modmail_notification_message_title"/>"
             },
             <#include "modmail_color">,
-            <#assign user><@member_user_name member=member/>(${member.user.id})</#assign>
+            <#assign user><@user_detail user=userDisplay/></#assign>
             "description": "<@safe_include "modmail_notification_message_description"/>"
             <#if channel?has_content>,
             "fields": [

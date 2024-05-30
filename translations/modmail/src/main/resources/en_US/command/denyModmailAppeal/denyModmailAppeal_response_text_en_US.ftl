@@ -1,0 +1,1 @@
+User has been banned from the appeal server.
