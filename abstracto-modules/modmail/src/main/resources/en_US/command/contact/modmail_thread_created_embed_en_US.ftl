@@ -1,8 +1,8 @@
 {
     "embeds": [
         {
-            <#include "member_author">
-            <@member_author member=targetMember/>,
+            <#include "user_author">
+            <@user_detail_author user=userDisplay/>,
             "description": "<@safe_include "modmail_thread_created_description"/>",
             <#include "modmail_color">,
             "fields": [
