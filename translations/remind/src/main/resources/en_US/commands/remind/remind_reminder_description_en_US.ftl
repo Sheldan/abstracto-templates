@@ -1,1 +1,1 @@
-Reminder ID ${reminder.id?c}
+Reminder ID ${reminderId?c}

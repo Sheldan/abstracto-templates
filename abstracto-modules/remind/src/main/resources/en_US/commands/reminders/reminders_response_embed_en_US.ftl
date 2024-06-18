@@ -2,8 +2,8 @@
 {
     "embeds": [
         {
-            <#include "member_author">
-            <@member_author member=member/>,
+            <#include "user_author">
+            <@user_detail_author user=userDisplay/>,
             <#include "abstracto_color">,
             "title": {
                 "title": "<@safe_include "reminders_reminders_embed_title"/>"
@@ -17,7 +17,7 @@
                     <#assign id>${reminderDisplay.id}</#assign>
                     <#assign reminderTargetDate><@format_instant_date_time instant=reminderDisplay.targetDate/></#assign>
                     <#assign reminderText=reminderDisplay.text/>
-                    <#assign messageLink=reminderDisplay.message.jumpUrl/>
+                    <#if !reminderDisplay.userCommand><#assign messageLink=reminderDisplay.message.jumpUrl/></#if>
                     <#assign joined=reminderDisplay.joined/>
                     <#assign joinedText><#if joined><@safe_include "reminder_joined_text"/></#if></#assign>
                     "name": "<@safe_include "reminders_reminder_field_title"/>",

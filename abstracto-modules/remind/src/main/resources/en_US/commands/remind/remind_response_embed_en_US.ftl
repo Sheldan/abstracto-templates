@@ -3,9 +3,8 @@
     "embeds": [
         {
             <#assign id>${reminder.id}</#assign>
-            <#include "member_author">
-            <#include "member_avatar">
-            <@member_display_author member=memberDisplay/>,
+            <#include "user_author">
+            <@user_detail_author user=userDisplay/>,
             <#include "abstracto_color">,
             <#assign reminderTargetDate><@format_instant_date_time instant=reminder.targetDate/></#assign>
             <#if message?has_content>
@@ -17,8 +16,11 @@
             </#if>
 
         }
-    ],
-    "additionalMessage": "${memberDisplay.memberMention?json_string}",
+    ]
+    <#if !reminder.userCommand>,
+    "additionalMessage": "${userDisplay.userMention?json_string}"
+    </#if>
+    <#if joinButtonId?has_content>,
     "buttons": [
         {
             "label": "<@safe_include "remind_reminder_join_button_label"/>",
@@ -29,4 +31,5 @@
             }
         }
     ]
+    </#if>
 }
