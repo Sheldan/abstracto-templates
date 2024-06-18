@@ -1,10 +1,10 @@
 {
     "embeds": [
         {
-            <#include "member_author">
-            <#include "member_avatar">
-            <@member_display_author member=memberNameDisplay/>,
+            <#include "user_author">
+            <@user_detail_author user=userDisplay/>,
             <#include "abstracto_color">,
+            <#assign reminderId=reminderDisplay.id>
             "description": "<@safe_include "remind_reminder_description"/>",
             "fields": [
                 {
@@ -13,18 +13,22 @@
                 },
                 {
                     "name": "<@safe_include "remind_reminder_note_field_title"/>",
-                    "value": "${reminder.text?json_string}"
-                },
+                    "value": "${reminderDisplay.text?json_string}"
+                }
+                <#if messageUrl?has_content>,
                 {
                     "name": "<@safe_include "remind_reminder_link_field_title"/>",
                     "value": "[<@safe_include "remind_reminder_link_content_display_text"/>](${messageUrl})"
                 }
+                </#if>
             ]
         }
-    ],
-<#assign participantsMentions><#list reminderParticipants as participant>${participant.memberMention}<#sep>, </#list></#assign>
-    "additionalMessage": "${memberNameDisplay.memberMention?json_string} 🔔
+    ]
+<#if !reminderDisplay.userCommand>,
+<#assign participantsMentions><#if reminderParticipants?has_content><#list reminderParticipants as participant>${participant.memberMention}<#sep>, </#list></#if></#assign>
+    "additionalMessage": "${userDisplay.userMention?json_string} 🔔
 
 ${participantsMentions}
 "
+</#if>
 }
