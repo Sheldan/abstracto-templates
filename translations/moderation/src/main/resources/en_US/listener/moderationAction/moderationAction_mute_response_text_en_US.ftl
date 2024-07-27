@@ -1,1 +1,1 @@
-User has been banned.
+User has been muted.
