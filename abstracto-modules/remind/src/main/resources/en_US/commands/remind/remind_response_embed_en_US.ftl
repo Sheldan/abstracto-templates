@@ -12,8 +12,12 @@
                 <#assign messageUrl>${message.jumpUrl}</#assign>
                 "description": "<@safe_include "remind_reminding_description_text"/>"
             <#else>
-                <#assign reminderText=remindText?json_string>
-                "description": "<@safe_include "remind_reminding_description_slash_text"/>"
+                <#if remindText?has_content>
+                    <#assign reminderText=remindText?json_string>
+                    "description": "<@safe_include "remind_reminding_description_slash_text"/>"
+                <#else>
+                    "description": "<@safe_include "remind_reminding_description_slash_no_text"/>"
+                </#if>
             </#if>
 
         }

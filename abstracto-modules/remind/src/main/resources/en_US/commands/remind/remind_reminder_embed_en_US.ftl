@@ -11,10 +11,12 @@
                     "name": "<@safe_include "remind_reminder_duration_field_title"/>",
                     "value": "${fmtDuration(duration)}"
                 },
+                <#if reminder.text?has_content>
                 {
                     "name": "<@safe_include "remind_reminder_note_field_title"/>",
                     "value": "${reminder.text?json_string}"
                 },
+                </#if>
                 {
                     "name": "<@safe_include "remind_reminder_link_field_title"/>",
                     "value": "[<@safe_include "remind_reminder_link_content_display_text"/>](${messageUrl})"
