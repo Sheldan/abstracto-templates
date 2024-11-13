@@ -7,7 +7,8 @@
             },
             <#include "modmail_color">,
             <#assign user><@user_detail user=userDisplay/></#assign>
-            "description": "<@safe_include "modmail_notification_message_description"/>"
+            <#assign appeal=appeal>
+            "description": "<@safe_include "modmail_notification_message_description"/><#if appeal> <@safe_include "modmail_notification_message_description_appeal_suffix"/></#if>"
             <#if channel?has_content>,
             "fields": [
                 {
