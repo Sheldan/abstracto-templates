@@ -1,0 +1,1 @@
+Whether the leaderboard should show the rankings surrounding you. Overwrites page parameter

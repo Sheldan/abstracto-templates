@@ -12,9 +12,11 @@
 <@userDisplay user=user />
 
 </#list>
-
-<@safe_include "leaderboard_own_placement"/>:
-<@userDisplay user=userExecuting />
+<#assign showPlacement=showPlacement>
+<#if showPlacement>
+    <@safe_include "leaderboard_own_placement"/>:
+    <@userDisplay user=userExecuting />
+</#if>
 ",
             "footer": {
                 "text": "<@safe_include "leaderboard_footer"/>"
