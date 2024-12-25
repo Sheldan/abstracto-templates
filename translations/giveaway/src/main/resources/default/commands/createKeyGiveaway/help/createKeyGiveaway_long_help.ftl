@@ -1,0 +1,1 @@
+Creates a giveaway using a stored key.

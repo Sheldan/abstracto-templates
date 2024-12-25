@@ -1,0 +1,1 @@
+Adds a key identified by name and key (and optional description) to the list of keys to be used in the future

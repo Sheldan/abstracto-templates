@@ -1,0 +1,1 @@
+Adds a key to the list of giveaway keys

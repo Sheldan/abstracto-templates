@@ -1,0 +1,1 @@
+Shows the current giveaway keys. With an option to also show the already used ones

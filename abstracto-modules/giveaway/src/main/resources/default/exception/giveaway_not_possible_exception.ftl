@@ -1,0 +1,1 @@
+<#include "giveaway_not_possible_exception_message">

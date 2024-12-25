@@ -1,0 +1,1 @@
+A description for the key. Will be displayed in the giveaway

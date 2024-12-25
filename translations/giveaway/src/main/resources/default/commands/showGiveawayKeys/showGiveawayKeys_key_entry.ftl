@@ -1,0 +1,1 @@
+${key.used?string('❌', '✅')} ${key.id} `${key.name}`: `${key.key}` <#if key.description?has_content>${key.description} </#if><#if key.creator?has_content>(created by ${key.creator.memberMention}) </#if><#if key.benefactor?has_content>Donated by: ${key.benefactor.memberMention} </#if><#if key.used && key.winner?has_content>Won by: ${key.winner.memberMention}</#if>

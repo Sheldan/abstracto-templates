@@ -1,0 +1,1 @@
+How long the giveaway should be.
