@@ -1,0 +1,1 @@
+The duration for giveaways created for keys. Default: ${defaultValue}
