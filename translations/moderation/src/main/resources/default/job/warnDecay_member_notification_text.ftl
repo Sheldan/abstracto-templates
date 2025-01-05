@@ -1,1 +1,1 @@
-Your warning from ${warningDate} with the reason `${reason}` has been decayed. You have ${remainingWarningsCount} remaining active warnings.
+Your warning from ${warningDate} with the reason `${reason?json_string}` has been decayed. You have ${remainingWarningsCount} remaining active warnings.

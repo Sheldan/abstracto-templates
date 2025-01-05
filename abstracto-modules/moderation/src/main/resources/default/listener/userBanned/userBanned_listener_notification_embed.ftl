@@ -25,7 +25,7 @@
                 ,
                 {
                     "name": "<@safe_include "userBanned_field_title_reason"/>",
-                    "value": "${reason}"
+                    "value": "${reason?json_string}"
                 }
                 </#if>
             ]

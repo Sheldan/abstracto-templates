@@ -1,1 +1,1 @@
-You were banned from the server ${serverName} for `${reason}`.
+You were banned from the server ${serverName} for `${reason?json_string}`.

@@ -1,1 +1,1 @@
-You were kicked from the server ${serverName} for the following reason: ${warning.reason}.
+You were kicked from the server ${serverName} for the following reason: ${warning.reason?json_string}.

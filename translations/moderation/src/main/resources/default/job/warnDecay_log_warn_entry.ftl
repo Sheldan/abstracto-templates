@@ -1,1 +1,1 @@
-${warnedUser} was warned on ${warnDate} with reason `${warnReason}` by ${warningUser}
+${warnedUser} was warned on ${warnDate} with reason `${warnReason?json_string}` by ${warningUser}

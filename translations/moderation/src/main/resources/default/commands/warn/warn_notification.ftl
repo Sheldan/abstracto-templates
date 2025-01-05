@@ -1,1 +1,1 @@
-You were warned on the server ${serverName} for the following reason: ${reason}.
+You were warned on the server ${serverName} for the following reason: ${reason?json_string}.

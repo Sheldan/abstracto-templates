@@ -1,1 +1,1 @@
-You were muted on the server ${serverName} for the following reason: ${reason}.
+You were muted on the server ${serverName} for the following reason: ${reason?json_string}.

@@ -1,1 +1,1 @@
-Warning #${warnId} towards user ${warnedUserText} by user ${warningUserText} on ${warnDate}. It is **${decayed?then('decayed', 'active')}**. The reason was: `${reason}`.
+Warning #${warnId} towards user ${warnedUserText} by user ${warningUserText} on ${warnDate}. It is **${decayed?then('decayed', 'active')}**. The reason was: `${reason?json_string}`.
