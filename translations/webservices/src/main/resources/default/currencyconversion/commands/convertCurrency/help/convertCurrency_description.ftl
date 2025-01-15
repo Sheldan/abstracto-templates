@@ -1,0 +1,1 @@
+Converts money between different currencies

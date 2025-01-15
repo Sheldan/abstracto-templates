@@ -1,0 +1,1 @@
+${sourceValue} ${sourceCurrency} is ${targetValue} ${targetCurrency}.

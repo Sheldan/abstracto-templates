@@ -1,0 +1,1 @@
+The target currency (use symbol, short code or name)

@@ -1,0 +1,1 @@
+Uses a web API to convert money between different currencies.
