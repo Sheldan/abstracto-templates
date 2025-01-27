@@ -1,0 +1,1 @@
+Emotes used in messages only

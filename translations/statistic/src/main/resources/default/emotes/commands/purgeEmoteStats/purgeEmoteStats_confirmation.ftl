@@ -1,1 +1,1 @@
-Do you really want to purge the emote stats?
+Do you really want to purge the emote stats? This will delete all stored usages of the provided emote.

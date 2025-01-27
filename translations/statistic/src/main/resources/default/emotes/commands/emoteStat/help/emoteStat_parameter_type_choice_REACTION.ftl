@@ -1,0 +1,1 @@
+Emotes as reactions only

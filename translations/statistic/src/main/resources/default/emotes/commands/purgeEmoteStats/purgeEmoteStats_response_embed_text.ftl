@@ -1,0 +1,1 @@
+Emote stats for emote have been purged.

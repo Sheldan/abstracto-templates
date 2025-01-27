@@ -1,0 +1,1 @@
+Emote stats have been reset.

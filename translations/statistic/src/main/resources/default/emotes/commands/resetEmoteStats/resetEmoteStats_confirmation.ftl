@@ -1,0 +1,1 @@
+Do you really want to reset the emote stats? This will COMPLETELY WIPE ALL STORED EMOTE USAGES, and **CANNOT** be reversed.

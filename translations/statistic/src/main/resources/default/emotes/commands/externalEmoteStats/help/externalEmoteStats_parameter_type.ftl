@@ -1,0 +1,1 @@
+Which types of emotes to show: Reactions or Messages (if not provided, both)

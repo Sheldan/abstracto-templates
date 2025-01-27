@@ -1,1 +1,1 @@
-The emote which should be tracked. This needs to be an actual emote used, but can be an ID if you are 're-tracking' a previously existing emote.
+The emote to tracked. Use the emote or provide an ID if you are 're-tracking' an existing emote.
