@@ -1,0 +1,1 @@
+`${emote.trackedEmote.emoteName}:${emote.trackedEmote.trackedEmoteId.id?c}`x${emote.result.amount?c}
