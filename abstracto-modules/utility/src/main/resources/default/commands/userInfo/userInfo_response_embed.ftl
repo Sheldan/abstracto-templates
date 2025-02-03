@@ -9,6 +9,18 @@
             "thumbnail":  "<@member_display_avatar member=memberDisplay/>",
             "fields": [
                 {
+                    "name": "<@safe_include "userInfo_response_embed_user_name_field_title"/>",
+                    "value": "${memberDisplay.userName}",
+                    "inline": "true"
+                },
+                <#if memberDisplay.displayName?has_content>
+                {
+                    "name": "<@safe_include "userInfo_response_embed_global_name_field_title"/>",
+                    "value": "${memberDisplay.displayName}",
+                    "inline": "true"
+                },
+                </#if>
+                {
                     "name": "<@safe_include "userInfo_response_embed_id_field_title"/>",
                     "value": "${id?c}",
                     "inline": "true"
@@ -20,22 +32,26 @@
                     "inline": "true"
                 },
                 </#if>
+                <#if onlineStatus?has_content>
                 {
                     "name": "<@safe_include "userInfo_response_embed_status_field_title"/>",
                     "value": "${onlineStatus?json_string}",
                     "inline": "true"
                 },
+                </#if>
+                <#if joinDate?has_content>
                 {
                     "name": "<@safe_include "userInfo_response_embed_joined_field_title"/>",
                     "value": "<@format_instant_date_time instant=joinDate/>",
                     "inline": "true"
                 },
+                </#if>
                 {
                     "name": "<@safe_include "userInfo_response_embed_registered_field_title"/>",
                     "value": "<@format_instant_date_time instant=creationDate/>",
                     "inline": "true"
                 }
-                <#if roles?size gt 0>
+                <#if roles?has_content && roles?size gt 0>
                 ,
                 {
                     "name": "<@safe_include "userInfo_response_embed_roles_field_title"/>",
@@ -44,7 +60,7 @@
                     "valueSplitLength": 250
                 }
                 </#if>
-                <#if activities?size gt 0>
+                <#if activities?has_content && activities?size gt 0>
                 ,
                 {
                     "name": "<@safe_include "userInfo_response_embed_activity_field_title"/>",

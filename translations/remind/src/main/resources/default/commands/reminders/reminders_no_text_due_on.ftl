@@ -1,1 +1,1 @@
-Due on ${reminderTargetDate} started [here](${messageLink}) ${joinedText}
+Due on ${reminderTargetDate} <#if messageLink?has_content>started [here](${messageLink}))</#if> ${joinedText}
