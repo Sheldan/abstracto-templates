@@ -1,0 +1,1 @@
+[USER] Plays a game of magic 8-ball

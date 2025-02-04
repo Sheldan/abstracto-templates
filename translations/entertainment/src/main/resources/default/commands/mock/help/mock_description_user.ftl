@@ -1,0 +1,1 @@
+[USER] Mocks a given text

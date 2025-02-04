@@ -1,0 +1,1 @@
+[USER] Responds with an image showing the text with Amongus

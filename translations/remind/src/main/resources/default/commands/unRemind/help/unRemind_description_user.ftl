@@ -1,0 +1,1 @@
+[USER] Cancels the given reminder

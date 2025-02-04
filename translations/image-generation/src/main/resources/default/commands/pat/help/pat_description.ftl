@@ -1,1 +1,1 @@
-Responds with a GIF representing the user being patted
+Responds with a GIF representing the target being patted

@@ -1,0 +1,1 @@
+[USER] Shows the avatar of a user

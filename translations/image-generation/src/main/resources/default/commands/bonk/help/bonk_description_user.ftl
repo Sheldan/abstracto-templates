@@ -1,0 +1,1 @@
+[USER] Responds with a GIF representing the target being bonked

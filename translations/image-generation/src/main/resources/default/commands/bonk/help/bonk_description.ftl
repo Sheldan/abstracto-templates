@@ -1,1 +1,1 @@
-Responds with a GIF representing the user being bonked.
+Responds with a GIF representing the target being bonked.

@@ -1,0 +1,1 @@
+[USER] Converts money between different currencies. Only shown currencies are available

@@ -1,0 +1,1 @@
+[USER] Deletes a custom command from your set of custom commands

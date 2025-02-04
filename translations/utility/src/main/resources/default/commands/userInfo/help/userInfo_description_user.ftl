@@ -1,0 +1,1 @@
+[USER] Shows limited information about a user

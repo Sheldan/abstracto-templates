@@ -1,0 +1,1 @@
+[USER] Prints the latency between the bot and Discord

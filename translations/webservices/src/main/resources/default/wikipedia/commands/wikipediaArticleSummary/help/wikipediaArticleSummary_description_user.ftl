@@ -1,0 +1,1 @@
+[USER] Searches for articles on Wikipedia and shows the first paragraph

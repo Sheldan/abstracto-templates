@@ -1,1 +1,1 @@
-Searches for definitions on [urban dicationary](https://www.urbandictionary.com/)
+Searches for definitions on [urban dictionary](https://www.urbandictionary.com/)
