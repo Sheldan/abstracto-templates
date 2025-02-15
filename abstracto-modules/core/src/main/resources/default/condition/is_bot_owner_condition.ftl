@@ -1,0 +1,1 @@
+<#include "is_bot_owner_text">
