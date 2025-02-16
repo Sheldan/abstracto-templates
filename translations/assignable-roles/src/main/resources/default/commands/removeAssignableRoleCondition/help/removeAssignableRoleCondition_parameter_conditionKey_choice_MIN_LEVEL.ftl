@@ -1,0 +1,1 @@
+Minimum level for the role

@@ -1,0 +1,1 @@
+Assignable role place only usable by boosting members, they lose their role if they stop boosting

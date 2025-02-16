@@ -1,0 +1,1 @@
+Assignable role place was moved.

@@ -1,0 +1,1 @@
+Only allow one of the roles to be chosen at a time
