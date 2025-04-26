@@ -1,9 +1,4 @@
 {
-    "embeds": [
-        {
-            <#include "abstracto_color">,
-            <#assign choice=chosenValue>
-            "description": "<@safe_include "choose_response_description"/>"
-        }
-    ]
+    <#assign choice=chosenValue>
+    "additionalMessage": "<@safe_include "choose_response_description"/>"
 }

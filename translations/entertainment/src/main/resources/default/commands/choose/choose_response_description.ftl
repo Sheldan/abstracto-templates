@@ -1,1 +1,1 @@
-I have chosen: ${choice}.
+From `${choices?join("`, `")?json_string}` I have chosen: `${choice?json_string}`.
