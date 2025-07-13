@@ -6,29 +6,59 @@
     <#assign title=currentSection.title>
     <#assign thumbnail=currentSection.thumbnailURL>
     <#assign viewerCount=currentSection.viewerCount>
-    "additionalMessage": "<@safe_include "twitch_streamer_go_live_notification_text"/>",
-    "embeds": [
-        {
-            <#include "twitch_color">,
-            "author": { "name": "${channelName}", "avatar":  "${streamerAvatarURL}", "url": "${streamURL}"},
-            "title": {
-                "title": "${title?json_string}"
+    "components": [
+        <#assign additionalText><@safe_include "twitch_streamer_go_live_notification_text"/></#assign>
+        <#if additionalText?has_content>
+            {
+                "type": "textDisplay",
+                "content": "${additionalText}"
             },
-            "description": "<@safe_include "twitch_streamer_go_live_notification_current_section"/> <#if pastSections?? && pastSections?size gt 0><@safe_include "twitch_streamer_go_live_notification_past_sections"/></#if>",
-            "imageUrl": "${thumbnail}?${randomString}"
+        </#if>
+        {
+            "type": "textDisplay",
+            "content": "# ${title?json_string}"
+        },
+        {
+            "type": "section",
+            "components": [
+                {
+                    "type": "textDisplay",
+                    "content": "<@safe_include "twitch_streamer_go_live_notification_current_section"/>"
+                }
+                <#if pastSections?? && pastSections?size gt 0>,
+                {
+                    "type": "textDisplay",
+                    "content": "<@safe_include "twitch_streamer_go_live_notification_past_sections"/>"
+                }
+                </#if>
+            ]
+            ,"accessory": {
+                "type": "thumbnail",
+                "url": "${streamerAvatarURL}"
+            }
+        },
+        {
+            "type": "mediaGallery",
+            "images": [
+                {
+                    "url": "${thumbnail}?${randomString}"
+                }
+            ]
+        },
+        {
+            "type": "actionRow",
+            "actionRowItems": [
+                {
+                    "type": "button",
+                    "label": "<@safe_include "twitch_streamer_go_live_notification_watch_button"/>",
+                    "url": "${streamURL?json_string}",
+                    "buttonStyle": "link"
+                }
+            ]
         }
     ],
     "messageConfig": {
-        "allowsRoleMention": true
-    },
-    "buttons": [
-        {
-            "label": "<@safe_include "twitch_streamer_go_live_notification_watch_button"/>",
-            "url": "${streamURL?json_string}",
-            "buttonStyle": "link",
-            "metaConfig": {
-                "persistCallback": false
-            }
-        }
-    ]
+        "allowsRoleMention": true,
+        "useComponentsV2": true
+    }
 }

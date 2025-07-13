@@ -1,51 +1,96 @@
 {
-    "embeds": [
+    "components": [
         {
-            <#if author??>
-            <#include "user_author">
-            <@user_author user=author/>
+            "type": "textDisplay",
+            <#assign emote>${starLevelEmote}</#assign>
+            <#assign count>${starCount}</#assign>
+            <#assign messageId>${message.messageId?c}</#assign>
+            <#assign userText><#if author??><#include "user_user_name"><@user_user_name user=author/><#else><@safe_include "delete_user_name"/></#if></#assign>
+            <#if channel?has_content>
+                <#assign channelMention>${channel.asMention?json_string}</#assign>
+                "content": "<@safe_include "starboard_post_embed_additional_message"/>"
             <#else>
-            <@safe_include "deleted_user_author"/>
-            </#if>,
-            <#include "abstracto_color">,
-            <#if message.content?has_content || message.embeds?size gt 0>
-            "description": "${message.content?json_string}
-<#list message.embeds>
-<@safe_include "starboard_post_embed_embeds_name"/>:
-<#items as embed>
-<#if embed.description??> <@safe_include "starboard_post_embed_description"/>: ${embed.description?json_string} </#if> <#if embed.imageUrl?has_content> <@safe_include "starboard_post_embed_image_url"/>: ${embed.imageUrl} </#if>
-</#items>
-</#list>
-",
+                <#assign channelMention>${sourceChannelId?c}</#assign>
+                "content": "<@safe_include "starboard_post_embed_additional_message"/>"
             </#if>
-            <#if message.attachments?size gt 0>
-            "imageUrl": "${message.attachments[0].proxyUrl}",
-            <#elseif message.attachments?size = 0 && message.embeds?size gt 0 && message.embeds[0].cachedThumbnail??>
-            "imageUrl": "${message.embeds[0].cachedThumbnail.proxyUrl}",
-            <#elseif message.attachments?size = 0 && message.embeds?size gt 0 && message.embeds[0].cachedImageInfo??>
-            "imageUrl": "${message.embeds[0].cachedImageInfo.proxyUrl}",
-            </#if>
-            "fields": [
+        }
+        ,{
+            "type": "container",
+            "components": [
+                <#assign hasContent=false>
+                <#if message.content?has_content>
+                    <#assign hasContent=true>
                 {
-                    "name": "<@safe_include "starboard_post_embed_original_field_title"/>"
-                    <#if channel?has_content>
-                    ,"value": "[${channel.name?json_string}](${message.messageUrl})"
-                    <#else>
-                    ,"value": "[${sourceChannelId?c}](${message.messageUrl})"
-                    </#if>
+                    "type": "textDisplay",
+                    "content": "${message.content?json_string}"
                 }
-            ],
-            "timeStamp": "${message.timeCreated}"
+                </#if>
+            <#list message.embeds as embed>
+                <#if embed.description?has_content>
+                    <#assign hasContent=true>
+                ,{
+                    "type": "section",
+                    "components": [
+                        {
+                            "type": "textDisplay",
+                            "content": "${embed.description?json_string}"
+                        }
+                    ]
+                <#if (embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content) || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content)>
+                    ,"accessory": {
+                        "type": "thumbnail",
+                        "url": "${(embed.cachedImageInfo.proxyUrl)!embed.cachedThumbnail.proxyUrl}"
+                    }
+                </#if>
+                }
+                <#elseif (embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content && embed.cachedImageInfo.width gt 0)
+                || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content && embed.cachedThumbnail.width gt 0)>
+                    <#assign hasContent=true>
+                {
+                    "type": "mediaGallery",
+                    "images": [
+                        {
+                            "url": "${(embed.cachedImageInfo.proxyUrl)!embed.cachedThumbnail.proxyUrl}"
+                        }
+                    ]
+                }
+                </#if>
+            </#list>
+            <#if message.attachments?size gt 0>
+            <#list message.attachments?filter(x -> x.width gt 0)>
+                <#assign hasContent=true>
+                ,{
+                    "type": "mediaGallery",
+                    "images": [
+                    <#items as attachment>
+                        {
+                            "url": "${attachment.proxyUrl}"
+                        }</#items>
+                    ]
+                }<#sep>,</#list>
+            </#if>
+            <#if hasContent==false>
+                {
+                "type": "textDisplay",
+                "content": "<@safe_include "starboard_post_embed_no_content"/>"
+                }
+            </#if>
+            ]
+        },
+        {
+            "type": "actionRow",
+            "actionRowItems": [
+                {
+                    "type": "button",
+                    "label": "<#include "starboard_post_embed_go_to_post_title">",
+                    "url": "${message.messageUrl}",
+                    "buttonStyle": "link"
+                }
+            ]
         }
     ],
-    <#assign emote>${starLevelEmote}</#assign>
-    <#assign count>${starCount}</#assign>
-    <#assign messageId>${message.messageId?c}</#assign>
-    <#if channel?has_content>
-    <#assign channelMention>${channel.asMention?json_string}</#assign>
-    "additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
-    <#else>
-    <#assign channelMention>${sourceChannelId?c}</#assign>
-    "additionalMessage": "<@safe_include "starboard_post_embed_additional_message"/>"
-    </#if>
+    "messageConfig": {
+        "allowsUserMention": false,
+        "useComponentsV2": true
+    }
 }
