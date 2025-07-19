@@ -1,12 +1,28 @@
 {
     "components": [
         {
-            "type": "textDisplay",
+            <#assign userFound=author??>
             <#include "user_user_name">
             <#assign userText><#if author??><@user_user_name user=author/><#else><@safe_include "delete_user_name"/></#if></#assign>
             <#include "member_user_name">
             <#assign embeddingUserText><@member_user_name member=embeddingUser/></#assign>
-            "content": "<@safe_include "message_embed_meta_info"/>"
+            <#assign userAvatar><#if author??>${author.effectiveAvatarUrl}</#if></#assign>
+            <#if userFound>
+                "type": "section",
+                "components": [
+                    {
+                        "type": "textDisplay",
+                        "content": "<@safe_include "message_embed_meta_info"/>"
+                    }
+                ],
+                "accessory": {
+                    "type": "thumbnail",
+                    "url": "${userAvatar}"
+                }
+            <#else>
+                "type": "textDisplay",
+                "content": "<@safe_include "message_embed_meta_info"/>"
+            </#if>
         },
         {
             "type": "container",
