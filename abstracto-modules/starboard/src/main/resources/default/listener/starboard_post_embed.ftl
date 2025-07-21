@@ -11,7 +11,7 @@
                 "type": "textDisplay",
                 <#if channel?has_content>
                     <#assign channelMention>${channel.asMention?json_string}</#assign>
-                    "content": "<@safe_include "starboard_post_embed_additional_message"/> ${(starCount >= 15)?string('yes', 'no')} ${(starCount >= 15)?string('yes', 'no')} ${(starCount >= 10)?string('yes', 'no')} ${(starCount >= 2)?string('yes', 'no')} ${(starCount >= 1)?string('yes', 'no')}"
+                    "content": "<@safe_include "starboard_post_embed_additional_message"/>"
                 <#else>
                     <#assign channelMention>${sourceChannelId?c}</#assign>
                     "content": "<@safe_include "starboard_post_embed_additional_message"/>"
