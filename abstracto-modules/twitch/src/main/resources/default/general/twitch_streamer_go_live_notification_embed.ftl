@@ -8,22 +8,12 @@
     <#assign viewerCount=currentSection.viewerCount>
     "components": [
         <#assign additionalText><@safe_include "twitch_streamer_go_live_notification_text"/></#assign>
-        <#if additionalText?has_content>
-            {
-                "type": "textDisplay",
-                "content": "${additionalText}"
-            },
-        </#if>
-        {
-            "type": "textDisplay",
-            "content": "# ${title?json_string}"
-        },
         {
             "type": "section",
             "components": [
                 {
                     "type": "textDisplay",
-                    "content": "<@safe_include "twitch_streamer_go_live_notification_current_section"/>"
+                    "content": "${(additionalText)!''}\n# ${title?json_string} \n <@safe_include "twitch_streamer_go_live_notification_current_section"/>"
                 }
                 <#if pastSections?? && pastSections?size gt 0>,
                 {
