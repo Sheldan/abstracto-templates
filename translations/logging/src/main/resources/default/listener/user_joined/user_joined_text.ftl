@@ -1,1 +1,1 @@
-User ${user} has joined the guild.
+User ${userText} has joined the guild.
