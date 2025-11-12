@@ -5,7 +5,7 @@
 
     <groupId>dev.sheldan.abstracto-templates</groupId>
     <artifactId>templates</artifactId>
-    <version>1.4.62-SNAPSHOT</version>
+    <version>1.4.62</version>
 
     <modules>
         <module>abstracto-modules</module>
@@ -24,7 +24,7 @@
         <connection>scm:git:${project.scm.url}</connection>
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
         <url>https://github.com/Sheldan/abstracto-templates.git</url>
-        <tag>HEAD</tag>
+        <tag>templates-1.4.62</tag>
     </scm>
 
     <repositories>
