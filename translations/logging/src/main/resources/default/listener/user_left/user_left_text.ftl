@@ -1,1 +1,1 @@
-User ${user} has left the guild.
+User ${userText} has left the guild.

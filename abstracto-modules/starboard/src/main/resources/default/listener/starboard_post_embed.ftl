@@ -1,12 +1,12 @@
 {
     "components": [
         {
-            <#assign userFound=author??>
+            <#assign userFound=authorMember?? || authorUser??>
             <#assign emote>${starLevelEmote}</#assign>
             <#assign count>${starCount}</#assign>
             <#assign messageId>${message.messageId?c}</#assign>
-            <#assign userText><#if author??><#include "user_user_name"><@user_user_name user=author/><#else><@safe_include "delete_user_name"/></#if></#assign>
-            <#assign userAvatar><#if author??>${author.effectiveAvatarUrl}</#if></#assign>
+            <#assign userText><#if authorMember??>${authorMember.name}<#elseif authorUser??>${authorUser.name}<#else><@safe_include "delete_user_name"/></#if></#assign>
+            <#assign userAvatar><#if authorMember??>${authorMember.avatarUrl}<#elseif authorUser??>${authorUser.avatarUrl}</#if></#assign>
             <#assign userComponent>
                 "type": "textDisplay",
                 <#if channel?has_content>
