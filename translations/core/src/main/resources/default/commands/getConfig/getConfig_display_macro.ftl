@@ -1,0 +1,2 @@
+<#macro config_value_value_display entry><#if entry.longValue??>${entry.longValue?c}</#if><#if entry.stringValue??>${entry.stringValue}</#if><#if entry.doubleValue??>${entry.doubleValue}</#if></#macro>
+<#macro config_value_display entry>${entry.key}: <#if entry.hasConcreateValue><@config_value_value_display entry=entry/><#else><#include "getConfig_display_no_concrete_value_label"></#if> <#include "getConfig_display_default_label">: <@config_value_value_display entry=entry.defaultValue/></#macro>

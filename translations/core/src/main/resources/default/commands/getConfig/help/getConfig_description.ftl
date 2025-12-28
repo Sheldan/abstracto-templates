@@ -1,0 +1,1 @@
+Shows all or one value of the bots configuration.

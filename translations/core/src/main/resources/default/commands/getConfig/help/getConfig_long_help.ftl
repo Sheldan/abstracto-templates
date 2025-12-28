@@ -1,0 +1,2 @@
+This command is used to see the currently applied configuration and default configuration of this server.
+If a `key` is provided, this shows one individual configuration and all configuration entries otherwise.
