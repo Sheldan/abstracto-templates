@@ -75,9 +75,9 @@
                     <#items as attachment>
                     {
                         "url": "${attachment.proxyUrl}"
-                    }</#items>
+                    }<#sep>,</#items>
                 ]
-            }<#sep>,</#list>
+            }</#list>
         </#if>
         <#if hasContent==false>
             {
