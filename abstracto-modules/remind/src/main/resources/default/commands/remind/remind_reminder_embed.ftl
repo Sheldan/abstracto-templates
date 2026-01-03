@@ -23,7 +23,11 @@
                     "value": "[<@safe_include "remind_reminder_link_content_display_text"/>](${messageUrl})"
                 }
                 </#if>
-            ]
+            ]<#if !reminderDisplay.userCommand>,
+            "footer": {
+                "text": "<@safe_include "remind_reminder_snooze_hint"/>"
+            }
+            </#if>
         }
     ]
 <#if !reminderDisplay.userCommand>,

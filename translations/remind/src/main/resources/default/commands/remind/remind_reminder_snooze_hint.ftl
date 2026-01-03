@@ -1,0 +1,1 @@
+In case you want to be reminded at a different time, you can set a new duration using the snooze command.
