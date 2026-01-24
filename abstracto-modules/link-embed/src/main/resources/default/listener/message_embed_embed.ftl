@@ -37,22 +37,29 @@
             </#if>
             <#list embeddedMessage.embeds as embed>
                 <#if embed.description?has_content>
-                ,{
-                    <#assign hasContent=true>
-                    "type": "section",
-                    "components": [
+                 <#if embeddedMessage.content?has_content>,</#if>
+                    <#if (embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content) || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content)>
+                        {
+                        <#assign hasContent=true>
+                            "accessory": {
+                                "type": "thumbnail",
+                                "url": "${(embed.cachedImageInfo.proxyUrl)!embed.cachedThumbnail.proxyUrl}"
+                            },
+                            "type": "section",
+                            "components": [
+                                {
+                                    "type": "textDisplay",
+                                    "content": "${embed.description?json_string}"
+                                }
+                            ]
+                        }
+                    <#else>
                         {
                             "type": "textDisplay",
                             "content": "${embed.description?json_string}"
                         }
-                    ]
-                    <#if (embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content) || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content)>
-                    ,"accessory": {
-                        "type": "thumbnail",
-                        "url": "${(embed.cachedImageInfo.proxyUrl)!embed.cachedThumbnail.proxyUrl}"
-                    }
                     </#if>
-                }
+                    <#assign hasContent=true>
                 <#elseif (embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content && embed.cachedImageInfo.width gt 0)
                 || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content && embed.cachedThumbnail.width gt 0)>
                     <#assign hasContent=true>
@@ -67,18 +74,18 @@
                 </#if>
             </#list>
             <#if embeddedMessage.attachments?size gt 0>
-            <#list embeddedMessage.attachments?filter(x -> x.width gt 0)>
-            ,{
-                <#assign hasContent=true>
-                "type": "mediaGallery",
-                "images": [
-                    <#items as attachment>
-                    {
-                        "url": "${attachment.proxyUrl}"
-                    }<#sep>,</#items>
-                ]
-            }</#list>
-        </#if>
+                <#list embeddedMessage.attachments?filter(x -> x.width gt 0)>
+                <#if hasContent>,</#if>{
+                    <#assign hasContent=true>
+                    "type": "mediaGallery",
+                    "images": [
+                        <#items as attachment>
+                        {
+                            "url": "${attachment.proxyUrl}"
+                        }<#sep>,</#items>
+                    ]
+                }</#list>
+            </#if>
         <#if hasContent==false>
             {
             "type": "textDisplay",

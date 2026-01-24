@@ -47,7 +47,7 @@
             <#list message.embeds as embed>
                 <#if embed.description?has_content && !((embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content) || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content))>
                     <#assign hasContent=true>
-                    {
+                    <#if message.content?has_content>,</#if>{
                         "type": "textDisplay",
                         "content": "${embed.description?json_string}"
                     }
@@ -82,8 +82,8 @@
             </#list>
             <#if message.attachments?size gt 0>
             <#list message.attachments?filter(x -> x.width gt 0)>
-                <#assign hasContent=true>
-                ,{
+                <#if hasContent>,</#if><#assign hasContent=true>
+                {
                     "type": "mediaGallery",
                     "images": [
                     <#items as attachment>
