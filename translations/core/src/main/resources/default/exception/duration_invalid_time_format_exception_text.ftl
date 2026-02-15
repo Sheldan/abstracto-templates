@@ -1,1 +1,2 @@
-Invalid time format: ${invalidFormat}. Valid formats are ${validFormats}. Beware to not use a space between the number and the unit.
+Invalid time format: ${invalidFormat}. Valid formats are ${validFormats}. Do not use a space between the number and the unit.
+Alternatively, you can use `@time: <duration description>` to define a duration.
