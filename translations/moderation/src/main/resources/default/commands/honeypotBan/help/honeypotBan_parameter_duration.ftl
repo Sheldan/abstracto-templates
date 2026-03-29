@@ -1,0 +1,1 @@
+Only users older than this duration are banned. Leave empty to use configured value.

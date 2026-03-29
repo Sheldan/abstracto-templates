@@ -1,0 +1,1 @@
+Bans all users that currently have the honeypot role

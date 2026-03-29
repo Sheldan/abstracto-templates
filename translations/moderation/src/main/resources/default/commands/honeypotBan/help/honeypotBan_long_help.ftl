@@ -1,0 +1,2 @@
+Bans all users that still have the configured honeypot role and are longer member than the provided duration.
+If no duration is provided, the content of config key `honeypotIgnoredJoinDurationSeconds` will be used

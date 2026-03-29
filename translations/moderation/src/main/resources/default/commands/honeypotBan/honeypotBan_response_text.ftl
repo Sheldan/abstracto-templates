@@ -1,0 +1,1 @@
+${bannedMemberCount} members who had the honeypot role have been banned.
