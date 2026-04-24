@@ -1,0 +1,1 @@
+Whether to pause or unpause the thread

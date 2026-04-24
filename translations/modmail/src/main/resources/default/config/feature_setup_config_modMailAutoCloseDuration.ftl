@@ -1,0 +1,1 @@
+Duration format defining the duration after how much a modmail thread should be closed without activity. Default: `${defaultValue}`

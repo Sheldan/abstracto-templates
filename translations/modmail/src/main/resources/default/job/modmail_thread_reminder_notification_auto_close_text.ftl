@@ -1,0 +1,1 @@
+Thread will be closed ${autoCloseTime}, unless there are more messages being sent or the thread is paused.

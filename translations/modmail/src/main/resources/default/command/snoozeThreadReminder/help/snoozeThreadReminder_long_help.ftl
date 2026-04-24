@@ -1,0 +1,1 @@
+This command snoozes the reminders for a modmail thread for a defined period of time.

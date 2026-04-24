@@ -1,0 +1,1 @@
+Thread was last updated ${lastUpdated}.

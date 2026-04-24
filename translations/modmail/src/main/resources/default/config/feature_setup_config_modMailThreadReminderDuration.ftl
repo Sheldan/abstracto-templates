@@ -1,0 +1,1 @@
+Duration format defining the duration after which the moderators should be reminded about the thread. Default: `${defaultValue}`
