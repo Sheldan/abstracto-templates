@@ -1,0 +1,1 @@
+The channel in which no messages are allowed. Default: ${defaultValue}
