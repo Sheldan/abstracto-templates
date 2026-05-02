@@ -1,0 +1,1 @@
+Duration format defining how often the twitch live notification should be updated. Default: `${defaultValue}`
