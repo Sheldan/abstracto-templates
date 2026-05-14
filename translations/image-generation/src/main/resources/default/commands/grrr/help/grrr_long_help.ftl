@@ -1,0 +1,1 @@
+A red face indicating a GRRR emotion

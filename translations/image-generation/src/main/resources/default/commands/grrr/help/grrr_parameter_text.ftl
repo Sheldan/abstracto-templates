@@ -1,0 +1,1 @@
+The text to add as the bottom text to the GRRR response

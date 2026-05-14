@@ -1,0 +1,1 @@
+[USER] Responds with a red GRRR face
