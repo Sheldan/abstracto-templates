@@ -46,13 +46,15 @@
                 </#if>
             <#list message.embeds as embed>
                 <#if embed.description?has_content && !((embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content) || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content))>
+                    <#if hasContent>,</#if>
                     <#assign hasContent=true>
-                    <#if message.content?has_content>,</#if>{
+                    {
                         "type": "textDisplay",
                         "content": "${embed.description?json_string}"
                     }
                 <#elseif embed.description?has_content && (embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content && embed.cachedImageInfo.width gt 0)
                 || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content && embed.cachedThumbnail.width gt 0)>
+                <#if hasContent>,</#if>
                 <#assign hasContent=true>
                 ,{
                     "type": "section",
@@ -69,6 +71,7 @@
                 }
                 <#elseif (embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content && embed.cachedImageInfo.width gt 0)
                 || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content && embed.cachedThumbnail.width gt 0)>
+                    <#if hasContent>,</#if>
                     <#assign hasContent=true>
                 {
                     "type": "mediaGallery",

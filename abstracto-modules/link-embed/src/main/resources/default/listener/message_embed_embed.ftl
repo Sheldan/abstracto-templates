@@ -37,7 +37,7 @@
             </#if>
             <#list embeddedMessage.embeds as embed>
                 <#if embed.description?has_content>
-                 <#if embeddedMessage.content?has_content>,</#if>
+                 <#if hasContent>,</#if>
                     <#if (embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content) || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content)>
                         {
                         <#assign hasContent=true>
@@ -62,6 +62,7 @@
                     <#assign hasContent=true>
                 <#elseif (embed.cachedImageInfo?has_content && embed.cachedImageInfo.proxyUrl?has_content && embed.cachedImageInfo.width gt 0)
                 || (embed.cachedThumbnail?has_content && embed.cachedThumbnail.proxyUrl?has_content && embed.cachedThumbnail.width gt 0)>
+                    <#if hasContent>,</#if>
                     <#assign hasContent=true>
                 {
                     "type": "mediaGallery",
