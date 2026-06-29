@@ -1,0 +1,1 @@
+Uses a paginator to be able to view all the quick replies

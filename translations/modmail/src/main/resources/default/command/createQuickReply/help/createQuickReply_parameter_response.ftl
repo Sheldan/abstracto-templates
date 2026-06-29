@@ -1,0 +1,1 @@
+The response to be used for the quick reply. Multi lines not possible.

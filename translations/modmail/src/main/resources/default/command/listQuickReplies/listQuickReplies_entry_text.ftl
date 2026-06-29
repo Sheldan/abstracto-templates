@@ -1,0 +1,1 @@
+Quick reply: **${name}** with response `${content}`${anonymous?string(' (anonymously)', '')}.

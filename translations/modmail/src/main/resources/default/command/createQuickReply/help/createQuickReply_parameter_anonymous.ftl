@@ -1,0 +1,1 @@
+Whether to send the quick reply anonymous

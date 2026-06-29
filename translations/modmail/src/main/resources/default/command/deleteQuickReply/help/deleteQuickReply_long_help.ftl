@@ -1,0 +1,1 @@
+Permanently removes a quick reply from the system
